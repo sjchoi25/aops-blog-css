@@ -6,7 +6,7 @@
 * Based off of BobRascal's DIM
 * The original code was completely revamped into cloud.css
 * 
-* 
+* Copyright (c) 2020 Nhv24 (player01) under MIT
 * 
 * Special thanks to
 * BobRascal
@@ -150,12 +150,12 @@ li.blog-shout.row2 {
     border-radius: 10px;
 }
 
-/*Code color patch.*/
+/* Code color patch */
 code[class*="language-"] {
     color: #333;
 }
 
-/*Feed username color patch. Original code by AoPS.*/
+/* Feed username color patch. Original code by AoPS */
 .cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
 .cmty-forum-admin a{color: #900 !important;}
 .cmty-forum-mod a{color: #090 !important;}
@@ -165,12 +165,12 @@ img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
     display: none;
 }
 
-/*Shouts scrollbar patch by happycupcake.*/
+/* Shouts scrollbar patch by happycupcake */
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
     scrollbar-width: none;
 }
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
-    width: 0px; /*Yay for nonstandard behavior /s.*/
+    width: 0px;
 }
 
 /**  Polls  **/
@@ -178,62 +178,9 @@ img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
     background-color: #e8e8e8;
 }
 
-/**  Scrollbar  **/
-::-webkit-scrollbar {
-    width: 9px;
-}
-::-webkit-scrollbar-track {
-    display: none;
-}
-::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:active {
-    background: #444;
-}
-
 /**  Make the comment background white  **/
 div.comment.row1, div.comment.row2 {
     background-color: transparent;
-}
-
-/**  Post new entry button styling  **/
-/**  Main code by AoPS  */
-#post-new-entry {
-    display: inline-block;
-    font-weight: 700;
-    height: 24px;
-    padding: 0 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    border: none;
-    border-radius: 0;
-    font-family: Roboto,sans-serif;
-    user-select: none;
-    color: #fff;
-    background-color: #1b365d;
-}
-#post-new-entry:focus {
-    outline: thin dotted #333;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset:-2px;
-}
-#post-new-entry:focus, #post-new-entry:hover {
-    color: #fff;
-    background-color: #135b7b;
-    border-color: #135b7b;
-    text-decoration:none;
-}
-#post-new-entry:active {
-    background-image: none;
-    outline: 0;
-    box-shadow:inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 
 /**  Increase the title font size  **/
@@ -247,7 +194,7 @@ div.entrywrap {
     background-color: white;
 }
 
-/**  Credits  **/
+/**  Credits DO NOT REMOVE **/
 #main::after {
     content: "cloud.css made by player01";
     margin-top: 5px;
@@ -270,96 +217,96 @@ div.cmty-tip-triangle{
 /**  Mobile and other small devices support  **/
 
 @media only screen and (max-width: 800px) {
-div#header h1 {
-    font-size: 30px;
-    line-height: 100px;
-}
-#navigation_box a {
-    text-align: center;
-    line-height: 25px;
-    padding-top: 2px;
-}
-#navigation_box {
-    height: 30px;
-}
-#main {
-    width: 100%;
-    padding: 5px;
-    background-color: white;
-}
-#wrapper {
-   width: 100%;
-}
+    div#header h1 {
+        font-size: 30px;
+        line-height: 100px;
+    }
+    #navigation_box a {
+        text-align: center;
+        line-height: 25px;
+        padding-top: 2px;
+    }
+    #navigation_box {
+        height: 30px;
+    }
+    #main {
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+    }
+    #wrapper {
+        width: 100%;
+    }
 
-p.description {
-    padding-top: 20px;
-}
+    p.description {
+        padding-top: 20px;
+    }
 
-div#left_navigation_box {
-    display: none;
-}
+    div#left_navigation_box {
+        display: none;
+    }
 
-/**  Side widget taken and modified from NMK  **/
-#side {
-    position: fixed;
-    top: 0;
-    left: -20em;
-    width: 20em;
-    height: 100%;
-    padding: 0 2em;
-    z-index: 100;
-    overflow-y: scroll;
-    -webkit-transition-property: left;
-    transition-property: left;
-    -webkit-transition: .9s ease;
-    transition: .9s ease;
-    background-color: white;
-    border: 1px solid lightgray;
-}
+    /**  Side widget taken and modified from NMK  **/
+    #side {
+        position: fixed;
+        top: 0;
+        left: -20em;
+        width: 20em;
+        height: 100%;
+        padding: 0 2em;
+        z-index: 100;
+        overflow-y: scroll;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+        background-color: white;
+        border: 1px solid lightgray;
+    }
  
-#side:after {
-    content: "»";
-    position: fixed;
-    top: 1.5em;
-    left: 0;
-    background: #e8eef0;
-    color: #808080;
-    display: block;
-    font-size: 2em;
-    padding: 0.35em 0.4em;
-    height: 1.5em;
-    width: 1.5em;
-    border-radius: 0 1em 1em 0;
-    -webkit-transition-property: left;
-    transition-property: left;
-    -webkit-transition: .7s ease;
-    transition: .7s ease;
-}
+    #side:after {
+        content: "»";
+        position: fixed;
+        top: 1.5em;
+        left: 0;
+        background: #e8eef0;
+        color: #808080;
+        display: block;
+        font-size: 2em;
+        padding: 0.35em 0.4em;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 0 1em 1em 0;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
  
-#side:hover {
-    left: 0;
-    -webkit-transition: .9s ease;
-    transition: .9s ease;
-}
+    #side:hover {
+        left: 0;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+    }
  
-#side:hover:after {
-    left: -1.5em;
-    -webkit-transition: .7s ease;
-    transition: .7s ease;
-}
+    #side:hover:after {
+        left: -1.5em;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
  
-/* widgets */
-#side > div {
-    margin: 0 !important;
-    padding: 2em 0 !important;
-    border-bottom: 1px solid #909090;
-}
+    /* widgets */
+    #side > div {
+        margin: 0 !important;
+        padding: 2em 0 !important;
+        border-bottom: 1px solid #909090;
+    }
  
-#side > div:last-child {
-    border-bottom: 0;
-}
-/*  End of code taken from NMK  */
-textarea#message.inputbox {
-    width: 105%;
-}
+    #side > div:last-child {
+        border-bottom: 0;
+    }
+    /*  End of code taken from NMK  */
+    textarea#message.inputbox {
+        width: 105%;
+    }
 }
