@@ -1,0 +1,324 @@
+/** NOTE: I am using :after and :before instead of the usual 
+* ::after and ::before because of IE comptibility. **/
+
+/**  Definition of colors  **/
+:root {
+    --color-1: #12232E; /** Poll border color, navigation bar color */
+    --color-2: #007CC7; /* Header background color, poll bar color, shout number color */
+    --color-3: #1464F4; /* Search button color */
+    --color-4: #203647; /* No uses currently */
+    --color-5: white; /* Header color, shout number color search button color */
+
+    /**  Shoutbox colors  **/
+    --row-1: #CAE1FF;
+    --row-2: white;
+}
+
+/**  Wrapper  **/
+#wrapper {
+    width: 90%;
+}
+
+/**  Navigation bar  **/
+#navigation_box {
+    position: fixed;
+    height: 40px;
+    background-color: var(--color-1);
+}
+#navigation_box a {
+    line-height: 2.6;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/**  Header  **/
+#header h1 {
+    position: relative;
+    top: 4vh;
+    font-size: 90%;
+    transition: 1s;
+    font-weight: 700;
+    color: var(--color-5);
+    padding-top: 10vh;
+    /* Credits to wstella */
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
+}
+#header h1:hover {
+    text-decoration: none;
+    cursor: default;
+    font-size: 115%;
+    transition: 1s;
+}
+#header {
+    height: 40vh;
+    background-color: var(--color-2);
+}
+
+/**  Body  **/
+body {
+    background: url('https://artofproblemsolving.com/assets/images/top/pattern-online-gray.png');
+}
+
+/**  Links  **/
+a:link, a:visited, a {
+    color: #2188e0;
+}
+
+/**  Misc  **/
+#main {
+    margin: 15px;
+    padding: 10px;
+    width: 80%;
+}
+.inputbox:not(#blog_keywords) {
+    padding: 1px;
+    width: 100%;
+}
+
+/**  Entry  **/
+div.entrywrap {
+    background-color: white;
+}
+
+/**  Polls  **/
+.cmty-poll-display {
+    background-color: #e8e8e8;
+}
+.cmty-poll-result-bar {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color: var(--color-2);
+}
+.cmty-poll-display {
+    border-color: var(--color-1);
+}
+
+/**  Tips  **/
+div.cmty-tip-triangle{
+    display: none !important;
+}
+
+/* Code color patch */
+code[class*="language-"] {
+    color: #333;
+}
+
+/**   Curved edges  **/
+.blog-shout-wrapper, .blog-tags-wrapper, .blog-shout, .inputbox:not(#blog_keywords) {
+    border-radius: 10px;
+}
+
+/* Shouts scrollbar patch by happycupcake */
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
+  scrollbar-width: none;
+}
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*  Feed username color patch  */
+.cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
+.cmty-forum-admin a{color: #900 !important;}
+.cmty-forum-mod a{color: #090 !important;}
+
+/*  Search patch  
+Code taken from AoPS user monks  */
+#search-widget > div {
+    background-color: transparent;
+}
+#search-widget fieldset {
+    border: none;
+}
+.widget-settings {
+    display: none;
+}
+.search {
+    height: 25px;
+    border-radius: 5px;
+}
+.button2 {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    background-color: var(--color-3);
+    color: var(--color-5);
+}
+
+/*  Image patch  */
+img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
+  display: none;
+}
+
+/**  Widget title patch  **/
+div.widget-title {
+    font-size: 105%;
+}
+
+/**  Get rid of underlines  **/
+.blog-report-post, .blog-delete-post, .blog-edit-post, .blog-moderate-topic, a.post-comment, a.post-replies {
+    text-decoration: none !important;
+}
+
+/**  Entry patch  **/
+div #navigation_box, div.entry {
+  border: none;
+}
+
+/** Post button patch  **/
+#post-new-entry:before{
+    font-family: AoPS;
+    content: 'V ';
+}
+
+/**  Get rid of things  **/
+.cmty-post-edit-info, #charsleft {
+    display: none !important;
+}
+
+/**  Shouts  **/
+.blog-shout.row1 {
+    background-color: var(--row-1);
+}
+.blog-shout.row2 {
+    background-color: var(--row-2);
+}
+.blog-num-shouts {
+    background-color: var(--color-2);
+    color: var(--color-5);
+    border-radius: 2px;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    top: 5px;
+}
+
+/**   Submit button in shout  **/
+#submit {
+    background-color: #efefef;
+    padding: 3px 5px;
+    border-radius: 2px;
+    margin: 4px;
+    color: #fff;
+    background-color: #1b365d;
+    position: relative;
+    right: 10px;
+}
+#submit:hover {
+    background-color: #135b7b;
+}
+
+/**  Mobile support  **/
+@media only screen and (max-width: 800px) {
+    div#header h1 {
+        font-size: 30px;
+        line-height: 100px;
+    }
+    #navigation_box a {
+        text-align: center;
+        line-height: 25px;
+        padding-top: 2px;
+    }
+    #navigation_box {
+        height: 30px;
+    }
+    #main {
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+    }
+    #wrapper {
+        width: 100%;
+    }
+
+    p.description {
+        padding-top: 20px;
+    }
+
+    div#left_navigation_box {
+        display: none;
+    }
+
+    /**  Side widget taken and modified from NMK  **/
+    #side {
+        position: fixed;
+        top: 0;
+        left: -20em;
+        width: 20em;
+        height: 100%;
+        padding: 0 2em;
+        z-index: 100;
+        overflow-y: scroll;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+        background-color: white;
+        border: 1px solid lightgray;
+        }
+ 
+    #side:after {
+        content: "»";
+        position: fixed;
+        top: 1.5em;
+        left: 0;
+        background: #e8eef0;
+        color: #808080;
+        display: block;
+        font-size: 2em;
+        padding: 0.35em 0.4em;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 0 1em 1em 0;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
+ 
+    #side:hover {
+        left: 0;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+    }
+ 
+    #side:hover:after {
+        left: -1.5em;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
+ 
+    /* widgets */
+    #side > div {
+        margin: 0 !important;
+        padding: 2em 0 !important;
+        border-bottom: 1px solid #909090;
+    }
+ 
+    #side > div:last-child {
+        border-bottom: 0;
+    }
+    /*  End of code taken from NMK  */
+}
+
+/**   Credits   **/
+#content:after, #header:after {
+    content: "CSS made by player01";
+    margin-top: 5px;
+    text-align: center;
+    color: lightgray;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15pt;
+}
