@@ -142,7 +142,7 @@ body {
 }
 
 /**   Curved edges  **/
-.blog-shout-wrapper, .blog-tags-wrapper, .inputbox:not(.inputbox.search) {
+.blog-shout-wrapper, .blog-tags-wrapper, .inputbox:not(#blog_keywords) {
     border-radius: 10px;
     background-color: var(--bgcolor);
 }
@@ -282,7 +282,7 @@ div.cmty-tip-triangle{
     }
 
     div#left_navigation_box {
-    display: none;
+        display: none;
     }
 
     /**   Side widget taken and modified from NMK   **/
