@@ -230,6 +230,11 @@ div #navigation_box, div.entry {
     top: 5px;
 }
 
+/**   Make the comment background white   **/
+div.comment.row1, div.comment.row2 {
+    background-color: transparent;
+}
+
 /**   Submit button in shout  **/
 #submit {
     background-color: #efefef;
