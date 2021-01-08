@@ -1,5 +1,17 @@
-/** NOTE: I am using :after and :before instead of the usual 
-* ::after and ::before because of IE comptibility. **/
+/**
+* CSS by player01
+*
+* Inspired by City.css (NMK) and Goodbye.css (Mathlete2017)
+*
+* Credits to wstella for header text
+*
+* Released under the MIT license
+*
+* GitHub link: 
+*
+* NOTE: I am using :after and :before instead of the usual 
+* ::after and ::before because of IE comptibility. 
+**/
 
 /** Import fonts  **/
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
@@ -11,6 +23,74 @@
     --color-3: #1464F4; /* Search button color, poll border */
     --color-4: #CAE1FF; /* Poll bar */
     --color-5: white; /* Header color, shout number color search button color */
+}
+
+/**  Code for alert  **/
+span[style^="font-family:'alert-dark"], 
+span[style^="font-family:'alert-light"], 
+span[style^="font-family:'alert-danger"], 
+span[style^="font-family:'alert-warning"], 
+span[style^="font-family:'alert-info"], 
+span[style^="font-family:'alert-success"], 
+span[style^="font-family:'alert-secondary"], 
+span[style^="font-family:'alert-primary"] {
+    padding: 15px;
+    margin: 15px;
+    display: block;
+    border-radius: 4px;
+    font-family: Arial, sans-serif !important;
+    border: 1px solid transparent;
+}
+span[style^="font-family:'alert-dark"] a, span[style^="font-family:'alert-light"] a, span[style^="font-family:'alert-danger"] a, span[style^="font-family:'alert-warning"] a, span[style^="font-family:'alert-info"] a, span[style^="font-family:'alert-success"] a, span[style^="font-family:'alert-secondary"] a, span[style^="font-family:'alert-primary"] a {
+    font-weight: 700;
+}
+
+span[style^="font-family:'alert-primary"] {
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+}
+
+span[style^="font-family:'alert-secondary"] {
+    color: #41464b;
+    background-color: #e2e3e5;
+    border-color: #d3d6d8;
+}
+
+span[style^="font-family:'alert-success"] {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+span[style^="font-family:'alert-info"] {
+    color: #055160;
+    background-color: #cff4fc;
+    border-color: #b6effb;
+}
+
+span[style^="font-family:'alert-warning"] {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
+
+span[style^="font-family:'alert-danger"] {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+span[style^="font-family:'alert-light"] {
+    color: #636464;
+    background-color: #fdfdfe;
+    border-color: #fdfdfe;
+}
+
+span[style^="font-family:'alert-dark"] {
+    color: #141619;
+    background-color: #d3d3d4;
+    border-color: #bcbebf;
 }
 
 /**   Font  **/
@@ -56,6 +136,9 @@ input.cmty-submit-button.btn.btn-primary {
 }
 
 /**  Header  **/
+#header {
+    border-bottom: none;
+}
 #header h1 {
     position: relative;
     top: 4vh;
@@ -100,21 +183,60 @@ a:link, a:visited, a {
 }
 
 /**  Misc  **/
-#main {
-    margin: 15px;
+#main{
+    width: calc(100% - 258px);
+    width: -webkit-calc(100% - 258px);
     padding: 10px;
-    width: 80%;
 }
 .inputbox:not(#blog_keywords) {
     padding: 1px;
     width: 100%;
+    transition: .7s;
+}
+.inputbox:not(#blog_keywords):hover {
+    box-shadow: 3px 3px 5px lightgray;
+    transition: .7s;
+}
+
+/**  Archive row  **/
+.archive-row:hover {
+    -webkit-box-shadow: 0 0 5px 2px lightgray;
+    -moz-box-shadow: 0 0 5px 2px lightgray;
+    box-shadow: 0 0 5px 2px lightgray;
+    border-radius: 2px;
+}
+
+/**   Comments   **/
+div.comment {
+    background-color: transparent;
+    box-shadow: 2px 2px 5px lightgray;
+    border: none;
 }
 
 /**  Entry  **/
 div.entrywrap {
     background-color: white;
-    padding: 15px;
     border-color: lightgray;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+/**  Comments  **/
+.post-replies, .post-comment, .blog-edit-post, .blog-moderate-topic, .blog-delete-post, .blog-report-post {
+    border: 1px solid var(--color-3);
+    border-radius: 2px;
+    padding: 2px;
+    transition: .2s;
+}
+.post-replies:hover, .post-comment:hover, .blog-edit-post:hover,
+.blog-moderate-topic:hover, .blog-delete-post:hover, .blog-report-post:hover {
+    padding: 1px;
+    transition: .2s;
+    margin: 1px;
+}
+
+/**  Lists  **/
+ul {
+    list-style-type: disc;
 }
 
 /**  Polls  **/
@@ -122,6 +244,8 @@ div.entrywrap {
     background-color: #e8e8e8;
     border: 2px solid var(--color-3);
     border-radius: 2px;
+    box-shadow: 3px 3px 5px black;
+    margin-bottom: 5px;
 }
 .cmty-poll-result-bar {
     border-bottom-right-radius: 2px;
@@ -180,6 +304,9 @@ Code taken from AoPS user monks  */
     border: none;
     background-color: var(--color-3);
     color: var(--color-5);
+}
+.button2:hover {
+    border: 1px solid var(--color-4);
 }
 
 /*  Image patch  */
@@ -253,7 +380,7 @@ div.comment.row1, div.comment.row2 {
 /**  Mobile support  **/
 @media only screen and (max-width: 800px) {
     div#header h1 {
-        font-size: 30px;
+        font-size: 90%;
         line-height: 100px;
     }
     #navigation_box a {
@@ -297,7 +424,7 @@ div.comment.row1, div.comment.row2 {
         transition: .9s ease;
         background-color: white;
         border: 1px solid lightgray;
-        }
+    }
  
     #side:after {
         content: "»";
@@ -317,7 +444,7 @@ div.comment.row1, div.comment.row2 {
         -webkit-transition: .7s ease;
         transition: .7s ease;
     }
- 
+
     #side:hover {
         left: 0;
         -webkit-transition: .9s ease;
@@ -352,4 +479,22 @@ div.comment.row1, div.comment.row2 {
     display: block;
     margin-bottom: 5px;
     font-size: 13pt !important;
+}
+
+/**  Height so that no scroll on header  **/
+@media only screen and (max-height: 850px) {
+    #header:after {
+        display: none;
+    }
+    #header {
+        height: 30vh;
+    }
+    #header h1 {
+        padding-top: 5vh;
+        font-size: 80%;
+    }
+    #header h1:hover {
+        font-size: 85%;
+        transition: .5s;
+    }
 }
