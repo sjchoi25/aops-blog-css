@@ -1,13 +1,12 @@
 /**
 * CSS by player01
 *
-* Inspired by City.css (NMK) and Goodbye.css (Mathlete2017)
+* Goodbye.css (Mathlete2017) and Collaboration.css 
+* (Zanderman, bestzack66, BlueJay43, Chocolatte, G.G.Otto, Paul10, player01, recoco, SparklyFlowers, TigerEye123, and eduD_looC)
 *
 * Credits to wstella for header text
 *
 * Released under the MIT license
-*
-* GitHub link: 
 *
 * NOTE: I am using :after and :before instead of the usual 
 * ::after and ::before because of IE comptibility. 
@@ -23,6 +22,7 @@
     --color-3: #1464F4; /* Search button color, poll border */
     --color-4: #CAE1FF; /* Poll bar */
     --color-5: white; /* Header color, shout number color search button color */
+    --nav: #101010;
 }
 
 /**  Code for alert  **/
@@ -130,9 +130,16 @@ input.cmty-submit-button.btn.btn-primary {
     background-color: var(--color-1);
 }
 #navigation_box a {
-    line-height: 2.5;
+    display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
+    line-height: 2.5;
+    transition: 1s;
+}
+#navigation_box a:hover {
+    background-color: var(--nav);
+    border-radius: 5px;
+    transition: .5s;
 }
 
 /**  Header  **/
@@ -251,7 +258,11 @@ ul {
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
     background-color: var(--color-4);
-    box-shadow: 1px 1px 1px var(--color-2);
+    transition: .2s;
+}
+.cmty-poll-result-bar:hover {
+    box-shadow: 1px 1px 2px var(--color-2);
+    transition: .2s;
 }
 
 /**  Tips  **/
