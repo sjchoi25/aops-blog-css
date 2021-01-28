@@ -1,3 +1,12 @@
+/**
+* 
+* Circuit.css by player01
+* 
+* Inspired by Goodbye.css (Mathlete2017)
+*
+* Copyright (c) 2020 Nhv24/player01
+**/
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 /**   Font  **/
@@ -109,6 +118,7 @@ span[style^="font-family:'alert-dark"] {
 div.entrywrap {
     background-color: white;
     border: none;
+    box-shadow: 0 0 1em lightgray;
 }
 div.comment {
     border: none;
@@ -116,6 +126,15 @@ div.comment {
 
 /**  Lists  **/
 ul {list-style-type: disc;}
+
+/**   Polls   **/
+.cmty-poll-display {
+    background-color: #e8e8e8;
+}
+.cmty-poll-result-bar {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
 
 /**  Header  */
 #header {
@@ -347,4 +366,13 @@ div #navigation_box, div.entry {
     textarea#message.inputbox {
         width: 100%;
     }
+}
+
+#main::after {
+    content: "CSS made by player01";
+    margin-top: 5px;
+    text-align: center;
+    color: lightgray;
+    display: block;
+    margin-bottom: 5px;
 }
