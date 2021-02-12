@@ -1,0 +1,70 @@
+/**
+* Code by player01
+*
+* Copyright (c) 2020 Nhv24 (player01)
+* Licensed under MIT
+*
+* https://github.com/Nhv24/aops-alerts
+*
+* This code was converted from SASS into CSS
+**/
+
+span[style^="font-family:'alert-dark"], span[style^="font-family:'alert-light"], span[style^="font-family:'alert-danger"], span[style^="font-family:'alert-warning"], span[style^="font-family:'alert-info"], span[style^="font-family:'alert-success"], span[style^="font-family:'alert-secondary"], span[style^="font-family:'alert-primary"] {
+  padding: 15px;
+  margin: 15px;
+  display: block;
+  border-radius: 4px;
+  font-family: Arial, sans-serif !important;
+  border: 1px solid transparent;
+}
+span[style^="font-family:'alert-dark"] a, span[style^="font-family:'alert-light"] a, span[style^="font-family:'alert-danger"] a, span[style^="font-family:'alert-warning"] a, span[style^="font-family:'alert-info"] a, span[style^="font-family:'alert-success"] a, span[style^="font-family:'alert-secondary"] a, span[style^="font-family:'alert-primary"] a {
+  font-weight: 700;
+}
+
+span[style^="font-family:'alert-primary"] {
+  color: #084298;
+  background-color: #cfe2ff;
+  border-color: #b6d4fe;
+}
+
+span[style^="font-family:'alert-secondary"] {
+  color: #41464b;
+  background-color: #e2e3e5;
+  border-color: #d3d6d8;
+}
+
+span[style^="font-family:'alert-success"] {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
+span[style^="font-family:'alert-info"] {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
+}
+
+span[style^="font-family:'alert-warning"] {
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+}
+
+span[style^="font-family:'alert-danger"] {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
+span[style^="font-family:'alert-light"] {
+  color: #636464;
+  background-color: #fdfdfe;
+  border-color: #fdfdfe;
+}
+
+span[style^="font-family:'alert-dark"] {
+  color: #141619;
+  background-color: #d3d3d4;
+  border-color: #bcbebf;
+}
