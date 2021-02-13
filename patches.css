@@ -1,0 +1,81 @@
+/**
+* patches.css made by player01
+* 
+*
+* The file is a collection of patches made by various AoPS users
+*
+* Copyright (c) 2020 Nhv24/player01
+* Licensed under MIT
+**/
+
+/* Code color patch */
+code[class*="language-"] {
+    color: #333;
+}
+
+/* Shouts scrollbar patch by happycupcake */
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
+  scrollbar-width: none;
+}
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*  Feed username color patch  */
+.cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
+.cmty-forum-admin a{color: #900 !important;}
+.cmty-forum-mod a{color: #090 !important;}
+
+/*  Search patch  
+Code taken from AoPS user monks  */
+#search-widget > div {
+    background-color: transparent;
+}
+#search-widget fieldset {
+    border: none;
+}
+.widget-settings {
+    display: none;
+}
+.search {
+    height: 25px;
+    border-radius: 5px;
+}
+.button2 {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    background-color: #999;
+}
+
+/*  Image patch  */
+img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
+  display: none;
+}
+
+/**  Widget title patch  **/
+div.widget-title {
+    font-size: 105%;
+}
+
+/**  Get rid of underlines  **/
+.blog-report-post, .blog-delete-post, .blog-edit-post, .blog-moderate-topic, a.post-comment, a.post-replies {
+    text-decoration: none !important;
+}
+
+/**    Nav bar and entry patch    **/
+div #navigation_box, div.entry {
+  border: none;
+}
+#navigation_box a {
+    vertical-align: middle;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/** Post button patch  **/
+#post-new-entry:before{
+    font-family: AoPS;
+    content: 'V ';
+}
