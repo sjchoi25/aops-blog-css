@@ -1,24 +1,18 @@
 /**
 * Code by player01
 *
-* Copyright (c) 2020 Nhv24 (player01)
-* Licensed under MIT
+* Copyright 2020 player01 under MIT
 *
-* https://github.com/Nhv24/blog-css
-*
-* This code was converted from SASS into CSS
+* Colors taken from original bootstrap source code
 **/
 
 span[style^="font-family:'alert-dark"], span[style^="font-family:'alert-light"], span[style^="font-family:'alert-danger"], span[style^="font-family:'alert-warning"], span[style^="font-family:'alert-info"], span[style^="font-family:'alert-success"], span[style^="font-family:'alert-secondary"], span[style^="font-family:'alert-primary"] {
   padding: 15px;
-  margin: 15px;
+  margin: 0px;
   display: block;
   border-radius: 4px;
   font-family: Arial, sans-serif !important;
   border: 1px solid transparent;
-}
-span[style^="font-family:'alert-dark"] a, span[style^="font-family:'alert-light"] a, span[style^="font-family:'alert-danger"] a, span[style^="font-family:'alert-warning"] a, span[style^="font-family:'alert-info"] a, span[style^="font-family:'alert-success"] a, span[style^="font-family:'alert-secondary"] a, span[style^="font-family:'alert-primary"] a {
-  font-weight: 700;
 }
 
 span[style^="font-family:'alert-primary"] {
@@ -59,7 +53,7 @@ span[style^="font-family:'alert-danger"] {
 
 span[style^="font-family:'alert-light"] {
   color: #636464;
-  background-color: #fdfdfe;
+  background-color: #fefefe;
   border-color: #fdfdfe;
 }
 
