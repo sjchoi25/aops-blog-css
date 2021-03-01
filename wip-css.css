@@ -1,0 +1,255 @@
+:root {
+    --height: 50px;
+}
+
+body {
+    color: black;
+}
+
+/**  Buttons and input  **/
+input, button {
+    outline: none;
+}
+
+#message, .blog-shout-wrapper, .blog-tags-wrapper {
+    border: 1px solid lightgray;
+}
+
+#wrapper {
+    width: 100%;
+    border: none;
+    margin-top: 69vh;
+}
+#content {
+    width: 70%;
+    margin: 0 auto;
+}
+#main {
+    width: calc(100% - 258px);
+}
+
+#navigation_box, #left_navigation_box, #right_navigation_box {
+    position: fixed;
+    border-bottom: 1px solid #0e1525;
+    height: 50px; /* Fallback for old browsers */
+    height: var(--height);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+#navigation_box {
+    justify-content: space-between;
+    opacity: 0.9;
+    box-shadow: 0 5px 5px lightgray;
+    background-color: black;
+}
+#navigation_box a {
+    font-weight: 500;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 16px;
+    padding: 0 20px;
+    opacity: 1;
+}
+#left_navigation_box {
+    left: 0;
+}
+#right_navigation_box {
+    right: 0;
+}
+ 
+#header {
+    margin-top: 50px; /* Fallback for old browsers */
+    margin-top: var(--height);
+    border: none;
+    z-index: -1;
+    position: fixed;
+    height: 70vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation_box * {
+    font-size: 0 !important;
+}
+#navigation_box a {
+    font-size: 16px !important;
+}
+
+.description {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+/* Code color patch */
+code[class*="language-"] {
+    color: #333;
+}
+pre[style="font-family:monospace;background-color: #f4f6f4;padding:10px;"], pre.language-none {
+    border-radius: 3px;
+    padding: 11px !important; /* Override inline styles */
+    background-color: #ccc !important; /* Override inline styles */
+    margin: 0;
+}
+
+/* Shouts scrollbar patch by happycupcake */
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
+  scrollbar-width: none;
+}
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*  Feed username color patch  */
+.cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
+.cmty-forum-admin a{color: #900 !important;}
+.cmty-forum-mod a{color: #090 !important;}
+
+/*  Search patch  
+Code taken from AoPS user monks  */
+#search-widget > div {
+    background-color: transparent;
+}
+#search-widget fieldset {
+    border: none;
+}
+.widget-settings {
+    display: none;
+}
+.search {
+    height: 25px;
+    border-radius: 5px;
+}
+.button2 {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+}
+
+/*  Image patch  */
+img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
+  display: none;
+}
+
+.avatar img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/**  Widget title patch  **/
+div.widget-title {
+    font-size: 105%;
+}
+
+/**  Get rid of underlines  **/
+.blog-report-post, .blog-delete-post, .blog-edit-post, .blog-moderate-topic, a.post-comment, a.post-replies {
+    text-decoration: none !important;
+}
+
+/**    Nav bar and entry patch    **/
+div #navigation_box, div.entry {
+  border: none;
+}
+
+/** Post button patch  **/
+#post-new-entry:before{
+    font-family: AoPS;
+    content: 'V ';
+}
+
+.cmty-posting-environ .cmty-submit-button.btn btn-primary {
+    font-size: 12px;
+}
+
+/**  Comments  **/
+.post-replies:before, .post-comment:before, .blog-edit-post:before, .entry h2:before {
+    margin-right: 5px;
+    font-family: AoPS;
+}
+.post-replies:before {
+    content: "t";
+}
+.post-comment:before {
+    content: "N";
+}
+.blog-edit-post:before {
+    content: "L";
+}
+
+
+/**  Shout submit button  **/
+#submit {
+    margin: 3px 10px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    border: 1px solid #58a6ff;
+    background-color: #0d419d;
+    color: white;
+    transition-duration: .1s;
+}
+#submit:hover {
+    color: #0d419d;
+    background-color: transparent;
+}
+#charsleft {display: none;}
+
+.btn.btn-run, .btn.btn-reset {
+    border-radius: 2px;
+}
+
+.entry h2, .blog-shout p {
+    color: transparent;
+    transition: color .3s ease-in-out;
+    margin-left: 8px;
+}
+.entry h2:hover, .blog-shout p:hover {
+    color: initial;
+}
+.entry h2:hover strong, .blog-shout p:hover a {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+}
+.entry h2:before {
+    content: "L";
+    color: initial;
+}
+.entry h2 strong, .blog-shout p a {
+    color: initial;
+    display: inline-block;
+    transform: translateX(-1.3em);
+    -webkit-transform: translateX(-1.3em);
+    -moz-transform: translateX(-1.3em);
+    -o-transform: translateX(-1.3em);
+    -ms-transform: translateX(-1.3em);
+    transition: .2s ease-in-out;
+}
+.blog-shout p a {
+    color: rgba(7, 7, 223, 0.719);
+}
+
+#content:after {
+    content: "CSS Copyright 2021 player01";
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    color: lightgray;
+}
