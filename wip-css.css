@@ -19,6 +19,7 @@ input, button {
     width: 100%;
     border: none;
     margin-top: 69vh;
+    box-shadow: 0 -5em 5em lightgray;
 }
 #content {
     width: 70%;
