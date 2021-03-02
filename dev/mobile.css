@@ -1,0 +1,103 @@
+/**
+* Mobile and other small devices support
+* 
+* Code by player01
+*
+* Copyright (c) 2020 Fire-css
+* Licensed under MIT
+**/
+
+@media only screen and (max-width: 800px) {
+    div#header h1 {
+        font-size: 30px;
+        line-height: 100px;
+    }
+    #navigation_box a {
+        text-align: center;
+        line-height: 25px;
+        padding-top: 2px;
+    }
+    #navigation_box {
+        height: 30px;
+    }
+    #main {
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+    }
+    #wrapper {
+        width: 100%;
+    }
+
+    p.description {
+        padding-top: 20px;
+    }
+
+    div#left_navigation_box {
+        display: none;
+    }
+
+    /**  Side widget taken and modified from NMK  **/
+    #side {
+        position: fixed;
+        top: 0;
+        left: -20em;
+        width: 20em;
+        height: 100%;
+        padding: 0 2em;
+        z-index: 100;
+        overflow-y: scroll;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+        background-color: white;
+        border: 1px solid lightgray;
+        }
+ 
+    #side:after {
+        content: "»";
+        position: fixed;
+        top: 1.5em;
+        left: 0;
+        background: #e8eef0;
+        color: #808080;
+        display: block;
+        font-size: 2em;
+        padding: 0.35em 0.4em;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 0 1em 1em 0;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
+ 
+    #side:hover {
+        left: 0;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+    }
+ 
+    #side:hover:after {
+        left: -1.5em;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
+ 
+    /* widgets */
+    #side > div {
+        margin: 0 !important;
+        padding: 2em 0 !important;
+        border-bottom: 1px solid #909090;
+    }
+ 
+    #side > div:last-child {
+        border-bottom: 0;
+    }
+    /*  End of code taken from NMK  */
+    textarea#message.inputbox {
+        width: 100%;
+    }
+}
