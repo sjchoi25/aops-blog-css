@@ -1,0 +1,17 @@
+#header {
+    /**  Make header bigger  **/
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+    margin-top: 100vh;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.2);
+}
