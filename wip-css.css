@@ -200,7 +200,8 @@ div.widget-title:not(#search-widget .widget-title) {
     display: block;
     padding: 2px auto;
     background-color: cornflowerblue;
-    margin: 5px;
+    margin: 5px 0;
+    border-radius: 2px;
 }
 
 /**   Make the comment background white   **/
