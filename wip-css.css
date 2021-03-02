@@ -2,8 +2,36 @@
     --height: 50px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body, .btn-primary, #navigation_box a, 
+.inputbox, input.button2, .cmty-post-textarea, 
+.cmty-subject-input, .cmty-items-input.ui-autocomplete-input, 
+div.cmty-item-tag, button.btn.btn-run, button.btn.btn-reset,
+button.btn.btn-link.btn-pop, div.cmty-topic-cell-post, 
+div.cmty-topic-cell-subtitle, 
+span.cmty-color-main.cmty-topic-cell-username, 
+div.cmty-topic-cell-subject, div.cmty-topic-watchers, 
+div.cmty-topic-cell-left-bottom, div.cmty-topic-cell-source, 
+div.cmty-topic-cell-second-row, select, 
+input#login-username.form-control, 
+input#login-password.form-control, button#login-cancel-button.btn, 
+div.cmty-topic-subject, input.cmty-submit-button.btn.btn-primary, 
+textarea, .widget-content, .cmty-poll-question {
+    font-family: 'Inter', sans-serif;
+}
+
 body {
     color: black;
+}
+
+/**  Links  **/
+a.bbcode_url {
+    color: #376fc0;
+}
+a.bbcode_url:hover {
+    text-decoration: underline;
 }
 
 /**  Buttons and input  **/
@@ -11,8 +39,12 @@ input, button {
     outline: none;
 }
 
+/**  Shoutbox and other related things  **/
 #message, .blog-shout-wrapper, .blog-tags-wrapper {
     border: 1px solid lightgray;
+}
+#message {
+    padding: 5px;
 }
 
 #wrapper {
@@ -20,6 +52,7 @@ input, button {
     border: none;
     margin-top: 69vh;
     box-shadow: 0 -5em 5em lightgray;
+    background-image: none;
 }
 #content {
     width: 70%;
@@ -44,6 +77,7 @@ input, button {
     opacity: 0.9;
     box-shadow: 0 5px 5px lightgray;
     background-color: black;
+    border: none;
 }
 #navigation_box a {
     font-weight: 500;
@@ -68,10 +102,16 @@ input, button {
     position: fixed;
     height: 70vh;
     width: 100%;
+    line-height: normal;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#header h1 {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
 }
 
 #navigation_box * {
@@ -145,7 +185,6 @@ img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
 }
 
 .avatar img {
-    user-drag: none; 
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -153,9 +192,20 @@ img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
     -ms-user-select: none;
 }
 
-/**  Widget title patch  **/
-div.widget-title {
+/**  Widget title  **/
+div.widget-title:not(#search-widget .widget-title) {
     font-size: 105%;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 2px auto;
+    background-color: cornflowerblue;
+    margin: 5px;
+}
+
+/**   Make the comment background white   **/
+div.comment.row1, div.comment.row2 {
+    background-color: transparent;
 }
 
 /**  Get rid of underlines  **/
@@ -163,9 +213,9 @@ div.widget-title {
     text-decoration: none !important;
 }
 
-/**    Nav bar and entry patch    **/
-div #navigation_box, div.entry {
-  border: none;
+/**    Entries    **/
+div.entry {
+    border: none;
 }
 
 /** Post button patch  **/
@@ -174,7 +224,7 @@ div #navigation_box, div.entry {
     content: 'V ';
 }
 
-.cmty-posting-environ .cmty-submit-button.btn btn-primary {
+.cmty-reply-window .cmty-submit-button {
     font-size: 12px;
 }
 
@@ -205,7 +255,7 @@ div #navigation_box, div.entry {
     transition-duration: .1s;
 }
 #submit:hover {
-    color: #0d419d;
+    color: #58a6ff;
     background-color: transparent;
 }
 #charsleft {display: none;}
@@ -244,8 +294,16 @@ div #navigation_box, div.entry {
     transition: .2s ease-in-out;
 }
 .blog-shout p a {
-    color: rgba(7, 7, 223, 0.719);
+    color: #bd4f17;
 }
+
+/**  Tags  **/
+.cmty-item-tag {
+    border-radius: 0px;
+    transition-duration: .2s;
+}
+
+/**  Side module  **/
 
 #content:after {
     content: "CSS Copyright 2021 player01";
