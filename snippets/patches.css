@@ -88,3 +88,8 @@ div #navigation_box, div.entry {
     margin: 0 auto;
     /* NOTICE: Manually specify the width of the content and the content will automatically center */
 }
+
+#main{
+    width: calc(100% - 258px);
+    padding: 10px
+}
