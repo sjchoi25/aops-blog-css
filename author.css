@@ -1,3 +1,11 @@
+/**
+*
+* Made by player01
+*
+* Copyright (c) 2021 Nhv24/player01
+*
+**/
+
 .entry h2, .blog-shout p, .author {
     color: transparent;
     transition: color .3s ease-in-out;
