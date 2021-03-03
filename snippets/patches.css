@@ -83,3 +83,7 @@ div #navigation_box, div.entry {
     width: calc(100% - 258px);
     padding: 10px
 }
+
+#wrapper {
+   border: none;   
+}
