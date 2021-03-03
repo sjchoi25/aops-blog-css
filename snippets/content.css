@@ -1,0 +1,22 @@
+  
+/**
+* Made by player01/Nhv24
+*
+* Copyright (c) 2021 Nhv24/player01
+* Licensed under MIT
+**/
+
+#wrapper {
+    width: 100%;
+    border: none;
+    background-image: none;
+}
+#content {
+    margin: 0 auto;
+    /* NOTICE: Manually specify the width of the content and the content will automatically center */
+}
+
+#main{
+    width: calc(100% - 258px);
+    padding: 10px
+}
