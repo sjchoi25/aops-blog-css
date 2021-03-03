@@ -1,3 +1,21 @@
+/**
+TODO List:
+* Mobile support
+* Custom code syntax highlighting
+* Dark mode
+* Modern version
+* Change entries
+* Change comments
+* Change shoutbox
+* Change shout messages
+* Change navigation bar
+* Find a body font
+* Increase font size
+* Change tag styling
+* Separate username from main message in comments and shouts
+**/
+
+
 :root {
     --height: 50px;
 }
@@ -230,7 +248,7 @@ div.entry {
 }
 
 /**  Comments  **/
-.post-replies:before, .post-comment:before, .blog-edit-post:before, .entry h2:before {
+.post-replies:before, .post-comment:before, .blog-edit-post:before {
     margin-right: 5px;
     font-family: AoPS;
 }
@@ -265,26 +283,28 @@ div.entry {
     border-radius: 2px;
 }
 
-.entry h2, .blog-shout p {
+.entry h2, .blog-shout p, .author {
     color: transparent;
     transition: color .3s ease-in-out;
     margin-left: 8px;
 }
-.entry h2:hover, .blog-shout p:hover {
+.entry h2:hover, .blog-shout p:hover, .author:hover {
     color: initial;
 }
-.entry h2:hover strong, .blog-shout p:hover a {
+.entry h2:hover strong, .blog-shout p:hover a, .author:hover strong {
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
     -o-transform: none;
     -ms-transform: none;
 }
-.entry h2:before {
+.entry h2:before, .author:before {
     content: "L";
     color: initial;
+    margin-right: 5px;
+    font-family: AoPS;
 }
-.entry h2 strong, .blog-shout p a {
+.entry h2 strong, .blog-shout p a, .author strong {
     color: initial;
     display: inline-block;
     transform: translateX(-1.3em);
