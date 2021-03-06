@@ -87,3 +87,8 @@ div #navigation_box, div.entry {
 #wrapper {
    border: none;   
 }
+
+/**  Make comment background transparent  **/
+.comment {
+    background-color: transparent;
+}
