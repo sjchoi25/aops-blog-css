@@ -1,11 +1,6 @@
-@import url("https://Nhv24.github.io/aops-blog-css/snippets/alerts.css");
-@import url("https://Nhv24.github.io/aops-blog-css/snippets/inlinecode.css");
-
 /**
 * 
 * Circuit.css by player01
-*
-* Version 1
 * 
 * Inspired by Goodbye.css (Mathlete2017)
 *
@@ -17,6 +12,11 @@
 /** Body  **/
 body {
     margin: 0;
+}
+
+/**  Get rid of outline  **/
+button, input {
+    outline: none;
 }
 
 /**   Font  **/
@@ -41,7 +41,7 @@ textarea {
     word-spacing: 1.6px;
     font-size: 16px;
 }
-input.cmty-submit-button.btn.btn-primary {
+.cmty-reply-window input.cmty-submit-button.btn.btn-primary {
     font-size: 12px;
 }
 
@@ -66,6 +66,10 @@ div.entrywrap {
 .entry h1, .entry h2 {
     text-align: center;
 }
+.message {
+    overflow-x: hidden;
+}
+
 div.comment {
     border: 1px solid #efefef;
     border-radius: 5px;
@@ -82,6 +86,7 @@ div.comment {
     visibility: visible;
     display: inline-block;
     right: 0;
+    top: 99%;
 }
 .comment .blog-delete-post:before {
     content: "J";
@@ -89,6 +94,7 @@ div.comment {
     visibility: visible;
     display: inline-block;
     right: 0;
+    top: 33%;
 }
 .comment .blog-report-post:before {
     content: "Z";
@@ -96,6 +102,7 @@ div.comment {
     visibility: visible;
     display: inline-block;
     right: 0;
+    top: 0;
 }
 
 
@@ -109,6 +116,11 @@ ul {list-style-type: disc;}
 .cmty-poll-result-bar {
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
+}
+
+/**  Shoutbox and tags widgets  **/
+.blog-shout-wrapper, #message, .blog-tags-wrapper {
+    border: 1px solid lightgray;
 }
 
 /**  Header  */
@@ -275,6 +287,10 @@ div #navigation_box, div.entry {
         background-color: white;
     }
 
+    #content {
+        width: 100%;
+    }
+
     p.description {
         padding-top: 20px;
     }
@@ -345,6 +361,12 @@ div #navigation_box, div.entry {
     /*  End of code taken from NMK  */
     textarea#message.inputbox {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #content {
+        width: 90%;
     }
 }
 
