@@ -8,7 +8,7 @@
 **/
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 /** Body  **/
 body {
     margin: 0;
@@ -142,7 +142,7 @@ ul {list-style-type: disc;}
     user-select: none;
     color: white;
     transition: .2s;
-    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
 }
 #header h1:hover {
     text-decoration: none;
