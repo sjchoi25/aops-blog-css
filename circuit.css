@@ -62,7 +62,11 @@ div.entrywrap {
     overflow-x: hidden;
     border-radius: 5px;
     padding: 20px;
+    transition: box-shadow 1s;
 }
+
+div.entrywrap:hover {box-shadow: 0 0 5px lightgray;}
+
 .entry h1, .entry h2 {
     text-align: center;
 }
@@ -399,6 +403,6 @@ div #navigation_box, div.entry {
 }
 
 #navigation_box a:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
+    visibility: visible;
+    transform: scaleX(1);
 }
