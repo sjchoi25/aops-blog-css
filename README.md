@@ -4,7 +4,7 @@ A collection of CSS that can be used on AoPS blogs.
 ## Usage
 Use import commands to import the CSS into your blog like this:
 ```css
-@import url("https://Nhv24.github.io/<INSERT FILE NAME>");
+@import url("https://Nhv24.github.io/aops-blog-css/<INSERT FILE NAME>");
 ```
 
 #### Note: In the event of a significant update on the part of [artofproblemsolving.com](https://www.artofproblemsolving.com), the CSS in this repository will not necessarily be also updated.
