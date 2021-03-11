@@ -1,5 +1,5 @@
 # aops-blog-css
-A collection of CSS that can be used on AoPS blogs.
+A simple CSS framework that requires minimal knowledge of CSS that can be used on AoPS blogs.
 
 ## Usage
 Use import commands to import the CSS into your blog like this:
