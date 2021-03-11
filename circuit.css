@@ -136,17 +136,20 @@ ul {list-style-type: disc;}
     background-size: cover;
     border-bottom: none;
     z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #header h1 {
     font-size: 5.2vw;
-    line-height: 99vh;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     color: white;
-    transition: .2s;
+    transition: font-size .2s;
     font-family: 'Raleway', sans-serif;
+    line-height: normal;
 }
 #header h1:hover {
     text-decoration: none;
