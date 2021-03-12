@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
 
     const font = urlParams.get('family');
-    const css = `@import url('https://fonts.googleapis.com/css2?family=${font}&display=swap');
+    const css = `@import url('https://fonts.googleapis.com/css2?family=${font.split(" ").join("+")}&display=swap');
     
 /**   Font  **/
 
