@@ -1,0 +1,12 @@
+/**
+* CSS player01/Nhv24
+*
+* Copyright (c) 2021 Nhv24/player01
+*
+**/
+
+pre[style="font-family:monospace;background-color: #f4f6f4;padding:10px;"], pre.language-none {
+    border-radius: 3px;
+    padding: 11px !important; /* Override inline styles */
+    margin: 0;
+}
