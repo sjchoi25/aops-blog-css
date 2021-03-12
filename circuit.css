@@ -67,11 +67,12 @@ div.entrywrap {
 
 div.entrywrap:hover {box-shadow: 0 0 5px lightgray;}
 
-.entry h1, .entry h2 {
-    text-align: center;
-}
 .message {
     overflow-x: hidden;
+}
+
+.entry h2 {
+    margin-left: 0.3em;
 }
 
 div.comment {
