@@ -6,7 +6,8 @@
                 const urlParams = new URLSearchParams(window.location.search);
 
                 const clr = urlParams.get('clr');
-                const css = `
+                const css = `/* This is an auto-generated file */
+/* DO NOT REMOVE THE COMMENT ABOVE */
 @keyframes blink {
     from, to {
         color: transparent;
@@ -30,7 +31,7 @@
     text-decoration: none;
 }`;
 
-                if (font === null)
+                if (clr === null)
                 {
                     css = "";
                 }
