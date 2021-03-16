@@ -11,3 +11,6 @@ Use import commands to import the CSS into your blog like this:
 
 ### NOTICE 
 The CSS in this repository is not created by or affiliated with AoPS Incorporated.
+
+
+Credits to AoPS users pog, happycupcake, monks, and BobRascal for various snippets of code.
