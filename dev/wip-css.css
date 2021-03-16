@@ -15,21 +15,12 @@ TODO List:
 * Separate username from main message in comments and shouts
 **/
 
-/**
-*
-* Made by player01
-*
-* Copyright (c) 2021 Nhv24/player01
-*
-**/
-
 
 :root {
     --height: 50px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway|Inter&display=swap');
 
 body, .btn-primary, #navigation_box a, 
 .inputbox, input.button2, .cmty-post-textarea, 
@@ -104,6 +95,7 @@ input, button {
     box-shadow: 0 5px 5px lightgray;
     background-color: black;
     border: none;
+    position: fixed;
 }
 #navigation_box a {
     font-weight: 500;
@@ -119,7 +111,12 @@ input, button {
 #right_navigation_box {
     right: 0;
 }
- 
+
+/**  Get rid of edit message  **/
+.cmty-post-edit-info {
+    display: none !important;
+}
+
 #header {
     margin-top: 50px; /* Fallback for old browsers */
     margin-top: var(--height);
@@ -164,7 +161,6 @@ code[class*="language-"] {
 pre[style="font-family:monospace;background-color: #f4f6f4;padding:10px;"], pre.language-none {
     border-radius: 3px;
     padding: 11px !important; /* Override inline styles */
-    background-color: #ccc !important; /* Override inline styles */
     margin: 0;
 }
 
@@ -230,9 +226,15 @@ div.widget-title:not(#search-widget .widget-title) {
     border-radius: 2px;
 }
 
-/**   Make the comment background white   **/
-div.comment.row1, div.comment.row2 {
+/**   Comments   **/
+div.comment {
     background-color: transparent;
+    border: none;
+}
+
+/**  Entries  **/
+div.entrywrap {
+    border: none;
 }
 
 /**  Get rid of underlines  **/
@@ -256,7 +258,7 @@ div.entry {
 }
 
 /**  Comments  **/
-.post-replies:before, .post-comment:before, .blog-edit-post:before {
+/*.post-replies:before, .post-comment:before, .blog-edit-post:before {
     margin-right: 5px;
     font-family: AoPS;
 }
@@ -268,7 +270,7 @@ div.entry {
 }
 .blog-edit-post:before {
     content: "L";
-}
+}*/
 
 
 /**  Shout submit button  **/
@@ -291,6 +293,10 @@ div.entry {
     border-radius: 2px;
 }
 
+/**  Entry  **/
+.entry h1 {
+    text-align: center;
+}
 .entry h2, .blog-shout p, .author {
     color: transparent;
     transition: color .3s ease-in-out;
@@ -340,4 +346,85 @@ div.entry {
     display: block;
     margin-top: 5px;
     color: lightgray;
+}
+
+/**  Mobile support  **/
+@media only screen and (max-width: 800px) {
+    #header {
+        height: 100vh;
+    }
+
+    #navigation_box {
+        height: 30px;
+    }
+    #main {
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+    }
+    #wrapper {
+        width: 100%;
+        margin-top: 100vh;
+    }
+
+    .description {
+        padding-top: 20px;
+    }
+
+    /**  Side widget taken and modified from NMK  **/
+    #side {
+        position: fixed;
+        top: 0;
+        left: -20em;
+        width: 20em;
+        height: 100%;
+        padding: 0 2em;
+        z-index: 100;
+        overflow-y: scroll;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+        background-color: white;
+        border: 1px solid lightgray;
+        }
+ 
+    body:after {
+        content: "»";
+        position: fixed;
+        top: 1.5em;
+        left: 0;
+        background: #e8eef0;
+        color: #808080;
+        display: block;
+        font-size: 2em;
+        padding: 0.35em 0.4em;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 0 1em 1em 0;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
+ 
+    body:after:hover #side {
+        left: 0;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+    }
+ 
+    body:hover:after {
+        left: -1.5em;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
+ 
+    #side > div:last-child {
+        border-bottom: 0;
+    }
+    /*  End of code taken from NMK  */
+    textarea#message.inputbox {
+        width: 100%;
+    }
 }
