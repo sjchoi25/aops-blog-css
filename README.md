@@ -10,6 +10,8 @@ Use import commands to import the CSS into your blog like this:
 ## Custom files
 Note that you can get custom files by using url parameters and importing the files from [replit.com](https://replit.com/@Firecss) (Note that Firecss in replit is created by Nhv24) My replit username is player010.
 
+**WARNING:** Note that replit imports can significantly increase your blog loading time since it relies off of a server. This server may not respond at times and the blog may not render as wanted. Please use this at your own risk.
+
 Here is the current list of files that you can request from replit:
 
 [FONT](https://css.firecss.repl.co/font.css?family=EXAMPLE+FONT): The parameter is **family**. This returns a stylesheet that applies the font to the whole AoPS Blog.
