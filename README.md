@@ -12,7 +12,7 @@ Note that you can get custom files by using url parameters and importing the fil
 
 Here is the current list of files that you can request from replit:
 
-(FONT)[https://css.firecss.repl.co/font?family=EXAMPLE+FONT]: The parameter is **family**. This returns a stylesheet that applies the font to the whole AoPS Blog.
+[FONT](https://css.firecss.repl.co/font?family=EXAMPLE+FONT): The parameter is **family**. This returns a stylesheet that applies the font to the whole AoPS Blog.
 
 #### Note: In the event of a significant update on the part of [artofproblemsolving.com](https://www.artofproblemsolving.com), the CSS in this repository will not necessarily be also updated.
 
