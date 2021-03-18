@@ -1,4 +1,4 @@
-from flask import Flask, make_response, request, redirect
+from flask import Flask, make_response, request, redirect, render_template
 app = Flask(__name__)
 
 @app.route("/")
@@ -103,5 +103,19 @@ def return_blink_css():
 	res = make_response(output)
 	res.mimetype = 'text/css'
 	return res
+
+@app.route("/help")
+def helppage():
+	"""
+	Displays a help page
+	"""
+	descriptions = {
+		"/blink.css": ": Returns css for blinking header. Parameters: clr (the color or the cursor), hex (either true or false, determines if clr is hex or not",
+		"/font.css": ": Returns css for blog font. Parameters: family (the font family)"
+	}
+
+	return render_template("help.html", 
+		dirs = descriptions
+	)
 
 app.run(host='0.0.0.0', port=8080)
