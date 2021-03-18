@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Help</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+			}
+			h1 {
+				font-size: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>List of directories</h1>
+		{% for dir, info in dirs.items() %}
+			<a href={{dir}}>{{dir}}</a>{{info}}
+			<br>
+			<br>
+			<br>
+		{% endfor %}
+	</body>
+</html>
