@@ -1,0 +1,27 @@
+@import "https://fire-css.player010.repl.co/font.css?family=Noto+Sans";
+
+#header h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 5s steps(40, end);
+}
+
+#header h1:after {
+    content: "";
+    line-height: normal;
+    border-right: .15em solid black;
+    animation: cursor .5s step-end infinite;
+}
+
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes cursor {
+    from, to {border-color: transparent;}
+    50% {border-color: black;}
+}
