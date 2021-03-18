@@ -1,11 +1,20 @@
+# Imports
 from flask import Flask, make_response, request, redirect, render_template
+
 app = Flask(__name__)
 
 @app.route("/")
 def index():
+	"""
+	Index view
+	"""
 	# Redirect to the Fire-css official website
 	return redirect("https://Fire-css.github.io")
 
+
+# ----------------------------------
+#     Files
+# ----------------------------------
 @app.route('/font.css')
 def return_font_css():
 	"""
@@ -104,16 +113,21 @@ def return_blink_css():
 	res.mimetype = 'text/css'
 	return res
 
+# ----------------------------------
+#     Help page
+# ----------------------------------
 @app.route("/help")
 def helppage():
 	"""
 	Displays a help page
 	"""
+	# Descriptions
 	descriptions = {
 		"/blink.css": ": Returns css for blinking header. Parameters: clr (the color or the cursor), hex (either true or false, determines if clr is hex or not",
 		"/font.css": ": Returns css for blog font. Parameters: family (the font family)"
 	}
 
+	# Render help.html
 	return render_template("help.html", 
 		dirs = descriptions
 	)
