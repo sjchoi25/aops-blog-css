@@ -164,12 +164,14 @@ input.cmty-submit-button.btn.btn-primary {
     height: 40vh;
     background-color: var(--color-2);
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #header h1 {
     position: relative;
-    top: 4vh;
     font-size: 4vw;
-    transition: 1s;
+    transition: font-size 1s;
     font-weight: 700;
     color: var(--color-5);
     line-height: 34vh;
@@ -191,7 +193,6 @@ input.cmty-submit-button.btn.btn-primary {
     text-decoration: none;
     cursor: default;
     font-size: 5vw;
-    transition: 1s;
 }
 
 /**  Body  **/
