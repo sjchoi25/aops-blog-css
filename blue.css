@@ -6,8 +6,10 @@
 *
 * Credits to wstella for header text
 *
-* Copyright 2021 Nhv24/player01 under MIT
+* Released under the MIT license
 *
+* NOTE: I am using :after and :before instead of the usual 
+* ::after and ::before because of IE comptibility. 
 **/
 
 /** Import fonts  **/
@@ -161,15 +163,16 @@ input.cmty-submit-button.btn.btn-primary {
     border-bottom: none;
     height: 40vh;
     background-color: var(--color-2);
+    overflow-x: hidden;
 }
 #header h1 {
     position: relative;
     top: 4vh;
-    font-size: 90%;
+    font-size: 4vw;
     transition: 1s;
     font-weight: 700;
     color: var(--color-5);
-    padding-top: 10vh;
+    line-height: 34vh;
     /* Credits to wstella */
     text-shadow: 0 1px 0 #ccc,
         0 2px 0 #c9c9c9,
@@ -187,7 +190,7 @@ input.cmty-submit-button.btn.btn-primary {
 #header h1:hover {
     text-decoration: none;
     cursor: default;
-    font-size: 115%;
+    font-size: 5vw;
     transition: 1s;
 }
 
@@ -440,18 +443,19 @@ div.comment.row1, div.comment.row2 {
 
 /**  Mobile support  **/
 @media only screen and (max-width: 820px) {
-    div#header h1 {
-        font-size: 90%;
-        line-height: 100px;
-        z-index: 1;
-        padding-top: 40vh;
-    }
     #header {
         /**  Make header bigger  **/
         width: 100vw;
         height: 100vh;
         position: fixed;
         z-index: 0;
+    }
+    #header h1 {
+        line-height: 95vh;
+        font-size: 6vw;
+    }
+    #header h1:hover {
+        font-size: 7vw;
     }
 
     #navigation_box a {
@@ -544,22 +548,8 @@ div.comment.row1, div.comment.row2 {
     /*  End of code taken from NMK  */
 }
 
-@media only screen and (max-width: 450px), 
-only screen and (max-height: 750px) {
-    #main {
-        padding: 5px;
-    }
-    #header h1 {
-        font-size: 80%;
-        padding-top: 35vh;
-    }
-    #header h1:hover {
-        font-size: 80% !important;
-    }
-}
-
 /**   Credits   **/
-#content:after, #header:after {
+#content:after {
     content: "CSS made by player01";
     margin-top: 5px;
     text-align: center;
