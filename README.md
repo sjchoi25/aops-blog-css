@@ -21,5 +21,5 @@ Here is the current list of files that you can request from replit:
 ### NOTICE 
 The CSS in this repository is not created by or affiliated with AoPS Incorporated.
 
-
+## Credits
 Credits to AoPS users pog, happycupcake, monks, and BobRascal for various snippets of code.
