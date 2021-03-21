@@ -27,6 +27,7 @@ span[style^="font-family:'blink"]:after {
     -ms-user-select: none;
     user-select: none;
     text-decoration: none;
+    font-family: Arial, sans-serif !important;
 }
 
 span[style^="font-family:'typewriter"] {
@@ -34,6 +35,7 @@ span[style^="font-family:'typewriter"] {
     white-space: nowrap;
     margin: 0 auto;
     animation: typing 5s steps(40, end);
+    font-family: Arial, sans-serif !important;
 }
 
 span[style^="font-family:'typewriter"]:after {
@@ -41,6 +43,7 @@ span[style^="font-family:'typewriter"]:after {
     line-height: normal;
     border-right: .15em solid black;
     animation: cursor .5s step-end infinite;
+    font-family: Arial, sans-serif !important;
 }
 
 
