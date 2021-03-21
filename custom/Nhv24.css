@@ -6,71 +6,50 @@
 *
 **/
 
-span[style^="font-family:'inline-code"] {
-    display: inline-block;
-    background-color: #f8f8f8;
-    padding: 0px 5px;
-    font-family: monospace !important;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    margin: 0 2px;
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: initial;
+    }
+}
+
+span[style^="font-family:'blink"]:after {
+    content: "_";
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}
+
+span[style^="font-family:'typewriter"] {
+    overflow: hidden;
     white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end);
 }
 
-span[style^="font-family:'alert-dark"], span[style^="font-family:'alert-light"], span[style^="font-family:'alert-danger"], span[style^="font-family:'alert-warning"], span[style^="font-family:'alert-info"], span[style^="font-family:'alert-success"], span[style^="font-family:'alert-secondary"], span[style^="font-family:'alert-primary"] {
-  padding: 15px;
-  margin: 0px;
-  display: block;
-  border-radius: 4px;
-  font-family: Arial, sans-serif !important;
-  border: 1px solid transparent;
+span[style^="font-family:'typewriter"]:after {
+    content: "";
+    line-height: normal;
+    border-right: .15em solid black;
+    animation: cursor .5s step-end infinite;
 }
 
-span[style^="font-family:'alert-primary"] {
-  color: #084298;
-  background-color: #cfe2ff;
-  border-color: #b6d4fe;
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
 }
 
-span[style^="font-family:'alert-secondary"] {
-  color: #41464b;
-  background-color: #e2e3e5;
-  border-color: #d3d6d8;
-}
-
-span[style^="font-family:'alert-success"] {
-  color: #0f5132;
-  background-color: #d1e7dd;
-  border-color: #badbcc;
-}
-
-span[style^="font-family:'alert-info"] {
-  color: #055160;
-  background-color: #cff4fc;
-  border-color: #b6effb;
-}
-
-span[style^="font-family:'alert-warning"] {
-  color: #664d03;
-  background-color: #fff3cd;
-  border-color: #ffecb5;
-}
-
-span[style^="font-family:'alert-danger"] {
-  color: #842029;
-  background-color: #f8d7da;
-  border-color: #f5c2c7;
-}
-
-span[style^="font-family:'alert-light"] {
-  color: #636464;
-  background-color: #fefefe;
-  border-color: #fdfdfe;
-}
-
-span[style^="font-family:'alert-dark"] {
-  color: #141619;
-  background-color: #d3d3d4;
-  border-color: #bcbebf;
+@keyframes cursor {
+    from, to {border-color: transparent;}
+    50% {border-color: black;}
 }
