@@ -3,6 +3,23 @@ from flask import Flask, make_response, request, redirect, render_template
 
 app = Flask(__name__)
 
+
+# ----------------------------------
+#     Helper functions
+# ----------------------------------
+def ishexclr(clr):
+	"""
+	Return true if clr is hex, false otherwise
+	"""
+	# Check if the color is hex with a simple try/except statement
+	try:
+		# Check if its hex
+		int(clr, 16)
+		return True
+	except ValueError:
+		# Not hex
+		return False
+
 @app.route("/")
 def index():
 	"""
@@ -66,19 +83,13 @@ def return_blink_css():
 	"""
 	Return the blink css according to the url parameters
 	"""
-	# Get the family url parameter
+	# Get the clr and hex url parameter
 	clr = request.args.get("clr", default="")
-	ishex = request.args.get("hex", default="")
 
-	# Check if the color is hex with a simple try/except statement
-	if ishex.lower() == 'true':
-		try:
-			# Check if its hex
-			int(clr, 16)
-			clr = f"#{clr}"
-		except ValueError:
-			# Not hex
-			return "ERROR: Value is not hex color"
+	# Check if color is hex
+	if ishexclr(clr):
+		# Color is hex
+		clr = f"#{clr}"
 
 	# Create the css from the url parameter
 	output = """/* This is an auto-generated file */
@@ -104,6 +115,52 @@ def return_blink_css():
     text-decoration: none;
 }	
 """
+	# Check for proper usage of css
+	if clr == "":
+		# Make the output nothing
+		output = ""
+
+	res = make_response(output)
+	res.mimetype = 'text/css'
+	return res
+
+@app.route("/typewriter.css")
+def return_type_css():
+	"""
+	Return the typewriter css
+	"""
+	# Get the clr and hex url parameter
+	clr = request.args.get("clr", default="")
+
+	# Check if color is hex
+	if ishexclr(clr):
+		# Color is hex
+		clr = f"#{clr}"
+
+	output = """#header h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end);
+}
+
+#header h1:after {
+    content: "";
+    line-height: normal;
+    border-right: .15em solid """+clr+""";
+    animation: cursor .5s step-end infinite;
+}
+
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes cursor {
+    from, to {border-color: transparent;}
+    50% {border-color: """+clr+""";}
+}"""
 	# Check for proper usage of css
 	if clr == "":
 		# Make the output nothing
