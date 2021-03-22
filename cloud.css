@@ -28,6 +28,8 @@
     --textclr: black;
 }
 
+body {color: black;}
+
 div.entrywrap, div.message, div.entry, div.commentwrap, #header, #navigation_box, body{ 
     background-color: var(--bgcolor) !important;
 }
