@@ -25,6 +25,8 @@
     --nav: #101010;
 }
 
+body {color: black;}
+
 /* No user select */
 #navigation_box, #header h1 {
     -webkit-user-select: none;
