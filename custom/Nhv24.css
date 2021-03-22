@@ -14,7 +14,7 @@
         color: initial;
     }
 }
-
+span[style^="font-family:'blink"] {font-family: Arial, sans-serif !important;}
 span[style^="font-family:'blink"]:after {
     content: "_";
     -webkit-animation: 1s blink step-end infinite;
