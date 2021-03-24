@@ -4,14 +4,11 @@ TODO List:
 * Custom code syntax highlighting
 * Dark mode
 * Modern version
-* Change entries
-* Change comments
 * Change shoutbox
 * Change shout messages
 * Change navigation bar
 * Find a body font
 * Increase font size
-* Change tag styling
 * Separate username from main message in comments and shouts
 **/
 
@@ -70,6 +67,7 @@ input, button {
     margin-top: 69vh;
     box-shadow: 0 -5em 5em lightgray;
     background-image: none;
+    background-color: #eee;
 }
 #content {
     width: 70%;
@@ -232,19 +230,14 @@ div.comment {
     border: none;
 }
 
-/**  Entries  **/
-div.entrywrap {
-    border: none;
+.commentwrap .message {
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
 }
-
 /**  Get rid of underlines  **/
 .blog-report-post, .blog-delete-post, .blog-edit-post, .blog-moderate-topic, a.post-comment, a.post-replies {
     text-decoration: none !important;
-}
-
-/**    Entries    **/
-div.entry {
-    border: none;
 }
 
 /** Post button patch  **/
@@ -293,7 +286,17 @@ div.entry {
     border-radius: 2px;
 }
 
-/**  Entry  **/
+
+/**  Entries  **/
+div.entrywrap {
+    border: 2px solid #bebebe;
+    background-color: #eee;
+    border-radius: 4px;
+}
+div.entry {
+    border: none;
+}
+
 .entry h1 {
     text-align: center;
 }
@@ -334,7 +337,7 @@ div.entry {
 
 /**  Tags  **/
 .cmty-item-tag {
-    border-radius: 0px;
+    border-radius: 2px;
     transition-duration: .2s;
 }
 
