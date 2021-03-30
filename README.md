@@ -23,3 +23,6 @@ The CSS in this repository is not created by or affiliated with AoPS Incorporate
 
 ## Credits
 Credits to AoPS users pog, happycupcake, monks, and BobRascal for various snippets of code.
+
+
+(yeah yeah this is a very unorganized readme :P)
