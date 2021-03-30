@@ -189,4 +189,9 @@ def helppage():
 		dirs = descriptions
 	)
 
+# Wakeup call directory, only used to keep the server awake
+@app.route("/wakeup")
+def wake():
+	return ""
+
 app.run(host='0.0.0.0', port=8080)
