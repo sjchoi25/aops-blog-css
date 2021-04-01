@@ -1,0 +1,425 @@
+/**
+* 
+* Circuit.css by player01
+* 
+* Inspired by Goodbye.css (Mathlete2017)
+*
+* Copyright (c) 2020 Nhv24/player01
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+/** Body  **/
+body {
+    margin: 0;
+}
+
+/**  Get rid of outline  **/
+button, input {
+    outline: none;
+}
+
+/**   Font  **/
+
+/* Credits to pog */
+body, .btn-primary, #navigation_box a, 
+.inputbox, input.button2, .cmty-post-textarea, 
+.cmty-subject-input, .cmty-items-input.ui-autocomplete-input, 
+div.cmty-item-tag, button.btn.btn-run, button.btn.btn-reset,
+button.btn.btn-link.btn-pop, div.cmty-topic-cell-post, 
+div.cmty-topic-cell-subtitle, 
+span.cmty-color-main.cmty-topic-cell-username, 
+div.cmty-topic-cell-subject, div.cmty-topic-watchers, 
+div.cmty-topic-cell-left-bottom, div.cmty-topic-cell-source, 
+div.cmty-topic-cell-second-row, select, 
+input#login-username.form-control, 
+input#login-password.form-control, button#login-cancel-button.btn, 
+div.cmty-topic-subject, input.cmty-submit-button.btn.btn-primary, 
+textarea {
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.8px; 
+    word-spacing: 1.6px;
+    font-size: 16px;
+}
+.cmty-reply-window input.cmty-submit-button.btn.btn-primary {
+    font-size: 12px;
+}
+
+/**   Curved edges  **/
+.blog-shout-wrapper, .blog-tags-wrapper, .blog-shout, .inputbox:not(#blog_keywords) {
+    border-radius: 10px;
+}
+
+/**  Patch for blog name  **/
+.cmty-posting-forum-name {
+    max-width: 160px;
+}
+
+/**  Entry and comment  **/
+div.entrywrap {
+    background-color: black;
+    border: 1px solid #39ff14;
+    overflow-x: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    transition: box-shadow 1s;
+    color: white;
+}
+
+.message {
+    overflow-x: hidden;
+}
+
+.entry h2 {
+    margin-left: 0.3em;
+}
+
+div.comment {
+    border: 1px solid #39FF14;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.comment .modactions span {
+    font-size: 0;
+}
+.comment .blog-report-post:before, .comment .blog-edit-post:before, .comment .blog-delete-post:before {
+    font-family: AoPS;
+    letter-spacing: normal;
+}
+.comment .blog-edit-post:before {
+    content: "L";
+}
+.comment .blog-delete-post:before {
+    content: "J";
+}
+.comment .blog-report-post:before {
+    content: "Z";
+}
+
+
+/**  Lists  **/
+ul {list-style-type: disc;}
+
+/**   Polls   **/
+.cmty-poll-display {
+    background-color: #e8e8e8;
+}
+.cmty-poll-result-bar {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+/**  Shoutbox and tags widgets  **/
+.blog-shout-wrapper, #message, .blog-tags-wrapper {
+    border: 1px solid #39FF14;
+}
+
+/**  Header  */
+#header {
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    background: url('https://media0.giphy.com/media/1oF1KAEYvmXBMo6uTS/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    border: none;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header h1 {
+    font-size: 5.2vw;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    transition: font-size .2s;
+    font-family: 'Raleway', sans-serif;
+    line-height: normal;
+}
+#header h1:hover {
+    text-decoration: none;
+    cursor: default;
+    font-size: 6vw;
+}
+
+#wrapper {
+    width: 100%;
+    border: none;
+    margin-top: 100vh;
+    box-shadow: 0 -1em 3em #333;
+    background-image: none;
+    background-color: black;
+}
+#content {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+#main {
+    width: calc(100% - 258px);
+}
+
+/**  Get rid of edits  **/
+.cmty-post-edit-info {
+    display: none !important;
+}
+
+#navigation_box {
+    position: fixed;
+    border: none;
+    height: 40px;
+    background-color: black;
+    box-shadow: 4px 4px 7px #3a3a3a;
+    padding-right: 5px;
+    padding-left: 5px;
+    opacity: 0.9;
+}
+#navigation_box a {
+    line-height: 35px;
+    margin: 0 10px;
+}
+#navigation_box * {
+    font-size: 0 !important;
+}
+#navigation_box a {
+    font-size: 16px !important;
+}
+
+/**   Make the comment background white   **/
+div.comment.row1, div.comment.row2 {
+    background-color: transparent;
+}
+
+/* Code color patch */
+code[class*="language-"] {
+    color: #333;
+}
+
+/* Shouts scrollbar patch by happycupcake */
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
+  scrollbar-width: none;
+}
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*  Feed username color patch  */
+.cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
+.cmty-forum-admin a{color: #900 !important;}
+.cmty-forum-mod a{color: #090 !important;}
+
+/*  Search patch  
+Code taken from AoPS user monks  */
+#search-widget > div {
+    background-color: transparent;
+}
+#search-widget fieldset {
+    border: none;
+}
+.widget-settings {
+    display: none;
+}
+.search {
+    height: 25px;
+    border-radius: 5px;
+}
+.button2 {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    background-color: #999;
+}
+
+/*  Image patch  */
+img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
+  display: none;
+}
+
+/**  Widget title patch  **/
+div.widget-title {
+    font-size: 105%;
+}
+
+/* LaTeX and asy */
+.latex {
+    filter: invert(1);
+}
+img.asy-image {
+    padding: 10px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.bbcode_quote .latex, .cmty-hide-content .latex {
+    filter: none;
+}
+.bbcode_quote .asy-image, .cmty-hide-content .asy-image {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/**  Get rid of underlines  **/
+.blog-report-post, .blog-delete-post, .blog-edit-post, .blog-moderate-topic, a.post-comment, a.post-replies {
+    text-decoration: none !important;
+}
+
+/**    Nav bar and entry patch    **/
+div #navigation_box, div.entry {
+  border: none;
+}
+
+/** Post button patch  **/
+#post-new-entry:before{
+    font-family: AoPS;
+    content: 'V ';
+}
+
+/**  Shouts  **/
+.inputbox:not(#blog_keywords) {
+    padding: 5px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.blog-shout.row1 {
+    background-color: #39FF14;
+}
+
+/**  Mobile support  **/
+@media only screen and (max-width: 800px) {
+    #navigation_box a {
+        text-align: center;
+        line-height: 25px;
+    }
+    #navigation_box {
+        height: 30px;
+    }
+    #main {
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    p.description {
+        padding-top: 20px;
+    }
+
+    div#left_navigation_box {
+        display: none;
+    }
+
+    /**  Side widget taken and modified from NMK  **/
+    #side {
+        position: fixed;
+        top: 0;
+        left: -20em;
+        width: 20em;
+        height: 100%;
+        padding: 0 2em;
+        z-index: 100;
+        overflow-y: scroll;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+        background-color: white;
+        border: 1px solid lightgray;
+        }
+ 
+    #side:after {
+        content: "»";
+        position: fixed;
+        top: 1.5em;
+        left: 0;
+        background: #e8eef0;
+        color: #808080;
+        display: block;
+        font-size: 2em;
+        padding: 0.35em 0.4em;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 0 1em 1em 0;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
+ 
+    #side:hover {
+        left: 0;
+        -webkit-transition: .9s ease;
+        transition: .9s ease;
+    }
+ 
+    #side:hover:after {
+        left: -1.5em;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+    }
+ 
+    /* widgets */
+    #side > div {
+        margin: 0 !important;
+        padding: 2em 0 !important;
+        border-bottom: 1px solid #909090;
+    }
+ 
+    #side > div:last-child {
+        border-bottom: 0;
+    }
+    /*  End of code taken from NMK  */
+    textarea#message.inputbox {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #content {
+        width: 90%;
+    }
+}
+
+#main::after {
+    content: "CSS made by player01";
+    margin-top: 5px;
+    text-align: center;
+    color: lightgray;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/**  Link test  **/
+#navigation_box a {
+    position: relative;
+}
+
+#navigation_box a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+#navigation_box a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
