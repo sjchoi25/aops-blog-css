@@ -120,8 +120,7 @@ ul {list-style-type: disc;}
     height: 100vh;
     position: fixed;
     overflow: hidden;
-    background: url('https://media0.giphy.com/media/1oF1KAEYvmXBMo6uTS/giphy.gif');
-    background-position: center;
+    background: url('https://i.pinimg.com/originals/9e/b6/8e/9eb68e98831a5c4b8bfc2ee93e450536.jpg');
     background-size: cover;
     border: none;
     z-index: -1;
@@ -256,10 +255,10 @@ img.asy-image {
     border-radius: 2px;
 }
 
-.bbcode_quote .latex, .cmty-hide-content .latex {
+.bbcode_quote .latex, .cmty-hide-content .latex, .cmty-post-wrapper .latex, .cmty-topic-cell-left .latex {
     filter: none;
 }
-.bbcode_quote .asy-image, .cmty-hide-content .asy-image {
+.bbcode_quote .asy-image, .cmty-hide-content .asy-image, .cmty-post-wrapper .asy-image, .cmty-topic-cell-left .latex {
     padding: 0;
     background-color: transparent;
     border-radius: 0;
