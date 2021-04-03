@@ -312,7 +312,7 @@ div #navigation_box, div.entry {
         transition: .9s ease;
         background-color: white;
         border: 1px solid lightgray;
-        }
+    }
  
     #side:after {
         content: "»";
