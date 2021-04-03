@@ -9,6 +9,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+:root {
+    --color: red;
+}
 /** Body  **/
 body {
     margin: 0;
@@ -58,7 +62,8 @@ textarea {
 /**  Entry and comment  **/
 div.entrywrap {
     background-color: black;
-    border: 1px solid <INSERT>;
+    border: 1px solid #39ff14;
+    border: 1px solid var(--color);
     overflow-x: hidden;
     border-radius: 5px;
     padding: 20px;
@@ -75,13 +80,18 @@ div.entrywrap {
 }
 
 .entry h1 a {
-    color: <INSERT>;
+    color: #39FF14;
+    color: var(--color);
 }
 
 div.comment {
-    border: 1px solid <INSERT>;
+    border: 1px solid #39FF14;
+    border: 1px solid var(--color);
     border-radius: 5px;
     padding: 10px;
+}
+.commentwrap {
+    color: white;
 }
 
 .comment .modactions span {
@@ -103,7 +113,8 @@ div.comment {
 
 /* Side */
 #side, .widget-title {
-    color: <INSERT>;
+    color: #39FF14;
+    color: var(--color);
 }
 
 /**  Lists  **/
@@ -120,7 +131,8 @@ ul {list-style-type: disc;}
 
 /**  Shoutbox and tags widgets  **/
 .blog-shout-wrapper, #message, .blog-tags-wrapper {
-    border: 1px solid <INSERT>;
+    border: 1px solid #39FF14;
+    border: 1px solid var(--color);
 }
 
 /**  Header  */
@@ -233,8 +245,10 @@ Code taken from AoPS user monks  */
 }
 #blog_keywords {
     background-color: black;
-    border: 1px solid <INSERT>;
-    color: <INSERT>;
+    border: 1px solid #39FF14;
+    border: 1px solid var(--color);
+    color: #39FF14;
+    color: var(--color);
 }
 #search-widget fieldset {
     border: none;
@@ -251,23 +265,29 @@ Code taken from AoPS user monks  */
     width: 200px;
     height: 25px;
     border: 1px solid transparent;
-    background-color: <INSERT>;
+    background-color: #39FF14;
+    background-color: var(--color);
     transition: .2s;
 }
 .button2:hover {
-    border-color: <INSERT>;
-    color: <INSERT>;
+    border-color: #39FF14;
+    border-color: var(--color);
+    color: #39FF14;
+    color: var(--color);
     background-color: black;
 }
 
 /* Polls */
 .cmty-poll-display {
-    color: <INSERT>;
-    border: 1px solid <INSERT>;
+    color: #39FF14;
+    color: var(--color);
+    border: 1px solid #39FF14;
+    border: 1px solid var(--color);
     background-color: black;
 }
 .cmty-poll-result-bar {
-    background-color: <INSERT>;
+    background-color: #39FF14;
+    background-color: var(--color);
 }
 
 /*  Image patch  */
@@ -277,7 +297,8 @@ img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
 
 /**  Shout button  **/
 #submit {
-    background-color: <INSERT>;
+    background-color: #39FF14;
+    background-color: var(--color);
     border: 1px solid transparent;
     color: black;
     padding: 2px 4px;
@@ -287,8 +308,10 @@ img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
 }
 #submit:hover {
     background-color: black;
-    border-color: <INSERT>;
-    color: <INSERT>;
+    border-color: #39FF14;
+    border-color: var(--color);
+    color: #39FF14;
+    color: var(--color);
 }
 
 /**  Widget title patch  **/
@@ -340,13 +363,16 @@ div #navigation_box, div.entry {
 }
 
 .blog-shout.row1 {
-    background-color: <INSERT>;
+    background-color: #39FF14;
+    background-color: var(--color);
     color: black;
 }
 .blog-shout.row2 {
     background-color: black;
-    color: <INSERT>;
-    border: 1px solid <INSERT>;
+    color: #39FF14;
+    color: var(--color);
+    border: 1px solid #39FF14;
+    border: 1px solid var(--color);
 }
 
 /**  Mobile support  **/
@@ -391,7 +417,8 @@ div #navigation_box, div.entry {
         -webkit-transition: .9s ease;
         transition: .9s ease;
         background-color: black;
-        border: 1px solid <INSERT>;
+        border: 1px solid #39FF14;
+        border: 1px solid var(--color);
     }
  
     #side:after {
@@ -399,7 +426,8 @@ div #navigation_box, div.entry {
         position: fixed;
         top: 1.5em;
         left: 0;
-        background: <INSERT>;
+        background: #39FF14;
+        background: var(--color);
         color: black;
         display: block;
         font-size: 2em;
@@ -451,7 +479,8 @@ div #navigation_box, div.entry {
     content: "CSS made by player01";
     margin-top: 5px;
     text-align: center;
-    color: <INSERT>;
+    color: #39FF14;
+    color: var(--color);
     display: block;
     margin-bottom: 5px;
 }
