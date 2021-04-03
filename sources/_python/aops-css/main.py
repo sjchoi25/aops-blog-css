@@ -127,6 +127,26 @@ def return_type_css():
 	res.mimetype = 'text/css'
 	return res
 
+@app.route("/circuit-dark.css")
+def getdarkcircuit():
+	# Get the clr and hex url parameter
+	clr = request.args.get("clr", default="")
+
+	# Check if color is hex
+	if ishexclr(clr):
+		# Color is hex
+		clr = f"#{clr}"
+	
+	output = retrive("circuit-dark.css", clr)
+	# Check for proper usage of css
+	if clr == "":
+		# Make the output nothing
+		output = ""
+
+	res = make_response(output)
+	res.mimetype = 'text/css'
+	return res
+
 # ----------------------------------
 #     Help page
 # ----------------------------------
