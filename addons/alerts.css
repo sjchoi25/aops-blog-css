@@ -6,7 +6,14 @@
 * Colors taken from original bootstrap source code
 **/
 
-span[style^="font-family:'alert-dark"], span[style^="font-family:'alert-light"], span[style^="font-family:'alert-danger"], span[style^="font-family:'alert-warning"], span[style^="font-family:'alert-info"], span[style^="font-family:'alert-success"], span[style^="font-family:'alert-secondary"], span[style^="font-family:'alert-primary"] {
+span[style^="font-family:'alert-dark"], 
+span[style^="font-family:'alert-light"], 
+span[style^="font-family:'alert-danger"], 
+span[style^="font-family:'alert-warning"], 
+span[style^="font-family:'alert-info"], 
+span[style^="font-family:'alert-success"], 
+span[style^="font-family:'alert-secondary"], 
+span[style^="font-family:'alert-primary"] {
   padding: 15px;
   margin: 0px;
   display: block;
@@ -14,6 +21,18 @@ span[style^="font-family:'alert-dark"], span[style^="font-family:'alert-light"],
   font-family: Arial, sans-serif !important;
   border: 1px solid transparent;
 }
+
+span[style^="font-family:'alert-dark"] a, 
+span[style^="font-family:'alert-light"] a, 
+span[style^="font-family:'alert-danger"] a, 
+span[style^="font-family:'alert-warning"] a, 
+span[style^="font-family:'alert-info"] a, 
+span[style^="font-family:'alert-success"] a, 
+span[style^="font-family:'alert-secondary"] a, 
+span[style^="font-family:'alert-primary"] a {
+    font-weight: 700;
+}
+ 
 
 span[style^="font-family:'alert-primary"] {
   color: #084298;
