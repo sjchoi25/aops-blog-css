@@ -74,6 +74,10 @@ div.entrywrap {
     margin-left: 0.3em;
 }
 
+.entry h1 a {
+    color: #39FF14;
+}
+
 div.comment {
     border: 1px solid #39FF14;
     border-radius: 5px;
@@ -97,6 +101,13 @@ div.comment {
     content: "Z";
 }
 
+/* Side */
+#side {
+    color: white;
+}
+#side .username-colored {
+    color: #39FF14;
+}
 
 /**  Lists  **/
 ul {list-style-type: disc;}
@@ -198,6 +209,12 @@ div.comment.row1, div.comment.row2 {
 code[class*="language-"] {
     color: #333;
 }
+pre[style="font-family:monospace;background-color: #f4f6f4;padding:10px;"], pre.language-none {
+    border-radius: 3px;
+    padding: 11px !important; /* Override inline styles */
+    margin: 0;
+    background-color: #989898 !important;
+}
 
 /* Shouts scrollbar patch by happycupcake */
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
@@ -231,13 +248,35 @@ Code taken from AoPS user monks  */
     border-radius: 5px;
     width: 200px;
     height: 25px;
-    border: none;
-    background-color: #999;
+    border: 1px solid transparent;
+    background-color: #39FF14;
+    transition: .2s;
+}
+.button2:hover {
+    border-color: #39FF14;
+    color: #39FF14;
+    background-color: black;
 }
 
 /*  Image patch  */
 img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
   display: none;
+}
+
+/**  Shout button  **/
+#submit {
+    background-color: #39FF14;
+    border: 1px solid transparent;
+    color: black;
+    padding: 2px 4px;
+    margin: 5px;
+    border-radius: 2px;
+    transition: .2s;
+}
+#submit:hover {
+    background-color: black;
+    border-color: #39FF14;
+    color: #39FF14;
 }
 
 /**  Widget title patch  **/
@@ -247,7 +286,7 @@ div.widget-title {
 
 /* LaTeX and asy */
 .latex {
-    filter: invert(1);
+    filter: invert(1) grayscale(1);
 }
 img.asy-image {
     padding: 10px;
@@ -290,6 +329,12 @@ div #navigation_box, div.entry {
 
 .blog-shout.row1 {
     background-color: #39FF14;
+    color: black;
+}
+.blog-shout.row2 {
+    background-color: black;
+    color: white;
+    border: 1px solid #39FF14;
 }
 
 /**  Mobile support  **/
@@ -304,7 +349,7 @@ div #navigation_box, div.entry {
     #main {
         width: 100%;
         padding: 5px;
-        background-color: white;
+        background-color: black;
     }
 
     #content {
@@ -333,17 +378,17 @@ div #navigation_box, div.entry {
         transition-property: left;
         -webkit-transition: .9s ease;
         transition: .9s ease;
-        background-color: white;
-        border: 1px solid lightgray;
-        }
+        background-color: black;
+        border: 1px solid #39FF14;
+    }
  
     #side:after {
         content: "»";
         position: fixed;
         top: 1.5em;
         left: 0;
-        background: #e8eef0;
-        color: #808080;
+        background: #39FF14;
+        color: black;
         display: block;
         font-size: 2em;
         padding: 0.35em 0.4em;
@@ -394,7 +439,7 @@ div #navigation_box, div.entry {
     content: "CSS made by player01";
     margin-top: 5px;
     text-align: center;
-    color: lightgray;
+    color: #39FF14;
     display: block;
     margin-bottom: 5px;
 }
