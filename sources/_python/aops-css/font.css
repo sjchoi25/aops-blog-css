@@ -1,0 +1,28 @@
+/* THIS IS AN AUTO GENERATED FILE FROM https://Fire-css.player010.repl.co/font.css */
+
+@import url('https://fonts.googleapis.com/css2?family=<INSERT>&display=swap');
+    
+/**   Font  **/
+/* Credits to pog */
+body, #header h1, .btn-primary, #navigation_box a, 
+.inputbox, input.button2, .cmty-post-textarea, 
+.cmty-subject-input, .cmty-items-input.ui-autocomplete-input, 
+div.cmty-item-tag, button.btn.btn-run, button.btn.btn-reset,
+button.btn.btn-link.btn-pop, div.cmty-topic-cell-post, 
+div.cmty-topic-cell-subtitle, 
+span.cmty-color-main.cmty-topic-cell-username, 
+div.cmty-topic-cell-subject, div.cmty-topic-watchers, 
+div.cmty-topic-cell-left-bottom, div.cmty-topic-cell-source, 
+div.cmty-topic-cell-second-row, select, 
+input#login-username.form-control, 
+input#login-password.form-control, button#login-cancel-button.btn, 
+div.cmty-topic-subject, input.cmty-submit-button.btn.btn-primary, 
+textarea {
+    font-family: '<INSERT>';
+    letter-spacing: 0.8px; 
+    word-spacing: 1.6px;
+    font-size: 16px;
+}
+.cmty-reply-window input.cmty-submit-button.btn.btn-primary {
+    font-size: 12px;
+}
