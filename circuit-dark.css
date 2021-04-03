@@ -102,10 +102,7 @@ div.comment {
 }
 
 /* Side */
-#side {
-    color: white;
-}
-#side .username-colored {
+#side, .widget-title {
     color: #39FF14;
 }
 
@@ -234,6 +231,11 @@ Code taken from AoPS user monks  */
 #search-widget > div {
     background-color: transparent;
 }
+#blog_keywords {
+    background-color: black;
+    border: 1px solid #39FF14;
+    color: #39FF14;
+}
 #search-widget fieldset {
     border: none;
 }
@@ -256,6 +258,16 @@ Code taken from AoPS user monks  */
     border-color: #39FF14;
     color: #39FF14;
     background-color: black;
+}
+
+/* Polls */
+.cmty-poll-display {
+    color: #39FF14;
+    border: 1px solid #39FF14;
+    background-color: black;
+}
+.cmty-poll-result-bar {
+    background-color: #39FF14;
 }
 
 /*  Image patch  */
@@ -333,7 +345,7 @@ div #navigation_box, div.entry {
 }
 .blog-shout.row2 {
     background-color: black;
-    color: white;
+    color: #39FF14;
     border: 1px solid #39FF14;
 }
 
