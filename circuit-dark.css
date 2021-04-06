@@ -338,7 +338,7 @@ div.widget-title {
 }
 
 /* LaTeX and asy */
-.latex {
+.latex, .latexcenter {
     filter: invert(1) grayscale(1);
 }
 img.asy-image {
