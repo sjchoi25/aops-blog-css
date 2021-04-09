@@ -1,0 +1,40 @@
+/**
+* css by player01/Nhv24
+* 
+* Styles the post new entry button
+* 
+* Main code is by AoPS
+*
+* Copyright (c) 2021 Nhv24/player01
+* Licensed under MIT
+**/
+
+#post-new-entry {
+    display: inline-block;
+    font-weight: 700;
+    height: 24px;
+    padding: 0 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    font-family: Roboto,sans-serif;
+    user-select: none;
+    color: #fff;
+    background-color: #1b365d;
+}
+
+#post-new-entry:focus, #post-new-entry:hover {
+    background-color: #135b7b;
+}
+
+/**  AoPS font on button  **/
+#post-new-entry:before{
+    font-family: AoPS;
+    content: 'V ';
+}
