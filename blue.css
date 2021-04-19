@@ -329,12 +329,18 @@ code[class*="language-"] {
     border-radius: 10px;
 }
 
-/* Shouts scrollbar patch by happycupcake */
-.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner {
-  scrollbar-width: none;
+/* Shoutbox & tags scrollbar fix by HAPPYCUPCAKE */
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
+    scrollbar-width: none;
 }
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
-  width: 0px;
+    width: 0px;
+}
+.blog-tags-wrapper>.cmty-itembox>.aops-scroll-outer>.aops-scroll-inner::-webkit-scrollbar{
+display:none;
+}
+.blog-tags-wrapper>.cmty-itembox>.aops-scroll-outer>.aops-scroll-inner::-webkit-scrollbar {
+    width: 0px;
 }
 
 /*  Feed username color patch  */
