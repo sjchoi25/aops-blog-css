@@ -243,12 +243,18 @@ pre[style="font-family:monospace;background-color: #f4f6f4;padding:10px;"], pre.
     background-color: #989898 !important;
 }
 
-/* Shouts scrollbar patch by happycupcake */
+/* Shoutbox & tags scrollbar fix by HAPPYCUPCAKE */
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
-  scrollbar-width: none;
+    scrollbar-width: none;
 }
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
-  width: 0px;
+    width: 0px;
+}
+.blog-tags-wrapper>.cmty-itembox>.aops-scroll-outer>.aops-scroll-inner::-webkit-scrollbar{
+display:none;
+}
+.blog-tags-wrapper>.cmty-itembox>.aops-scroll-outer>.aops-scroll-inner::-webkit-scrollbar {
+    width: 0px;
 }
 
 /*  Feed username color patch  */
