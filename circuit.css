@@ -116,6 +116,11 @@ ul {list-style-type: disc;}
     border: 1px solid lightgray;
 }
 
+#archive-widget .widget-content {
+    margin-left: 5px;
+}
+
+
 /**  Header  */
 #header {
     height: 100vh;
