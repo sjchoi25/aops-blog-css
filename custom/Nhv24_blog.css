@@ -1,0 +1,90 @@
+/**
+ALL CSS MADE AND MANUFACTURED BY PLAYER01
+
+USDA ORGANIC
+NON-GMO
+GLUTEN FREE AND VEGAN
+
+RECYCLEABLE
+
+DO NOT STEAL
+HANDLE WITH CAUTION
+
+AUTHORIZED PERSONNEL ONLY
+
+PRODUCT MAY EXPLODE ON IMPACT
+STORE IN AN AIRTIGHT CONTAINER
+
+^ THIS SIDE UP
+
+WARNING: FRAGILE
+THIS PRODUCT MAY BE EXTREMELY SPICY, CONSUME AT YOUR OWN RISK
+
+CLEAN ROOM PRODUCT: OPEN IN A CLEAN ROOM ONLY
+
+WARNING: CONTAINS LEAD
+DO NOT MICROWAVE
+
+FLAMMABLE, KEEP AWAY FROM FIRE
+STORE IN A COOL, DRY PLACE
+KEEP AWAY FROM SUNLIGHT
+DO NOT EAT
+
+KEEP OUT OF REACH OF CHILDREN
+WARNING: CHOKING HAZARD
+
+NOT FOR CHILDREN UNDER THE AGE OF 1000000000
+
+ANY MODIFICATION TO THIS CSS NOT PERMITTED BY PLAYER01 MAY RESULT IN INJURY
+
+THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE, OR PREVENT ANY DISEASE.
+THIS PRODUCT MAY COINTAIN ZONKS AND OTHER ALERGIC PARTICLES
+
+DO NOT USE IF SAFETY SEAL IS BROKEN OR MISSING
+
+AVOID EYE CONTACT
+
+AMOUNT PER SERVING: 10
+
+SUGGESTED USE
+-------------------------------------------------------------------
+|   ADULTS: TAKE 1-10 DOSES DAILY          |
+|   CHILDREN: TAKE 10-20 DOSES DAILY   |
+-------------------------------------------------------------------
+
+NUTRITION FACTS
+------------------------------
+SUGAR: ?? GRAMS
+CALCIUM: 0 GRAMS
+etc etc...
+
+Notice: The above comments are purely a joke, and are not meant to be taken seriously :P
+**/
+
+@import url("https://Nhv24.github.io/aops-blog-css/snippets/links.css");
+
+@import url("https://Nhv24.github.io/aops-blog-css/addons/blink/light.css");
+/* Use the regular version since the minified one isn't always up to date */
+@import url("https://Nhv24.github.io/aops-blog-css/circuit.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+
+#header h1 {font-family: 'Overpass Mono', monospace;}
+#header {background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');}
+
+#post-2464569 div.entrywrap, #post-2464569 .message, #post-2465395 div.entrywrap, #post-2465395 .message {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+#post-2464569 h2, #post-2464569 .efooter, #post-2464569 .cmty-item-tag.cmty-edit-tag.aops-font, #post-2465395 h2,  #post-2465395 .efooter,  #post-2465395 .cmty-item-tag.cmty-edit-tag.aops-font {
+    display: none;
+}
+
+#post-2503233 .entrywrap .message {overflow-y: hidden;}
+
+.cmty-item-tag {
+    transition: background-color .2s;
+    border-radius: 2px;
+}
