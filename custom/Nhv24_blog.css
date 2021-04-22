@@ -88,3 +88,14 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
     transition: background-color .2s;
     border-radius: 2px;
 }
+
+.aops-modal-frame:not(.cmty-posting-modal) {
+    border-color: white;
+}
+
+.aops-modal-frame:not(.cmty-posting-modal) .aops-scroll-outer {
+    box-shadow: none;
+}
+.aops-modal-content-wrapper {
+    box-shadow: none;
+}
