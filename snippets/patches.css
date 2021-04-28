@@ -92,3 +92,9 @@ div #navigation_box, div.entry {
 .comment {
     background-color: transparent;
 }
+
+
+/** A patch that may only work on selective blogs, depending on the order of import **/
+@media (max-width: 480px), (max-height: 480px) {
+    a.blog-info {display: inline-block !important;}
+}
