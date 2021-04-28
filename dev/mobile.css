@@ -8,12 +8,12 @@
 **/
 
 :root {
-    --mobile-tab-font-size: 20px;
+    --mobile-tab-font-size: 2em;
     --mobile-color: white;
     --mobile-font-size: 14px;
     --mobile-tab-bd-color: black;
     --mobile-tab-clr: black;
-    --mobile-tab-bg: cornflowerblue;
+    --mobile-tab-bg: #e8eef0;
 }
 
 @media only screen and (max-width: 800px) {
@@ -43,11 +43,11 @@
     #navigation_box:after {
         cursor: pointer;
         content: '☰';
-        border-radius: 0px 30% 30% 0px;
-        font-size: 20px;
+        border-radius: 0px 1em 1em 0px;
+        font-size: 2em;
         font-size: var(--mobile-tab-font-size);
         position: fixed;
-        top: 75px;
+        top: 50px;
         left: 0;
         transition: left 1s ease;
         border: 1px solid black;
