@@ -6,6 +6,10 @@
 * Licensed under MIT
 **/
 
+:root {
+    --main-width: 80%;
+}
+
 #wrapper {
     width: 100%;
     border: none;
@@ -14,8 +18,12 @@
 #content {
     margin: 0 auto;
     /* NOTICE: Manually specify the width of the content and the content will automatically center */
+    width: 80%;
+    width: var(--main-width);
 }
 
+
+/* Credits to AoPS user BobRascal for the following snippet */
 #main{
     width: calc(100% - 258px);
     padding: 10px
