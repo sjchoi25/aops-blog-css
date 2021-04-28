@@ -8,89 +8,84 @@
 **/
 
 :root {
-    --mobilebg: white;
+    --mobile-tab-font-size: 20px;
+    --mobile-color: white;
+    --mobile-font-size: 14px;
+    --mobile-tab-bd-color: black;
+    --mobile-tab-clr: black;
+    --mobile-tab-bg: cornflowerblue;
 }
 
 @media only screen and (max-width: 800px) {
-    #main {
-        width: 100%;
-        padding: 5px;
-        background-color: white;
-        background-color: var(--mobilebg);
-    }
-    #wrapper {
-        width: 100%;
-    }
 
-    p.description {
-        padding-top: 20px;
-    }
-
-    div#left_navigation_box {
-        display: none;
-    }
-
-    /**  Side widget taken and modified from NMK  **/
-    #side {
+    #navigation_box {
+        height: 100vh;
+        width: 200px;
+        left: -200px;
+        top: 0px;
         position: fixed;
-        top: 0;
-        left: -20em;
-        width: 20em;
-        height: 100%;
-        padding: 0 2em;
-        z-index: 100;
-        overflow-y: scroll;
-        -webkit-transition-property: left;
-        transition-property: left;
-        -webkit-transition: .9s ease;
-        transition: .9s ease;
-        background-color: white;
-        border: 1px solid lightgray;
+        transition: left 1s ease;
+        padding: 10px;
+        border: none;
     }
- 
-    #side:after {
-        content: "»";
-        position: fixed;
-        top: 1.5em;
-        left: 0;
-        background: #e8eef0;
-        color: #808080;
-        display: block;
-        font-size: 2em;
-        padding: 0.35em 0.4em;
-        height: 1.5em;
-        width: 1.5em;
-        border-radius: 0 1em 1em 0;
-        -webkit-transition-property: left;
-        transition-property: left;
-        -webkit-transition: .7s ease;
-        transition: .7s ease;
+    #navigation_box * {
+        font-size: 0;
+        margin-top: 40px;
     }
- 
-    #side:hover {
-        left: 0;
-        -webkit-transition: .9s ease;
-        transition: .9s ease;
-    }
- 
-    #side:hover:after {
-        left: -1.5em;
-        -webkit-transition: .7s ease;
-        transition: .7s ease;
-    }
- 
-    /* widgets */
-    #side > div {
-        margin: 0 !important;
-        padding: 2em 0 !important;
-        border-bottom: 1px solid #909090;
-    }
- 
-    #side > div:last-child {
-        border-bottom: 0;
-    }
-    /*  End of code taken from NMK  */
-    textarea#message.inputbox {
+    #navigation_box a {
+        font-size: 14px;
+        font-size: var(--mobile-font-size);
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
         width: 100%;
+    }
+    #navigation_box:after {
+        cursor: pointer;
+        content: '☰';
+        border-radius: 0px 30% 30% 0px;
+        font-size: 20px;
+        font-size: var(--mobile-tab-font-size);
+        position: fixed;
+        top: 75px;
+        left: 0;
+        transition: left 1s ease;
+        border: 1px solid black;
+        border: 1px solid var(--mobile-tab-bd-color);
+        color: black;
+        color: var(--mobile-tab-clr);
+        background-color: cornflowerblue;
+        background-color: var(--mobile-tab-bg);
+        padding: 10px;
+    }
+
+    #navigation_box:before {
+        position: absolute;
+        content: "NAVIGATION";
+        color: white;
+        color: var(--mobile-color);
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 10px;
+        left: 0;
+        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--mobile-color);
+        font-size: 14px;
+        font-size: var(--mobile-font-size);
+    }
+
+    #left_navigation_box, #right_navigation_box {
+        width: 100%;
+    }
+    #right_navigation_box {
+        margin-top: 50px;
+    }
+
+    #navigation_box:hover::after {
+        left: 200px;
+    }
+
+    #navigation_box:hover {
+        left: 0;
     }
 }
