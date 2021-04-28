@@ -8,7 +8,7 @@
 **/
 
 :root {
-    --mobile-tab-font-size: 2em;
+    --mobile-tab-font-size: 1.5em;
     --mobile-color: white;
     --mobile-font-size: 14px;
     --mobile-tab-bd-color: black;
@@ -44,7 +44,7 @@
         cursor: pointer;
         content: '☰';
         border-radius: 0px 1em 1em 0px;
-        font-size: 2em;
+        font-size: 1.5em;
         font-size: var(--mobile-tab-font-size);
         position: fixed;
         top: 50px;
@@ -56,7 +56,7 @@
         color: var(--mobile-tab-clr);
         background-color: cornflowerblue;
         background-color: var(--mobile-tab-bg);
-        padding: 15px;
+        padding: 13px;
     }
 
     #navigation_box:before {
