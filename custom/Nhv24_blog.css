@@ -82,7 +82,7 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
     display: none;
 }
 
-#post-2503233 .entrywrap .message, #post-2540931 .entrywrap .message {overflow-y: hidden;}
+#post-2503233 .entrywrap .message, #post-2540931 .entrywrap .message, #post-2568042 .entrywrap .message {overflow-y: hidden;}
 
 .cmty-item-tag {
     transition: background-color .2s;
