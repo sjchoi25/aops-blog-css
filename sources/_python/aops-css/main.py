@@ -48,15 +48,6 @@ def ishexclr(clr):
 		# Not hex
 		return False
 
-@app.route("/")
-def index():
-	"""
-	Index view
-	"""
-	# Redirect to the Fire-css official website
-	return redirect("https://Fire-css.github.io")
-
-
 # ----------------------------------
 #     Files
 # ----------------------------------
@@ -188,11 +179,6 @@ def return_april_css():
 			res = make_response(file.read())
 			res.mimetype = 'text/css'
 			return res
-	return ""
-
-@app.route("/wakeup")
-def wake():
-	print("\n\n\n\nThis page was requested\n\n\n\n")
 	return ""
 
 app.run(host='0.0.0.0', port=8080)
