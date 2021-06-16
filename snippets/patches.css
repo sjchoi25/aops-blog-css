@@ -98,6 +98,11 @@ button, input {
     outline: none;
 }
 
+/* Links */
+.bbcode_url:hover {
+    text-decoration: underline;
+}
+
 /** A patch that may only work on selective blogs, depending on the order of import (Probably not tho) **/
 @media (max-width: 480px), (max-height: 480px) {
     a.blog-info {display: inline-block !important;}
