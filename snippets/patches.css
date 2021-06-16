@@ -93,8 +93,12 @@ div #navigation_box, div.entry {
     background-color: transparent;
 }
 
+/* Buttons and input */
+button, input {
+    outline: none;
+}
 
-/** A patch that may only work on selective blogs, depending on the order of import **/
+/** A patch that may only work on selective blogs, depending on the order of import (Probably not tho) **/
 @media (max-width: 480px), (max-height: 480px) {
     a.blog-info {display: inline-block !important;}
 }
