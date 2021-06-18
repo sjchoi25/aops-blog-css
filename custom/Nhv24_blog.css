@@ -61,8 +61,6 @@ etc etc...
 Notice: The above comments are purely a joke, and are not meant to be taken seriously :P
 **/
 
-@import url("https://Nhv24.github.io/aops-blog-css/snippets/links.css");
-
 @import url("https://Nhv24.github.io/aops-blog-css/addons/blink/light.css");
 /* Use the regular version since the minified one isn't always up to date */
 @import url("https://Nhv24.github.io/aops-blog-css/circuit.css");
@@ -98,4 +96,9 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
 }
 .aops-modal-content-wrapper {
     box-shadow: none;
+}
+
+/* Links */
+.bbcode_url:hover {
+    text-decoration: underline !important;
 }
