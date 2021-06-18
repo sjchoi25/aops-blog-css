@@ -62,6 +62,7 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
 **/
 
 @import url("https://Nhv24.github.io/aops-blog-css/addons/blink/light.css");
+@import url("https://Nhv24.github.io/aops-blog-css/snippets/modal.css");
 /* Use the regular version since the minified one isn't always up to date */
 @import url("https://Nhv24.github.io/aops-blog-css/circuit.css");
 
@@ -85,17 +86,6 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
 .cmty-item-tag {
     transition: background-color .2s;
     border-radius: 2px;
-}
-
-.aops-modal-frame:not(.cmty-posting-modal) {
-    border-color: white;
-}
-
-.aops-modal-frame:not(.cmty-posting-modal) .aops-scroll-outer {
-    box-shadow: none;
-}
-.aops-modal-content-wrapper {
-    box-shadow: none;
 }
 
 /* Links */
