@@ -92,3 +92,8 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
 .bbcode_url:hover {
     text-decoration: underline !important;
 }
+
+/* Un-runnable pywindows */
+span[style^="font-family:'no-run"] .pywindow .btn {
+    display: none;
+}
