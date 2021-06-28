@@ -620,3 +620,7 @@ span[style^="font-family:'alert-dark"] {
   background-color: #d3d3d4;
   border-color: #bcbebf;
 }
+
+@media (max-width: 480px), (max-height: 480px) {
+    #right_navigation_box a.blog-info {display: inline-block !important;}
+}
