@@ -578,3 +578,7 @@ div.comment.row1, div.comment.row2 {
     margin-bottom: 5px;
     font-size: 13pt !important;
 }
+
+@media (max-width: 480px), (max-height: 480px) {
+    #right_navigation_box a.blog-info {display: inline-block !important;}
+}
