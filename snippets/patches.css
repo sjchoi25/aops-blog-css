@@ -105,5 +105,5 @@ button, input {
 
 /** A patch that may only work on selective blogs, depending on the order of import (Probably not tho) **/
 @media (max-width: 480px), (max-height: 480px) {
-    a.blog-info {display: inline-block !important;}
+    #right_navigation_box a.blog-info {display: inline-block !important;}
 }
