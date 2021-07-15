@@ -98,3 +98,8 @@ span[style^="font-family:'no-run"] .pywindow .btn {
 }
 
 /* This is the 100th line */
+
+#post-2620701 .cmty-post-attached-image-content img {
+    width: 70%;
+    height: auto;
+}
