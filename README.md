@@ -8,3 +8,6 @@ WIP
 
 ## Credits
 Credits to AoPS users pog, happycupcake, monks, CreativeHedgehog, and BobRascal for various snippets of code in this repository.
+
+## License
+MIT
