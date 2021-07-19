@@ -68,7 +68,7 @@ div.entrywrap {
 div.entrywrap:hover {box-shadow: 0 0 5px lightgray;}
 
 .message {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .entry h2 {
