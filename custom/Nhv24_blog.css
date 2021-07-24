@@ -68,7 +68,7 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
 #header h1 {font-family: 'Overpass Mono', monospace;}
-#header {background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');}
+#header {background-image: url("https://nhv24.github.io/aops-blog-css/assets/nhv24/nhv24.jpeg");}
 
 #post-2464569 div.entrywrap, #post-2464569 .message, #post-2465395 div.entrywrap, #post-2465395 .message {
     box-shadow: none;
