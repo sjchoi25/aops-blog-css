@@ -1,5 +1,5 @@
 # aops-blog-css
-<img src="https://img.shields.io/badge/Maintained-Yes-yellow?style=for-the-badge"> <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge"></a>
+<div align="center"><img src="https://img.shields.io/badge/Maintained-Yes-yellow?style=for-the-badge"> <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge"></a></div>
 
 A simple CSS framework for AoPS blogs.
 
