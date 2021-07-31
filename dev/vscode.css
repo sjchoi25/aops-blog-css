@@ -376,6 +376,8 @@ div.entrywrap, .comment {
 }
 .cmty-poll-display {
     background-color: #222;
+    border: 0;
+    border-radius: 5px;
 }
 
 .cmty-new-topic-popup .cmty-items-input-box {
