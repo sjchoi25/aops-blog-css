@@ -1,3 +1,16 @@
+/**
+* 
+* VSCode.css created by player01 (Nhv24 on GitHub)
+*
+* License: MIT
+*
+* This CSS is not created by or affiliated with the Microsoft Corporation.
+*
+* Please give proper credit if using.
+*
+* The CSS does not support mobile.
+**/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 .blog-no-topics {
@@ -6,7 +19,7 @@
 }
 
 body {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='2455' viewBox='-11.9 -2 1003.9 995.6' width='2500'%3E%3Cpath d='m12.1 353.9s-24-17.3 4.8-40.4l67.1-60s19.2-20.2 39.5-2.6l619.2 468.8v224.8s-.3 35.3-45.6 31.4z' fill='%232489ca'/%3E%3Cpath d='m171.7 498.8-159.6 145.1s-16.4 12.2 0 34l74.1 67.4s17.6 18.9 43.6-2.6l169.2-128.3z' fill='%231070b3'/%3E%3Cpath d='m451.9 500 292.7-223.5-1.9-223.6s-12.5-48.8-54.2-23.4l-389.5 354.5z' fill='%230877b9'/%3E%3Cpath d='m697.1 976.2c17 17.4 37.6 11.7 37.6 11.7l228.1-112.4c29.2-19.9 25.1-44.6 25.1-44.6v-671.2c0-29.5-30.2-39.7-30.2-39.7l-197.7-95.3c-43.2-26.7-71.5 4.8-71.5 4.8s36.4-26.2 54.2 23.4v887.5c0 6.1-1.3 12.1-3.9 17.5-5.2 10.5-16.5 20.3-43.6 16.2z' fill='%233c99d4'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='2455' viewBox='-11.9 -2 1003.9 995.6' width='2500'%3E%3Cpath d='m12.1 353.9s-24-17.3 4.8-40.4l67.1-60s19.2-20.2 39.5-2.6l619.2 468.8v224.8s-.3 35.3-45.6 31.4z' fill='%23111'/%3E%3Cpath d='m171.7 498.8-159.6 145.1s-16.4 12.2 0 34l74.1 67.4s17.6 18.9 43.6-2.6l169.2-128.3z' fill='%23111'/%3E%3Cpath d='m451.9 500 292.7-223.5-1.9-223.6s-12.5-48.8-54.2-23.4l-389.5 354.5z' fill='%23111'/%3E%3Cpath d='m697.1 976.2c17 17.4 37.6 11.7 37.6 11.7l228.1-112.4c29.2-19.9 25.1-44.6 25.1-44.6v-671.2c0-29.5-30.2-39.7-30.2-39.7l-197.7-95.3c-43.2-26.7-71.5 4.8-71.5 4.8s36.4-26.2 54.2 23.4v887.5c0 6.1-1.3 12.1-3.9 17.5-5.2 10.5-16.5 20.3-43.6 16.2z' fill='%23111'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 40% 40%;
@@ -36,12 +49,8 @@ div.cmty-topic-subject, input.cmty-submit-button.btn.btn-primary,
 textarea, .cmty-poll-question, a, .widget-title {
     font-family: Inter, sans-serif;
 }
-/* No feed */
-#feed-wrapper {
-    display: none;
-}
 
-/* PATCHES, CREDITS TO HAPPYCUPCAKE AND MONKS FOR SOME CODE */
+/* PATCHES, CREDITS TO HAPPYCUPCAKE AND MONKS FOR CODE IN THIS SECTION */
 
 /* Shouts scrollbar patch by happycupcake */
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
@@ -79,6 +88,7 @@ Code taken from AoPS user monks  */
     background-color: hsl(220 12% 20%);
     color: white;
 }
+/* END */
 
 /*  Image patch  */
 img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
@@ -344,18 +354,13 @@ div.entrywrap, .comment {
     font-size: 1.5em;
 }
 
-.cmty-bbcode-attachment {
-    width: 0;
-}
-.cmty-bbcode-attachment:after {
-    content: "📎";
-    width: auto;
-    color: white;
-    font-weight: bold;
-}
-
 .cmty-reply-window .cmty-posting-button-row {
     background-color: #333;
+}
+
+.cmty-reply-window .cmty-posting-preview-bar,
+.cmty-reply-window .cmty-cancel-posting-x {
+    display: none;
 }
 
 .cmty-reply-window .cmty-submit-button {
@@ -380,17 +385,20 @@ div.entrywrap, .comment {
     border-radius: 5px;
 }
 
+.cmty-bbcode-btn {
+    filter: invert(0.9);
+    border-radius: 3px;
+    margin: 2px;
+}
+
+.cmty-posting-submenu {
+    color: white;
+}
+
 .cmty-new-topic-popup .cmty-items-input-box {
     border: 0;
 }
-.cmty-posting-preview-bar:not(.cmty-new-topic-popup .cmty-posting-preview-bar),
-.cmty-bbcode-buttons div:not(.cmty-bbcode-attachment):not(.cmty-new-topic-popup .cmty-bbcode-buttons div),
-.cmty-reply-window .cmty-cancel-posting-x:not(.cmty-new-topic-popup .cmty-reply-window .cmty-cancel-posting-x) {
-    display: none;
-}
-.cmty-reply-window .cmty-bbcode-buttons:not(.cmty-new-topic-popup .cmty-bbcode-buttons) {
-    width: auto;
-}
+
 div.comment {
     border: 0;
     margin: 5px;
@@ -399,6 +407,9 @@ div.comment {
     color: white;
     font-weight: bold;
 }
+
+
+
 
 
 /* SIDE */
@@ -452,9 +463,17 @@ div.comment {
 }
 
 
+
+
+
 /* Misc */
 .asy-image, .latexcenter, .latex {
     filter: invert(1);
+}
+
+/* No feed */
+#feed-wrapper {
+    display: none;
 }
 
 .aops-modal-frame:not(.cmty-posting-modal) {
@@ -540,12 +559,13 @@ div.comment {
 
 
 
+
 /* CODE + Pywindow */
 code.language-none {
     color: #333;
 }
 pre:not(.pywindow .CodeMirror) {
-    filter: invert(1);
+    filter: invert(1) hue-rotate(175deg); /* Credits to @happycupcake for hue-rotate */
 }
 .pywindow .CodeMirror {
     border-color: #333;
@@ -562,6 +582,8 @@ pre:not(.pywindow .CodeMirror) {
 .CodeMirror div.CodeMirror-cursor {
     border-color: white;
 }
+
+
 
 
 
