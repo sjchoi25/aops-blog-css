@@ -103,7 +103,24 @@ button, input {
     text-decoration: underline !important;
 }
 
-/** A patch that may only work on selective blogs, depending on the order of import (Probably not tho) **/
+.blog-shout-wrapper .aops-scroll-content {
+    max-width: none !important;
+}
+
+.blog-shout {
+    margin-bottom: 10px;
+}
+
+.blog-shout-wrapper, #message {
+    width: 100%:
+}
+
+#shouts-widget ul {
+    margin-top: 0;
+}
+
+
+
 @media (max-width: 480px), (max-height: 480px) {
     #right_navigation_box a.blog-info {display: inline-block !important;}
 }
