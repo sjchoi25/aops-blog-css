@@ -403,7 +403,7 @@ div.comment {
 .aops-modal-content-wrapper {
     box-shadow: none;
 }
-.aops-modal-body, .aops-modal-frame:not(.cmty-posting-modal), .aops-modal-buttons.aops-modal-footer {
+.aops-modal-body, .aops-modal-frame:not(.cmty-posting-modal), .aops-modal-buttons.aops-modal-footer, .aops-modal-title  {
     background-color: rgb(32, 32, 32);
     color: white;
 }
@@ -457,6 +457,51 @@ div.comment {
     background-color: black;
     color: white;
     border: 0;
+}
+
+
+
+/* CODE + Pywindow */
+code.language-none {
+    color: #333;
+}
+pre:not(.pywindow .CodeMirror) {
+    filter: invert(1);
+}
+.pywindow .CodeMirror {
+    border-color: #333;
+}
+
+.CodeMirror-activeline-background, .CodeMirror {
+    background-color: #111;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid #333;
+    background-color: transparent;
+}
+.CodeMirror div.CodeMirror-cursor {
+    border-color: white;
+}
+
+
+
+/* Quotes */
+.bbcode_quote, .bbcode_quote .bbcode_quote_head, .bbcode_quote:after {
+    background-color: #222;
+    color: white;
+}
+.bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote:after {
+    background-color: #333;
+    color: white;
+}
+.bbcode_quote .bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote .bbcode_quote:after {
+    background-color: #444;
+    color: white;
+}
+
+.bbcode_quote:before {
+    filter: invert(0.9);
 }
 
 @media (max-width: 480px), (max-height: 480px) {
