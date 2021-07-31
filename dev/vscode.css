@@ -330,8 +330,56 @@ div.entrywrap, .comment {
     border: 0;
     color: white;
 }
-.cmty-post-textarea:not(.cmty-new-topic-popup .cmty-post-textarea) {
+.cmty-reply-window .cmty-posting-box-container textarea {
     height: 40px !important;
+    background-color: #222;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+.cmty-reply-window .cmty-posting-box-container:before {
+    content: ">";
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.cmty-bbcode-attachment {
+    width: 0;
+}
+.cmty-bbcode-attachment:after {
+    content: "📎";
+    width: auto;
+    color: white;
+    font-weight: bold;
+}
+
+.cmty-reply-window .cmty-posting-button-row {
+    background-color: #333;
+}
+
+.cmty-reply-window .cmty-submit-button {
+    margin-right: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.cmty-new-topic-popup textarea,
+.aops-modal-body .cmty-new-topic-popup .cmty-subject-input,
+.aops-modal-body .cmty-new-topic-popup .cmty-tags-line .cmty-items-input-box,
+.aops-modal-body .cmty-new-topic-popup .cmty-items-input {
+    color: white;
+    background-color: #333;
+}
+.cmty-posting-submenu {
+    background-color: #222;
+}
+.cmty-poll-display {
+    background-color: #222;
+}
+
+.cmty-new-topic-popup .cmty-items-input-box {
+    border: 0;
 }
 .cmty-posting-preview-bar:not(.cmty-new-topic-popup .cmty-posting-preview-bar),
 .cmty-bbcode-buttons div:not(.cmty-bbcode-attachment):not(.cmty-new-topic-popup .cmty-bbcode-buttons div),
@@ -373,7 +421,15 @@ div.comment {
     background-color: rgb(37, 37, 37);
     padding: 5px;
     color: white;
+    width: 100%;
 }
+.blog-shout-wrapper {
+    width: 100%:
+}
+.blog-shout {
+    margin-bottom: 10px;
+}
+
 #side fieldset, #side textarea {
     border: 2px solid hsl(220 12% 20%);
     border-radius: 3px;
@@ -382,8 +438,15 @@ div.comment {
     background-color: rgb(40, 40, 40);
     border-radius: 3px;
 }
+
+.blog-shout-wrapper .aops-scroll-content {
+    max-width: none !important;
+}
 #side .description {
     color: white;
+}
+#shouts-widget ul {
+    margin-top: 0;
 }
 
 
@@ -403,17 +466,31 @@ div.comment {
 .aops-modal-content-wrapper {
     box-shadow: none;
 }
-.aops-modal-body, .aops-modal-frame:not(.cmty-posting-modal), .aops-modal-buttons.aops-modal-footer, .aops-modal-title  {
+.aops-modal-body, 
+.aops-modal-frame:not(.cmty-posting-modal), 
+.aops-modal-buttons.aops-modal-footer, 
+.aops-modal-standard .aops-modal-title, 
+.aops-modal-plain-body .aops-modal-title {
     background-color: rgb(32, 32, 32);
     color: white;
 }
-.cmty-item-tag, .cmty-editable-item-close, button {
+#post-attachments {
+    border-color: #333;
+    background-color: rgb(32, 32, 32);
+}
+.cmty-edit-reason textarea {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    border-color: #333;
+}
+
+.cmty-item-tag, .cmty-editable-item-close, button, .btn-primary {
     color: rgb(215, 116, 60) !important;
     border-radius: 3px;
     background-color: rgb(45, 45, 45) !important;
     transition: background-color .2s;
 }
-.cmty-item-tag:hover, .cmty-editable-item-close, button {
+.cmty-item-tag:hover, .cmty-editable-item-close:hover, button:hover, .btn-primary:hover {
     background-color: rgb(40, 40, 40) !important;
     color: rgb(215, 116, 60) !important;
 }
@@ -486,21 +563,25 @@ pre:not(.pywindow .CodeMirror) {
 
 
 
-/* Quotes */
-.bbcode_quote, .bbcode_quote .bbcode_quote_head, .bbcode_quote:after {
+/* Quotes + hides */
+.bbcode_quote, .bbcode_quote .bbcode_quote_head, .bbcode_quote:after,
+.cmty-hide-content, .cmty-hide-content:after {
     background-color: #222;
     color: white;
 }
-.bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote:after {
+.bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote:after,
+.cmty-hide-content .cmty-hide-content, .cmty-hide-content .cmty-hide-content:after {
     background-color: #333;
     color: white;
 }
-.bbcode_quote .bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote .bbcode_quote:after {
+.bbcode_quote .bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote .bbcode_quote:after,
+.cmty-hide-content .cmty-hide-content .cmty-hide-content, .cmty-hide-content .cmty-hide-content .cmty-hide-content:after {
     background-color: #444;
     color: white;
 }
 
-.bbcode_quote:before {
+.bbcode_quote:before,
+.cmty-hide-content:before {
     filter: invert(0.9);
 }
 
