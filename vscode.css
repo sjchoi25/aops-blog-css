@@ -7,8 +7,6 @@
 * This CSS is not created by or affiliated with the Microsoft Corporation.
 *
 * Please give proper credit if using.
-*
-* The CSS does not support mobile.
 **/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
@@ -49,8 +47,12 @@ div.cmty-topic-subject, input.cmty-submit-button.btn.btn-primary,
 textarea, .cmty-poll-question, a, .widget-title {
     font-family: Inter, sans-serif;
 }
+/* No feed */
+#feed-wrapper {
+    display: none;
+}
 
-/* PATCHES, CREDITS TO HAPPYCUPCAKE AND MONKS FOR CODE IN THIS SECTION */
+/* PATCHES, CREDITS TO HAPPYCUPCAKE AND MONKS FOR SOME CODE */
 
 /* Shouts scrollbar patch by happycupcake */
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
@@ -88,7 +90,6 @@ Code taken from AoPS user monks  */
     background-color: hsl(220 12% 20%);
     color: white;
 }
-/* END */
 
 /*  Image patch  */
 img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
@@ -409,9 +410,6 @@ div.comment {
 }
 
 
-
-
-
 /* SIDE */
 #side {
     background-color: rgb(37, 37, 37);
@@ -463,17 +461,9 @@ div.comment {
 }
 
 
-
-
-
 /* Misc */
 .asy-image, .latexcenter, .latex {
     filter: invert(1);
-}
-
-/* No feed */
-#feed-wrapper {
-    display: none;
 }
 
 .aops-modal-frame:not(.cmty-posting-modal) {
@@ -559,7 +549,6 @@ div.comment {
 
 
 
-
 /* CODE + Pywindow */
 code.language-none {
     color: #333;
@@ -585,8 +574,6 @@ pre:not(.pywindow .CodeMirror) {
 
 
 
-
-
 /* Quotes + hides */
 .bbcode_quote, .bbcode_quote .bbcode_quote_head, .bbcode_quote:after,
 .cmty-hide-content, .cmty-hide-content:after {
@@ -607,6 +594,12 @@ pre:not(.pywindow .CodeMirror) {
 .bbcode_quote:before,
 .cmty-hide-content:before {
     filter: invert(0.9);
+}
+
+/** Post button patch  **/
+#post-new-entry:before{
+    font-family: AoPS;
+    content: 'V ';
 }
 
 @media (max-width: 480px), (max-height: 480px) {
