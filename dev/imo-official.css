@@ -40,7 +40,7 @@ body {
 
 /* NAV */
 #navigation_box {
-    margin-top: 3.6em; /* Hacky but works ig */
+    margin-top: 3.7em; /* Hacky but works ig */
     border-bottom: 1px solid #BEB761;
     border-top: 1px dashed #BEB761;
     background-color: white;
