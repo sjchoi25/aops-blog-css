@@ -146,6 +146,11 @@ div.comment {
 
 
 /* Side */
+#side {
+    background-color: #FCFCD9;
+    border-top: 1em solid #F9F9B5;
+    margin-top: 1em;
+}
 #message {
     background-color: #FFFFF2;
 }
