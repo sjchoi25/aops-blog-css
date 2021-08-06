@@ -120,6 +120,17 @@ button, input {
 }
 
 
+/* Modals */
+.aops-modal-frame:not(.cmty-posting-modal) {
+    border-color: white;
+}
+
+.aops-modal-frame:not(.cmty-posting-modal) .aops-scroll-outer {
+    box-shadow: none;
+}
+.aops-modal-content-wrapper {
+    box-shadow: none;
+}
 
 @media (max-width: 480px), (max-height: 480px) {
     #right_navigation_box a.blog-info {display: inline-block !important;}
