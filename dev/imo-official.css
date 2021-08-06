@@ -1,0 +1,274 @@
+/**
+* CSS made by player01 (aops)/Nhv24 (github)
+*
+* This CSS is not created by/affiliated with the International Mathematical Olympiad.
+*
+* License: MIT
+**/
+
+body {
+    background-color: #FFFFF2;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+
+/* HEADER */
+#header h1 {
+    font-weight: bold;
+    font-variant: small-caps;
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 1.2em 1em 0.2em 1em;
+}
+#header {
+    font-size: 1em;
+    line-height: normal;
+    font-family: Verdana, sans-serif;
+    border: 0;
+    background-color: #FCFCD9;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+
+
+
+/* NAV */
+#navigation_box {
+    margin-top: 3.6em; /* Hacky but works ig */
+    border-bottom: 1px solid #BEB761;
+    border-top: 1px dashed #BEB761;
+    background-color: white;
+    height: 2em;
+    position: fixed;
+    z-index: 100000;
+}
+
+#navigation_box a {
+    padding: 0.2em 0.3em;
+    font-variant: small-caps;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    color: #0F3678;
+}
+
+#navigation_box a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+#left_navigation_box, #right_navigation_box {
+    float: none;
+    position: static;
+    display: inline-block;
+    color: #0F3678;
+}
+
+
+
+/* Footer + wrapper */
+#page-wrapper:after {
+    content: "Copyright (c) 2021";
+    border-top: 1px dashed #BEB761;
+    border-bottom: 1px solid #FCFCD9;
+    background-color: #FCFCD9;
+    text-align: center;
+    padding: 0.2em;
+    font-size: 0.8em;
+    white-space: nowrap;
+    line-height: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 100000; /* AoPS z-indexes are weird */
+}
+
+#page-wrapper {
+    margin-bottom: 3em;
+}
+
+#wrapper {
+    border: 0;
+    margin-top: 5.5em;
+    background-image: none;
+    background-color: #FFFFF2;
+    width: 60%;
+}
+
+#main{
+    width: calc(100% - 258px);
+    padding: 10px
+}
+
+
+
+/* Entry and comments */
+div.entry {
+    border: 0;
+}
+
+div.entry h1, .blog-num-comments {
+    color: green;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    margin: 0.5em 0 0.5em 0;
+    font-weight: bold;
+}
+div.entry h1 a {
+    color: green;
+}
+
+div.entry h2 {
+    color: #0F3678;
+}
+
+.blog-post-comment {
+    display: none;
+}
+
+div.entrywrap {
+    background-color: #FCFCD9;
+    border-color: #BEB761;
+}
+
+div.comment {
+    border: 1px solid #BEB761;
+    background-color: #FCFCD9;
+}
+
+
+
+
+/* Side */
+#message {
+    background-color: #FFFFF2;
+}
+
+.blog-shout-wrapper .aops-scroll-content {
+    max-width: none !important;
+}
+
+.blog-shout {
+    margin-bottom: 10px;
+}
+
+.blog-shout-wrapper, #message {
+    width: 100%:
+}
+
+.blog-shout.row1 {
+    background-color: #F9F9B5;
+}
+
+.blog-shout.row2 {
+    background-color: #F9F9DA;
+}
+
+#shouts-widget ul {
+    margin-top: 0;
+}
+#message, .blog-shout-wrapper {
+    border: 1px solid #BEB761;
+}
+
+
+
+
+
+/* PATCHES */
+/* Code color patch */
+code[class*="language-"] {
+    color: #333;
+}
+
+/* Shouts scrollbar patch by happycupcake */
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
+  scrollbar-width: none;
+}
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*  Feed username color patch  */
+.cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
+.cmty-forum-admin a{color: #900 !important;}
+.cmty-forum-mod a{color: #090 !important;}
+
+/*  Search patch  
+Code taken from AoPS user monks  */
+#search-widget > div {
+    background-color: transparent;
+}
+#search-widget fieldset {
+    border: none;
+}
+.widget-settings {
+    display: none;
+}
+.search {
+    height: 25px;
+    border-radius: 5px;
+}
+.button2 {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    border: 1px solid lightgray;
+    background-color: #F9F9DA;
+}
+
+/*  Image patch  */
+img#post-new-entry-img, .month-image, div.entry h2 img, p.author img {
+  display: none;
+}
+
+/**  Widget title patch  **/
+div.widget-title {
+    font-size: 105%;
+}
+
+/** Post button patch  **/
+#post-new-entry:before{
+    font-family: AoPS;
+    content: 'V ';
+}
+
+
+
+/* MISC */
+#feed-wrapper {
+    display: none; /* Footer screws this up, easiest way to fix is to remove */
+}
+
+/* Modals */
+.aops-modal-frame:not(.cmty-posting-modal) {
+    border-color: white;
+}
+
+.aops-modal-frame:not(.cmty-posting-modal) .aops-scroll-outer {
+    box-shadow: none;
+}
+.aops-modal-content-wrapper {
+    box-shadow: none;
+}
+
+#blog_keywords {
+    background-color: #FFFFF2;
+}
+
+/* Links */
+a {
+    color: #0F3678;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
