@@ -73,7 +73,7 @@ body {
 
 /* Footer + wrapper */
 #page-wrapper:after {
-    content: "Copyright (c) 2021";
+    content: "Copyright (c) 2021 player01/Nhv24. All rights reserved.";
     border-top: 1px dashed #BEB761;
     border-bottom: 1px solid #FCFCD9;
     background-color: #FCFCD9;
