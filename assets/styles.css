@@ -1,0 +1,33 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(odd):not(thead tr) {
+    background-color: #ddd;
+}
+
+a {
+    color: #3474ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
