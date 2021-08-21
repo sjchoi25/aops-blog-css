@@ -334,9 +334,9 @@ button, input {
     background-color: transparent;
 }
 #main {
-    width: 100%;
     float: right;
     width: calc(100% - 258px);
+    padding-left: 40px;
 }
 div.entry {
     border: none;
