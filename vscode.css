@@ -579,7 +579,7 @@ code.language-none {
 }
 pre:not(.pywindow .CodeMirror) {
     filter: invert(1) hue-rotate(175deg); /* Credits to @happycupcake for hue-rotate */
-    color: white;
+    color: black;
 }
 .pywindow .CodeMirror {
     border-color: #333;
