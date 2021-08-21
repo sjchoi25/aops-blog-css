@@ -1467,7 +1467,7 @@ div.widget-title {
 }
 
 .python {
-    line-height: auto;
+    line-height: normal;
 }
 
 /* Credits to HC for this section */
