@@ -618,30 +618,6 @@ pre[class] a:link {
   background-image: none;
 }
 
-pre::before {
-  /* Rule extends %transition03 */
-  content: 'code';
-  position: absolute;
-  background-color: #fff;
-  color: #aaa;
-  opacity: 0.8;
-  padding: 0 0.7em;
-  top: 0;
-  right: 0;
-}
-
-pre[class]::before {
-  content: attr(class);
-}
-
-pre:hover::before {
-  opacity: 0.2;
-}
-
-pre.cpp::before {
-  content: 'c++';
-}
-
 .cmty-poll-display {
   margin-top: 0;
   margin-bottom: 1em;
