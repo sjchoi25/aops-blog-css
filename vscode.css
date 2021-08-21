@@ -157,8 +157,6 @@ button, input {
 
 .archive-row a {
     color: white;
-    overflow: hidden;
-    white-space: nowrap;
 }
 .archive-row:hover:before {
     visibility: visible;
