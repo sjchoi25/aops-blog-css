@@ -11,9 +11,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
+@font-face {
+    font-family: "Menlo";
+    src: url("https://Nhv24.github.io/aops-blog-css/assets/menlo.ttf") format("truetype"),
+}
+
 .blog-no-topics {
     color: white;
-    font-family: monospace;
+    font-family: "Menlo", monospace;
 }
 
 body {
@@ -22,7 +27,8 @@ body {
     background-attachment: fixed;
     background-size: 40% 40%;
     background-position: center;
-    background-color: hsl(220 10% 14%);
+    background-color: #1a1a1a;
+    counter-reset: line-num;
 }
 
 a:link, a:visited {
@@ -409,6 +415,28 @@ div.comment {
     font-weight: bold;
 }
 
+/* I think a lot of css uses this so credits to all of the csses :P */
+#main > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) > .entry .entrywrap,
+#main > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) > .entry h2 {
+    display: none;
+}
+
+#main > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) > .entry {
+    margin: 0;
+    padding: 0;
+}
+
+#main > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) > .entry h1 a {
+    color: white;
+    font-family: "Menlo", monospace;
+}
+
+#main > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) > .entry h1 a:before {
+    counter-increment: line-num;
+    content: counter(line-num) "  ";
+    color: gray;
+}
+/* End */
 
 /* SIDE */
 #side {
