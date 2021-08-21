@@ -15,10 +15,10 @@ code[class*="language-"] {
 
 /* Shouts scrollbar patch by happycupcake */
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
-  scrollbar-width: none;
+    scrollbar-width: none;
 }
 .blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
-  width: 0px;
+    width: 0px;
 }
 
 /*  Feed username color patch  */
