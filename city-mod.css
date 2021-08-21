@@ -1442,6 +1442,10 @@ div.post-tags {
     padding: 5px;
 }
 
+.cmty-editable-item-close {
+    font-family: AoPS;
+}
+
 fieldset {
     border: 1px solid lightgray;
 }
