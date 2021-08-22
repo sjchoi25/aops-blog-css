@@ -338,6 +338,7 @@ button, input {
     float: right;
     width: calc(100% - 258px);
     padding-left: 40px;
+    padding-right: 40px;
 }
 div.entry {
     border: none;
