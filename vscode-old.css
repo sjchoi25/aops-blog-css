@@ -335,6 +335,7 @@ button, input {
 }
 #main {
     width: 100%;
+    padding-right: 40px;
 }
 div.entry {
     border: none;
