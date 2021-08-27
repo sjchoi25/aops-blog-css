@@ -1,7 +1,6 @@
 /**
 TODO List:
 * Mobile support
-* Custom code syntax highlighting
 * Dark mode
 * Modern version
 * Change entries
@@ -12,7 +11,6 @@ TODO List:
 * Find a body font
 * Increase font size
 * Change tag styling
-* Separate username from main message in comments and shouts
 **/
 
 
@@ -359,9 +357,8 @@ div.entry {
     #header {
         height: 100vh;
     }
-
-    #navigation_box {
-        height: 30px;
+    #header h1 {
+        font-size: 40px;
     }
     #main {
         width: 100%;
@@ -433,4 +430,8 @@ div.entry {
     textarea#message.inputbox {
         width: 100%;
     }
+}
+
+@media (max-width: 480px), (max-height: 480px) {
+    #right_navigation_box a.blog-info {display: inline-block !important;}
 }
