@@ -13,11 +13,12 @@ code[class*="language-"] {
     color: #333;
 }
 
-/* Shouts scrollbar patch by happycupcake */
-.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
+/* Shouts scrollbar patch by happycupcake, modified slightly */
+:where(.blog-shout-wrapper, .blog-tags-wrapper) .aops-scroll-outer>.aops-scroll-inner {
     scrollbar-width: none;
 }
-.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
+
+:where(.blog-shout-wrapper, .blog-tags-wrapper) .aops-scroll-outer>.aops-scroll-inner::-webkit-scrollbar {
     width: 0px;
 }
 
