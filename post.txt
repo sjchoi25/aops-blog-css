@@ -1,0 +1,36 @@
+Hide tags:
+[hide=Hidden]Text that is hidden[hide=Nested]Hi this is nested[hide=Click]Another nest[/hide][/hide][/hide]
+
+Tips:
+[tip=Hover]Tips![/tip]
+
+Lists:
+[list=1][*]Ordered item[*]Ordered item[/list]
+[list][*]Unordered item[*]Unordered item[/list]
+
+LaTeX:
+$\LaTeX$, $$ettest$$
+
+Asymptote:
+[asy]draw((0,0)..(2,1)..(3,1)..(2,2));[/asy]
+
+Code:
+[code]//This is code[/code]
+
+Pywindows:
+[pywindow]print("hello there")[/pywindow]
+
+Smileys:
+ :D  :maybe:  :-D  :)    :rotfl: 
+
+Links:
+[url=https://aops.com]Click here to go to AoPS[/url]
+
+Quotes:
+[quote="Somebody"]Quoted text[quote="Person"]This is a nested quote[quote]More nested[/quote][/quote][/quote]
+
+Images:
+[img width=20]https://artofproblemsolving.com/assets/images/logos/aops-online.svg[/img]
+[img width=200]https://artofproblemsolving.com/assets/images/logos/aops-online.svg[/img]
+
+This post has been edited :ninja:
