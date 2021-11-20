@@ -90,13 +90,9 @@ div.widget-title {
     text-decoration: none !important;
 }
 
-/**    Nav bar and entry patch    **/
-div #navigation_box, div.entry {
+/**    Entry patch    **/
+div.entry {
   border: none;
-}
-#navigation_box a {
-    padding-left: 2px;
-    padding-right: 2px;
 }
 
 /** Post button patch  **/
@@ -153,6 +149,32 @@ div #navigation_box, div.entry {
 .aops-modal-content-wrapper {
     box-shadow: none;
 }
+
+#navigation_box, #left_navigation_box, #right_navigation_box {
+    position: fixed;
+    border-bottom: 1px solid #0e1525;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#left_navigation_box {
+    left: 0;
+    margin-left: 10px;
+}
+#right_navigation_box {
+    right: 0;
+    margin-right: 10px;
+}
+
+#navigation_box a {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
 
 @media (max-width: 480px), (max-height: 480px) {
     #right_navigation_box a.blog-info {display: inline-block !important;}
