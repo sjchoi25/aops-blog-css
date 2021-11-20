@@ -1,11 +1,9 @@
 /**
-
 Stackoverflow.css by forester2015, player01, and AndrewC10
 Feel free to use, but do not delete this header
-
 **/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 @font-face {
   font-family: "DIN";
@@ -62,7 +60,7 @@ body {
 }
 
 #navigation_box,
-#navigation_box>div {
+#navigation_box > div {
   background-color: transparent;
   border: 0;
   width: -moz-fit-content !important;
@@ -85,7 +83,8 @@ body {
   text-overflow: ellipsis;
   width: 164px;
   white-space: nowrap;
-  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
   font-size: 13px;
   padding: 4px 8px 4px 8px;
 }
@@ -112,7 +111,8 @@ body {
   float: right;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)):nth-of-type(1) {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)):nth-of-type(1) {
   margin-top: 72px;
 }
 
@@ -162,24 +162,33 @@ div .entrywrap {
   width: 97%;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry .entrywrap {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  .entrywrap {
   padding: 0;
   margin: 0;
   display: block;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry :where(.message, .cmty-post-attachments, .efooter, .cmty-poll-display, .cmty-post-edit-info) {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  :where(.message, .cmty-post-attachments, .efooter, .cmty-poll-display, .cmty-post-edit-info) {
   display: none;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry .cmty-tags-itembox-wrapper {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  .cmty-tags-itembox-wrapper {
   margin: 0;
   height: 28px;
   bottom: 5px;
   overflow: hidden;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry {
+#main > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) > .entry {
   border-top: 1px solid lightgray !important;
   border-bottom: none;
   margin: 0;
@@ -188,7 +197,10 @@ div .entrywrap {
   padding-bottom: 5px !important;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h2 {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2 {
   float: right;
   color: #9199a1;
   display: block;
@@ -197,23 +209,40 @@ div .entrywrap {
   background-color: transparent;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h2 a {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2
+  a {
   display: inline !important;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h2:before {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2:before {
   content: "asked ";
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h2 a::before {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2
+  a::before {
   background: none;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h2 {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2 {
   line-height: normal;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry .username-coloured {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  .username-coloured {
   color: #0077cc !important;
 }
 
@@ -227,7 +256,8 @@ div .entrywrap {
   border: 0;
   padding-left: 24px;
   background-color: rgb(250, 250, 251);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 1px 4px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 4px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
   z-index: 20;
 }
 
@@ -238,7 +268,7 @@ div#header h1 {
   text-align: left;
   text-decoration: none;
   margin-left: 20px;
-  font-family: 'DIN', 'Open Sans', sans-serif;
+  font-family: "DIN", "Open Sans", sans-serif;
 }
 
 div#header h1::before {
@@ -308,7 +338,7 @@ div#header h1::before {
 }
 
 .post-comment {
-  display: none !important
+  display: none !important;
 }
 
 /*  Search  */
@@ -319,12 +349,12 @@ div#header h1::before {
 }
 
 #search-widget,
-#search-widget>div {
+#search-widget > div {
   display: inline-block;
   height: 0px;
 }
 
-#blog_keywords+div .button2 {
+#blog_keywords + div .button2 {
   display: none;
 }
 
@@ -342,19 +372,19 @@ div#header h1::before {
   right: 25%;
 }
 
-#blog_searchform>fieldset,
-#search-widget>div.widget-content {
-  border: none
+#blog_searchform > fieldset,
+#search-widget > div.widget-content {
+  border: none;
 }
 
 #search-widget {
-  box-shadow: none !important
+  box-shadow: none !important;
 }
 
 #search-widget .widget-title,
 #search-widget #widget-header,
-#search-widget>div.widget-header {
-  display: none
+#search-widget > div.widget-header {
+  display: none;
 }
 
 /*  Widgets  */
@@ -393,18 +423,19 @@ p.avatar {
   border-color: #f1e5bc;
 }
 
-#user-menu-widget>div {
+#user-menu-widget > div {
   background-color: rgb(253, 247, 227);
   border: 1px solid #f1e5bc;
 }
 
-#side>div {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 1px 4px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
+#side > div {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 4px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
   padding: 0 !important;
   margin-bottom: 2em;
 }
 
-#side>div:not(.widget, .block) {
+#side > div:not(.widget, .block) {
   margin-top: 2em;
 }
 
@@ -446,27 +477,42 @@ p.avatar img {
   top: 7px;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h1 {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h1 {
   font-size: 1.3em;
   padding: 0 !important;
   border: 0;
   margin-bottom: 1.2em;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h1 a {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h1
+  a {
   color: #0077cc;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h1 a:visited {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h1
+  a:visited {
   color: #0064bd;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))>.entry h1 a:hover {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h1
+  a:hover {
   color: #0095ff;
 }
 
 .blog-shout-wrapper {
-  box-shadow: none
+  box-shadow: none;
 }
 
 .community textarea,
@@ -552,17 +598,30 @@ p.avatar img {
 }
 
 /* [TEST] No tag notice by AndrewC10*/
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .cmty-tags-itembox-wrapper>div>a:last-of-type+div {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-tags-itembox-wrapper
+  > div
+  > a:last-of-type
+  + div {
   display: none;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .cmty-tags-itembox-wrapper>div>*:first-child:not(a) {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-tags-itembox-wrapper
+  > div
+  > *:first-child:not(a) {
   font-size: 0px;
   background-color: white !important;
   border: 0;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .cmty-tags-itembox-wrapper>div>*:first-child:not(a)::before {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-tags-itembox-wrapper
+  > div
+  > *:first-child:not(a)::before {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   content: "(No tags in this post)";
   font-size: 12px;
@@ -572,12 +631,18 @@ p.avatar img {
   font-weight: 700;
 }
 
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .cmty-tags-itembox-wrapper>div>*:first-child:not(a) {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-tags-itembox-wrapper
+  > div
+  > *:first-child:not(a) {
   pointer-events: none;
 }
 
 /*[TEST] Poll notice thing by AndrewC10*/
-#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .cmty-post-poll::before {
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-post-poll::before {
   content: "[POLL]";
   position: absolute;
   top: -50px;
@@ -586,14 +651,14 @@ p.avatar img {
 }
 
 /*  Pywindow  */
-.pywindow>div>button {
+.pywindow > div > button {
   font-size: 13px !important;
   color: white;
   background-color: #0095ff !important;
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
   padding: 10.4px !important;
   border-radius: 3px;
-  height: fit-content !Important;
+  height: fit-content !important;
   height: -moz-fit-content !important;
   border: 1px solid transparent;
 }
@@ -611,19 +676,19 @@ p.avatar img {
   box-shadow: none;
 }
 
-.pywindow>div>button:not(.btn-run) {
+.pywindow > div > button:not(.btn-run) {
   color: #39739d !important;
   background-color: #e1ecf4 !important;
   border: 1px solid #7aa7c7 !important;
 }
 
-.pywindow>div>button:not(.btn-run):hover {
+.pywindow > div > button:not(.btn-run):hover {
   background-color: #b3d3ea !important;
   color: #2c5777 !important;
   text-decoration: none;
 }
 
-.pywindow>div>button:not(.btn-run):active {
+.pywindow > div > button:not(.btn-run):active {
   background-color: #a0c7e4 !important;
   box-shadow: none;
   border: 1px solid #5b8db1 !important;
@@ -693,7 +758,7 @@ div.modactions {
   margin-top: 10px;
 }
 
-.blog-reply-window+h1 {
+.blog-reply-window + h1 {
   margin-top: 20px;
 }
 
@@ -763,11 +828,11 @@ div.commentwrap {
   display: none;
 }
 
-#side>#user-menu-widget {
+#side > #user-menu-widget {
   margin-bottom: 0;
 }
 
-#side>#user-menu-widget>div {
+#side > #user-menu-widget > div {
   padding-bottom: 10px !important;
 }
 
@@ -863,7 +928,7 @@ div.commentwrap {
   }
 
   /* Credit to City.css by NMK for this amazing :focus trick */
-  #blog_keywords+div::before {
+  #blog_keywords + div::before {
     content: "";
     display: inline-block;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
@@ -937,11 +1002,11 @@ div.commentwrap {
   }
 
   #navigation_box:hover {
-    max-height: 300px !Important;
+    max-height: 300px !important;
     width: 240px !important;
   }
 
-  #navigation_box>div {
+  #navigation_box > div {
     background: white;
     float: right;
     clear: both;
@@ -974,25 +1039,28 @@ div.commentwrap {
     font-size: 0px !important;
   }
 
-  #blog_keywords+div .button2 {
+  #blog_keywords + div .button2 {
     display: none;
   }
 }
 
 /* Hacky fix for blog info ~ player01 */
-@media (max-width: 480px),
-(max-height: 480px) {
+@media (max-width: 480px), (max-height: 480px) {
   #right_navigation_box a.blog-info {
     display: inline-block !important;
   }
 }
 
 /*Shouts scrollbar patch by happycupcake. Modified to fit the tags widget too. */
-:where(.blog-shout-wrapper, .blog-tags-wrapper) .aops-scroll-outer>.aops-scroll-inner {
+:where(.blog-shout-wrapper, .blog-tags-wrapper)
+  .aops-scroll-outer
+  > .aops-scroll-inner {
   scrollbar-width: none;
 }
 
-:where(.blog-shout-wrapper, .blog-tags-wrapper) .aops-scroll-outer>.aops-scroll-inner::-webkit-scrollbar {
+:where(.blog-shout-wrapper, .blog-tags-wrapper)
+  .aops-scroll-outer
+  > .aops-scroll-inner::-webkit-scrollbar {
   width: 0px;
   /*Yay for nonstandard behavior /s.*/
 }
