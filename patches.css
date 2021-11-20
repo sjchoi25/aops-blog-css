@@ -121,7 +121,6 @@ div.entry {
 
 #wrapper {
     border-color: lightgray;
-    background-image: none;
     padding: 0;
 }
 
@@ -207,10 +206,6 @@ div.entry {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#side {
-    background-color: #efefef;
 }
 
 @media (max-width: 480px), (max-height: 480px) {
@@ -303,8 +298,14 @@ div.entry {
         height: auto;
     }
 
-    #navigation_box:hover:after {left: 200px;}
-    #side:hover:after {left: 258px;}
+    #navigation_box:hover:after {
+        left: 200px;
+    }
+    #side:hover:after {
+        left: 258px;
+    }
     #side:hover,
-    #navigation_box:hover {left: 0;}
+    #navigation_box:hover {
+        left: 0;
+    }
 }
