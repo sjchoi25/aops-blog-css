@@ -108,7 +108,9 @@ div.entry {
 }
 
 #wrapper {
-   border-color: lightgray;
+    border-color: lightgray;
+    background-image: none;
+    padding: 0;
 }
 
 /**  Make comment background transparent  **/
@@ -183,6 +185,9 @@ div.entry {
     justify-content: center;
 }
 
+#side {
+    background-color: #efefef;
+}
 
 @media (max-width: 480px), (max-height: 480px) {
     #right_navigation_box a.blog-info {display: inline-block !important;}
