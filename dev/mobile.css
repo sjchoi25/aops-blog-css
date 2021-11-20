@@ -8,15 +8,24 @@
 **/
 
 :root {
-    --mobile-tab-font-size: 1.5em;
+    --mobile-tab-font-size: 15pt;
     --mobile-color: white;
     --mobile-font-size: 14px;
     --mobile-tab-bd-color: black;
     --mobile-tab-clr: black;
     --mobile-tab-bg: #e8eef0;
+    --bg: white;
+    --opacity: 0.9;
 }
 
 @media only screen and (max-width: 800px) {
+    #main {
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+        background-color: var(--bg);
+    }
+    #content, #wrapper {width: 100%;}
 
     #navigation_box {
         height: 100vh;
@@ -28,7 +37,19 @@
         padding: 10px;
         border: none;
         display: flex;
+        z-index: 10000000;
         flex-direction: column;
+    }
+    #side {
+        height: 100vh;
+        top: 0;
+        left: -258px;
+        z-index: 9999999;
+        transition: left 1s ease;
+        overflow: auto;
+        position: fixed;
+        background-color: white;
+        background-color: var(--bg);
     }
     #navigation_box * {
         font-size: 0;
@@ -45,14 +66,13 @@
         line-height: normal;
         white-space: nowrap;
     }
-    #navigation_box:after {
+    #navigation_box:after,
+    #side:after {
         cursor: pointer;
-        content: '☰';
-        border-radius: 0px 1em 1em 0px;
-        font-size: 1.5em;
+        border-radius: 0px 50% 50% 0px;
+        font-size: 15pt;
         font-size: var(--mobile-tab-font-size);
         position: fixed;
-        top: 50px;
         left: 0;
         transition: left 1s ease;
         border: 1px solid black;
@@ -61,7 +81,19 @@
         color: var(--mobile-tab-clr);
         background-color: cornflowerblue;
         background-color: var(--mobile-tab-bg);
+        opacity: 0.9;
+        opacity: var(--opacity);
+    }
+
+    #navigation_box:after {
+        top: 50px;
+        content: '☰';
         padding: 13px;
+    }
+    #side:after {
+        top: 100px;
+        content: '»';
+        padding: 10px 15px;
     }
 
     #left_navigation_box, #right_navigation_box {
@@ -70,11 +102,8 @@
         height: auto;
     }
 
-    #navigation_box:hover::after {
-        left: 200px;
-    }
-
-    #navigation_box:hover {
-        left: 0;
-    }
+    #navigation_box:hover:after {left: 200px;}
+    #side:hover:after {left: 258px;}
+    #side:hover,
+    #navigation_box:hover {left: 0;}
 }
