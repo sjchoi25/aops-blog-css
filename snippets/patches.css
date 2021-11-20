@@ -175,6 +175,14 @@ div.entry {
     padding-left: 5px;
 }
 
+#header {
+    line-height: normal;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (max-width: 480px), (max-height: 480px) {
     #right_navigation_box a.blog-info {display: inline-block !important;}
