@@ -174,12 +174,12 @@ div.entry {
 }
 
 #navigation_box, #left_navigation_box, #right_navigation_box {
-    position: fixed;
     border-bottom: 1px solid #0e1525;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #left_navigation_box {
@@ -191,8 +191,11 @@ div.entry {
     margin-right: 10px;
 }
 
+#navigation_box .clear {
+    display: none;
+}
+
 #navigation_box a {
-    display: inline-block;
     white-space: nowrap;
     padding-right: 5px;
     padding-left: 5px;
@@ -235,6 +238,7 @@ div.entry {
         display: flex;
         z-index: 10000000;
         flex-direction: column;
+        justify-content: flex-start;
     }
     #side {
         height: 100vh;
@@ -249,6 +253,7 @@ div.entry {
     }
     #navigation_box * {
         font-size: 0;
+        position: static;
     }
     #navigation_box a {
         font-size: 14px;
