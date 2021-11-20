@@ -86,17 +86,12 @@ div #navigation_box, div.entry {
 }
 
 #wrapper {
-   border: none;   
+   border-color: lightgray;
 }
 
 /**  Make comment background transparent  **/
 .comment {
     background-color: transparent;
-}
-
-/* Buttons and input */
-button, input {
-    outline: none;
 }
 
 /* Links */
