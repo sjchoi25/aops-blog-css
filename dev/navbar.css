@@ -2,25 +2,27 @@
 *
 * Copyright (c) 2021 Nhv24
 TODO List:
-* Mobile support
-* Dark mode
-* Modern version
 * Change entries
 * Change comments
 * Change shoutbox
 * Change shout messages
 * Change navigation bar
-* Find a body font
 * Increase font size
 * Change tag styling
 **/
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 :root {
+    --mobile-tab-font-size: 15pt;
+    --mobile-color: white;
+    --mobile-font-size: 14px;
+    --mobile-tab-bd-color: black;
+    --mobile-tab-clr: black;
+    --mobile-tab-bg: #e8eef0;
+    --bg: white;
     --height: 50px;
+    --opacity: 0.9;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway|Inter&display=swap');
 
 body, .btn-primary, #navigation_box a, 
 .inputbox, input.button2, .cmty-post-textarea, 
@@ -113,6 +115,11 @@ input, button {
     right: 0;
 }
 
+
+
+
+
+
 /**  Get rid of edit message  **/
 .cmty-post-edit-info {
     display: none !important;
@@ -133,9 +140,7 @@ input, button {
     justify-content: center;
 }
 #header h1 {
-    font-weight: bold;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 #navigation_box * {
@@ -253,20 +258,6 @@ div.comment {
     font-size: 12px;
 }
 
-/**  Comments  **/
-/*.post-replies:before, .post-comment:before, .blog-edit-post:before {
-    margin-right: 5px;
-    font-family: AoPS;
-}
-.post-replies:before {
-    content: "t";
-}
-.post-comment:before {
-    content: "N";
-}
-.blog-edit-post:before {
-    content: "L";
-}*/
 
 
 /**  Shout submit button  **/
@@ -288,6 +279,9 @@ div.comment {
 .btn.btn-run, .btn.btn-reset {
     border-radius: 2px;
 }
+
+
+
 
 
 /**  Entries  **/
@@ -338,11 +332,30 @@ div.entry {
     color: #bd4f17;
 }
 
+
+
+
+
 /**  Tags  **/
 .cmty-item-tag {
     border-radius: 2px;
     transition-duration: .2s;
 }
+
+/** Modals **/
+.aops-modal-frame:not(.cmty-posting-modal) {
+    border-color: white;
+}
+
+.aops-modal-frame:not(.cmty-posting-modal) .aops-scroll-outer {
+    box-shadow: none;
+}
+.aops-modal-content-wrapper {
+    box-shadow: none;
+}
+
+
+
 
 /**  Side module  **/
 
@@ -356,6 +369,98 @@ div.entry {
 
 /**  Mobile support  **/
 @media only screen and (max-width: 800px) {
+    #main {
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+        background-color: var(--bg);
+    }
+    #content, #wrapper {width: 100%;}
+
+    #navigation_box {
+        height: 100vh;
+        width: 200px;
+        left: -200px;
+        top: 0px;
+        position: fixed;
+        transition: left 1s ease;
+        padding: 10px;
+        border: none;
+        display: flex;
+        z-index: 10000000;
+        flex-direction: column;
+        justify-content: normal;
+    }
+    #left_navigation_box, #right_navigation_box {
+        position: static;
+    }
+    #side {
+        height: 100vh;
+        top: 0;
+        left: -258px;
+        z-index: 9999999;
+        transition: left 1s ease;
+        overflow: auto;
+        position: fixed;
+        background-color: white;
+        background-color: var(--bg);
+    }
+    #navigation_box * {
+        font-size: 0;
+    }
+    #navigation_box a {
+        font-size: 14px;
+        font-size: var(--mobile-font-size);
+        text-align: left;
+        width: 100%;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        padding: 20px;
+        margin: 0;
+        line-height: normal;
+        white-space: nowrap;
+    }
+    #navigation_box:after,
+    #side:after {
+        cursor: pointer;
+        border-radius: 0px 50% 50% 0px;
+        font-size: 15pt;
+        font-size: var(--mobile-tab-font-size);
+        position: fixed;
+        left: 0;
+        transition: left 1s ease;
+        border: 1px solid black;
+        border: 1px solid var(--mobile-tab-bd-color);
+        color: black;
+        color: var(--mobile-tab-clr);
+        background-color: cornflowerblue;
+        background-color: var(--mobile-tab-bg);
+        opacity: 0.9;
+        opacity: var(--opacity);
+    }
+
+    #navigation_box:after {
+        top: 50px;
+        content: '☰';
+        padding: 13px;
+    }
+    #side:after {
+        top: 100px;
+        content: '»';
+        padding: 10px 15px;
+    }
+
+    #left_navigation_box, #right_navigation_box {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    #navigation_box:hover:after {left: 200px;}
+    #side:hover:after {left: 258px;}
+    #side:hover,
+    #navigation_box:hover {left: 0;}
+
     #header {
         height: 100vh;
     }
@@ -375,60 +480,6 @@ div.entry {
     .description {
         padding-top: 20px;
     }
-
-    /**  Side widget taken and modified from NMK  **/
-    #side {
-        position: fixed;
-        top: 0;
-        left: -20em;
-        width: 20em;
-        height: 100%;
-        padding: 0 2em;
-        z-index: 100;
-        overflow-y: scroll;
-        -webkit-transition-property: left;
-        transition-property: left;
-        -webkit-transition: .9s ease;
-        transition: .9s ease;
-        background-color: white;
-        border: 1px solid lightgray;
-        }
- 
-    body:after {
-        content: "»";
-        position: fixed;
-        top: 1.5em;
-        left: 0;
-        background: #e8eef0;
-        color: #808080;
-        display: block;
-        font-size: 2em;
-        padding: 0.35em 0.4em;
-        height: 1.5em;
-        width: 1.5em;
-        border-radius: 0 1em 1em 0;
-        -webkit-transition-property: left;
-        transition-property: left;
-        -webkit-transition: .7s ease;
-        transition: .7s ease;
-    }
- 
-    body:after:hover #side {
-        left: 0;
-        -webkit-transition: .9s ease;
-        transition: .9s ease;
-    }
- 
-    body:hover:after {
-        left: -1.5em;
-        -webkit-transition: .7s ease;
-        transition: .7s ease;
-    }
- 
-    #side > div:last-child {
-        border-bottom: 0;
-    }
-    /*  End of code taken from NMK  */
     textarea#message.inputbox {
         width: 100%;
     }
