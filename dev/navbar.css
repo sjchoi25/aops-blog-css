@@ -9,6 +9,7 @@ TODO List:
 * Change navigation bar
 * Increase font size
 * Change tag styling
+* Parallax scroll stuff?
 **/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
@@ -130,11 +131,10 @@ input, button {
     margin-top: var(--height);
     border: none;
     z-index: -1;
-    position: fixed;
     height: 70vh;
     width: 100%;
     line-height: normal;
-
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
