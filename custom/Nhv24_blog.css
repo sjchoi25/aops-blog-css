@@ -47,21 +47,22 @@ AVOID EYE CONTACT
 AMOUNT PER SERVING: 10
 
 SUGGESTED USE
--------------------------------------------------------------------
-|   ADULTS: TAKE 1-10 DOSES DAILY          |
+----------------------------------------
+|   ADULTS: TAKE 1-10 DOSES DAILY      |
+----------------------------------------
 |   CHILDREN: TAKE 10-20 DOSES DAILY   |
--------------------------------------------------------------------
+----------------------------------------
 
 NUTRITION FACTS
-------------------------------
+---------------
 SUGAR: ?? GRAMS
 CALCIUM: 0 GRAMS
-etc etc...
+etc... etc...
 
 Notice: The above comments are purely a joke, and are not meant to be taken seriously :P
 
 Oh also this CSS is copyright under MIT:
-* Copyright (c) 2021 Nhv24 *
+* Copyright (c) 2022 Nhv24 *
 **/
 
 @import url("https://Nhv24.github.io/aops-blog-css/addons/blink/light.css");
@@ -100,7 +101,8 @@ span[style^="font-family:'no-run"] .pywindow .btn {
 
 /* This is the 101th line */
 
-#post-2620701 .cmty-post-attached-image-content img {
+#post-2620701 .cmty-post-attached-image-content img,
+#post-2764416 .cmty-post-attached-image-content img{
     width: 70%;
     height: auto;
 }
