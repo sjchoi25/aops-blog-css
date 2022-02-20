@@ -7,8 +7,6 @@ TODO List:
 * Change shoutbox
 * Change shout messages
 * Change navigation bar
-* Increase font size
-* Change tag styling
 * Parallax scroll stuff?
 **/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
@@ -73,7 +71,7 @@ input, button {
     margin-top: 69vh;
     box-shadow: 0 -5em 5em lightgray;
     background-image: none;
-    background-color: #eee;
+    background-color: white;
 }
 #content {
     width: 70%;
@@ -127,8 +125,6 @@ input, button {
 }
 
 #header {
-    margin-top: 50px; /* Fallback for old browsers */
-    margin-top: var(--height);
     border: none;
     z-index: -1;
     height: 70vh;
@@ -157,6 +153,7 @@ input, button {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+    font-size: 15pt;
 }
 
 
@@ -478,10 +475,16 @@ div.entry {
     }
 
     .description {
-        padding-top: 20px;
+        position: static;
+        font-size: 12pt;
+        transform: none;
     }
     textarea#message.inputbox {
         width: 100%;
+    }
+    #side fieldset {
+        background-color: white;
+        background-color: var(--bg);
     }
 }
 
