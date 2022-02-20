@@ -293,100 +293,105 @@ div #navigation_box, div.entry {
 }
 
 /**  Mobile support  **/
+@media (max-width: 480px), (max-height: 480px) {
+    #right_navigation_box a.blog-info {display: inline-block !important;}
+}
+
 @media only screen and (max-width: 800px) {
-    #navigation_box a {
-        text-align: center;
-        line-height: 25px;
-    }
-    #navigation_box {
-        height: 30px;
-    }
     #main {
         width: 100%;
         padding: 5px;
         background-color: white;
+        background-color: var(--bg);
     }
+    #content, #wrapper {width: 100%;}
 
-    #content {
-        width: 100%;
+    #navigation_box {
+        height: 100vh;
+        width: 200px;
+        left: -200px;
+        top: 0px;
+        position: fixed;
+        transition: left 1s ease;
+        padding: 10px;
+        border: none;
+        display: flex;
+        z-index: 10000000;
+        flex-direction: column;
+        justify-content: flex-start;
     }
-
-    p.description {
-        padding-top: 20px;
-    }
-
-    div#left_navigation_box {
-        display: none;
-    }
-
-    /**  Side widget taken and modified from NMK  **/
     #side {
-        position: fixed;
+        height: 100vh;
         top: 0;
-        left: -20em;
-        width: 20em;
-        height: 100%;
-        padding: 0 2em;
-        z-index: 100;
-        overflow-y: scroll;
-        -webkit-transition-property: left;
-        transition-property: left;
-        -webkit-transition: .9s ease;
-        transition: .9s ease;
-        background-color: white;
-        border: 1px solid lightgray;
-    }
- 
-    #side:after {
-        content: "»";
+        left: -258px;
+        z-index: 9999999;
+        transition: left 1s ease;
+        overflow: auto;
         position: fixed;
-        top: 1.5em;
-        left: 0;
-        background: #e8eef0;
-        color: #808080;
-        display: block;
-        font-size: 2em;
-        padding: 0.35em 0.4em;
-        height: 1.5em;
-        width: 1.5em;
-        border-radius: 0 1em 1em 0;
-        -webkit-transition-property: left;
-        transition-property: left;
-        -webkit-transition: .7s ease;
-        transition: .7s ease;
+        background-color: white;
+        background-color: var(--bg);
     }
- 
-    #side:hover {
-        left: 0;
-        -webkit-transition: .9s ease;
-        transition: .9s ease;
+    #navigation_box * {
+        font-size: 0;
+        position: static;
     }
- 
-    #side:hover:after {
-        left: -1.5em;
-        -webkit-transition: .7s ease;
-        transition: .7s ease;
-    }
- 
-    /* widgets */
-    #side > div {
-        margin: 0 !important;
-        padding: 2em 0 !important;
-        border-bottom: 1px solid #909090;
-    }
- 
-    #side > div:last-child {
-        border-bottom: 0;
-    }
-    /*  End of code taken from NMK  */
-    textarea#message.inputbox {
+    #navigation_box a {
+        font-size: 14px;
+        font-size: var(--mobile-font-size);
+        text-align: left;
         width: 100%;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        padding: 20px;
+        margin: 0;
+        line-height: normal;
+        white-space: nowrap;
     }
-}
+    #navigation_box:after,
+    #side:after {
+        cursor: pointer;
+        border-radius: 0px 50% 50% 0px;
+        font-size: 15pt;
+        font-size: var(--mobile-tab-font-size);
+        position: fixed;
+        left: 0;
+        transition: left 1s ease;
+        border: 1px solid black;
+        border: 1px solid var(--mobile-tab-bd-color);
+        color: black;
+        color: var(--mobile-tab-clr);
+        background-color: cornflowerblue;
+        background-color: var(--mobile-tab-bg);
+        opacity: 0.9;
+        opacity: var(--opacity);
+    }
 
-@media only screen and (max-width: 1150px) {
-    #content {
-        width: 90%;
+    #navigation_box:after {
+        top: 50px;
+        content: '☰';
+        padding: 13px;
+    }
+    #side:after {
+        top: 100px;
+        content: '»';
+        padding: 10px 15px;
+    }
+
+    #left_navigation_box, #right_navigation_box {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    #navigation_box:hover:after {
+        left: 200px;
+    }
+    #side:hover:after {
+        left: 258px;
+    }
+    #side:hover,
+    #navigation_box:hover {
+        left: 0;
     }
 }
 
