@@ -8,6 +8,19 @@
 **/
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@800&display=swap');
+
+/** Vars for mobile **/
+:root {
+    --mobile-tab-font-size: 15pt;
+    --mobile-color: white;
+    --mobile-font-size: 14px;
+    --mobile-tab-bd-color: black;
+    --mobile-tab-clr: white;
+    --mobile-tab-bg: #e8eef0;
+    --bg: white;
+    --opacity: 0.9;
+}
+
 /** Body  **/
 body {
     margin: 0;
