@@ -3,9 +3,8 @@
 * Copyright (c) 2022 Nhv24
 TODO List:
 * Change entries
-* Change comments
 * Change shoutbox
-* Change navigation bar
+* Change shout messages
 * Parallax scroll stuff?
 **/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
@@ -57,9 +56,10 @@ input, button {
 }
 
 /**  Shoutbox and other related things  **/
-#message, .blog-shout-wrapper, .blog-tags-wrapper {
+#message, .blog-shout-wrapper {
     border: 1px solid lightgray;
 }
+
 #message {
     padding: 5px;
 }
@@ -308,6 +308,7 @@ div.entry {
 .entry h1 {
     text-align: center;
 }
+.entry h2, .author {display: inline-block}
 .entry h2, .blog-shout p, .author {
     color: transparent;
     transition: color .3s ease-in-out;
@@ -317,6 +318,8 @@ div.entry {
 .entry h2:hover, .blog-shout p:hover, .author:hover {
     color: initial;
 }
+
+.author {font-size: 13px;}
 
 .entry h2:hover strong, .blog-shout p:hover a, .author:hover strong {
     transform: none;
@@ -355,6 +358,36 @@ div.entry {
 .cmty-item-tag {
     border-radius: 2px;
     transition-duration: .2s;
+    line-height: normal;
+    height: auto;
+}
+
+.blog-tags-wrapper .blog-scroll-outer .aops-scroll-content {width: auto;}
+
+#side .cmty-itembox {
+    height: auto;
+}
+
+.cmty-itembox-inner-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-tags-wrapper {
+    border: 0;
+    padding: 0;
+}
+
+.cmty-itembox-inner-box a:nth-of-type(3n + 1) .cmty-item-tag {
+    font-size: 15px;
+}
+.cmty-itembox-inner-box a:nth-of-type(4n + 3) .cmty-item-tag {
+    font-size: 20px;
+}
+.cmty-itembox-inner-box a:nth-of-type(5n - 3) .cmty-item-tag {
+    font-size: 10px;
 }
 
 /** Modals **/
