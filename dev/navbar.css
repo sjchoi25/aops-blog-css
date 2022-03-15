@@ -50,14 +50,10 @@ a.bbcode_url:hover {
     text-decoration: underline;
 }
 
-/**  Buttons and input  **/
-input, button {
-    outline: none;
-}
-
 /**  Shoutbox and other related things  **/
 #message, .blog-shout-wrapper {
     border: 1px solid lightgray;
+    border-radius: 2px;
 }
 
 #message {
@@ -181,9 +177,12 @@ pre[style="font-family:monospace;background-color: #f4f6f4;padding:10px;"], pre.
 .cmty-forum-mod a{color: #090 !important;}
 
 /*  Search patch  
-Code taken from AoPS user monks  */
+Code taken from AoPS user monks & modified  */
 #search-widget > div {
     background-color: transparent;
+    line-height: normal;
+    width: auto;
+    height: auto;
 }
 #search-widget fieldset {
     border: none;
@@ -193,12 +192,13 @@ Code taken from AoPS user monks  */
 }
 .search {
     height: 25px;
-    border-radius: 5px;
+    border-radius: 2px;
+    border: 1px solid lightgray;
 }
 .button2 {
-    width: 200px;
-    height: 25px;
+    width: 100%;
     border: none;
+    display: block;
 }
 
 /*  Image patch  */
@@ -229,7 +229,10 @@ img#post-new-entry-img, div.entry h2 img, p.author img {
 }
 
 /**  Widget title  **/
-div.widget-title:not(#search-widget .widget-title), .button2 {
+#search-widget .widget-title {display: none;}
+#search-widget {display: block;}
+
+div.widget-title, input.button2 {
     font-size: 105%;
     text-transform: uppercase;
     text-align: center;
@@ -240,6 +243,16 @@ div.widget-title:not(#search-widget .widget-title), .button2 {
     border-radius: 2px;
     border-left: 10px solid lightblue;
     color: white;
+    cursor: default;
+    -webkit-transition: border-left .2s ease-in-out;
+    -moz-transition: border-left .2s ease-in-out;
+    -o-transition: border-left .2s ease-in-out;
+    -ms-transition: border-left .2s ease-in-out;
+    transition: border-left .2s ease-in-out;
+}
+
+div.widget-title:hover, input.button2:hover {
+    border-left: 0px solid lightblue;
 }
 
 /**   Comments   **/
