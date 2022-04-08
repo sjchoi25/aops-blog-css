@@ -1,11 +1,8 @@
 /**
 *
 * Copyright (c) 2022 Nhv24
-TODO List:
-* Change entries
-* Change shoutbox
-* Change shout messages
-* Parallax scroll stuff?
+*
+* This is currently a work-in-progress.
 **/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
@@ -69,7 +66,7 @@ a.bbcode_url:hover {
     background-color: white;
 }
 #content {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 #main {
@@ -309,9 +306,12 @@ div.comment {
 
 /**  Entries  **/
 div.entrywrap {
-    border: 2px solid #bebebe;
+    /*border: 2px solid #bebebe;
     background-color: #eee;
     border-radius: 4px;
+    */
+    border: 0;
+    background-color: transparent;
 }
 div.entry {
     border: none;
@@ -319,7 +319,9 @@ div.entry {
 
 .entry h1 {
     text-align: center;
+    font-size: 2em;
 }
+.entry h1 a {color: black;}
 .entry h2, .author {display: inline-block}
 .entry h2, .blog-shout p, .author {
     color: transparent;
@@ -414,8 +416,17 @@ div.entry {
     box-shadow: none;
 }
 
+#contrib-widget .widget-content {
+    font-size: 0px;
+}
 
+#contrib-widget .widget-content a {
+    font-size: 11pt;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
+.blog-post-comment {display: none;}
 
 /**  Side module  **/
 
@@ -426,6 +437,10 @@ div.entry {
     margin-top: 5px;
     color: lightgray;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #content {width: 80%;}
 }
 
 /**  Mobile support  **/
