@@ -321,6 +321,15 @@ div.entry {
     text-align: center;
     font-size: 2em;
 }
+.entry .cmty-item-tag, .entry .cmty-item-tag:hover {
+    background-color: transparent !important;
+    font-style: italic;
+    transition: color 0.2s ease-in-out;
+    padding: 0;
+    max-width: none;
+}
+.entry .cmty-item-tag {color: lightgray !important;}
+.entry .cmty-item-tag:hover {color: gray !important;}
 .entry h1 a {color: black;}
 .entry h2, .author {display: inline-block}
 .entry h2, .blog-shout p, .author {
@@ -427,6 +436,11 @@ div.entry {
 }
 
 .blog-post-comment {display: none;}
+.entry .cmty-tags-itembox-wrapper {margin-top: 20px;}
+div.actions {font-size: 10pt;}
+div.actions a {color: black;}
+.post-comment {margin-left: 5px;}
+.post-replies::after {content: "|"; margin-left: 5px;}
 
 /**  Side module  **/
 
