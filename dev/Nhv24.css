@@ -46,6 +46,19 @@ span[style^="font-family:'typewriter"]:after {
     font-family: Arial, sans-serif !important;
 }
 
+.description{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end);
+}
+
+.description:after {
+    content: "";
+    line-height: normal;
+    border-right: .15em solid black;
+    animation: cursor .5s step-end infinite;
+}
 
 @keyframes typing {
     from {width: 0;}
