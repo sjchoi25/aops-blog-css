@@ -68,7 +68,6 @@ Oh also this CSS is copyright under MIT:
 **/
 
 @import url("https://Nhv24.github.io/aops-blog-css/snippets/blink/light.css");
-@import url("https://Nhv24.github.io/aops-blog-css/snippets/modal.css");
 @import url("https://Nhv24.github.io/aops-blog-css/snippets/tag-cloud.css");
 @import url("https://Nhv24.github.io/aops-blog-css/circuit.css");
 
@@ -122,6 +121,21 @@ span[style^="font-family:'hide"] a:hover {
     color: #fff;
     background-color: #e06800;
     text-decoration: none !important;
+}
+
+span[style^="font-family:'problem"] {
+    padding: 15px;
+    border-radius: 4px;
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: "Noto Sans" !important;
+}
+
+span[style^="font-family:'problem"] .latex,
+span[style^="font-family:'problem"] .latexcenter,
+span[style^="font-family:'problem"] .asy-image {
+    filter: invert(1) hue-rotate(180deg);
 }
 
 /* CODE + Pywindow */
