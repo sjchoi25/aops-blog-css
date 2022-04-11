@@ -124,6 +124,30 @@ span[style^="font-family:'hide"] a:hover {
     text-decoration: none !important;
 }
 
+/* CODE + Pywindow */
+code.language-none {
+    color: #333;
+}
+pre:not(.pywindow .CodeMirror) {
+    filter: invert(1) hue-rotate(175deg); /* Credits to @happycupcake for hue-rotate */
+    color: black;
+}
+.pywindow .CodeMirror {
+    border-color: #333;
+}
+
+.CodeMirror-activeline-background, .CodeMirror {
+    background-color: #111;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid #333;
+    background-color: transparent;
+}
+.CodeMirror div.CodeMirror-cursor {
+    border-color: white;
+}
+
 /** 
 THESE ARE THE LAST LINES OF THIS FILE. THANK YOU FOR READING.
 **/
