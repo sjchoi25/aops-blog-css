@@ -466,7 +466,7 @@ div.comment {
 
 /* Misc */
 .asy-image, .latexcenter, .latex {
-    filter: invert(1);
+    filter: invert(1) hue-rotate(180deg);
 }
 
 .aops-modal-frame:not(.cmty-posting-modal) {
