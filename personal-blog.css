@@ -73,8 +73,10 @@ Oh also this CSS is copyright under MIT:
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
-#header h1 {font-family: 'Overpass Mono', monospace;}
-#header {background-image: url("https://nhv24.github.io/aops-blog-css/assets/nhv24/nhv24.jpeg");}
+:root {--font: 'Inter';}
+
+/*#header h1 {font-family: 'Overpass Mono', monospace;}
+#header {background-image: url("https://nhv24.github.io/aops-blog-css/assets/nhv24/nhv24.jpeg");}*/
 
 #post-2464569 div.entrywrap, #post-2464569 .message, #post-2465395 div.entrywrap, #post-2465395 .message {
     box-shadow: none;
@@ -114,7 +116,7 @@ span[style^="font-family:'hide"] a {
     border-radius: 2px;
     padding-left: 5px;
     padding-right: 5px;
-    font-family: "Noto Sans" !important;
+    font-family: var(--font) !important;
 }
 
 span[style^="font-family:'hide"] a:hover {
@@ -129,7 +131,7 @@ span[style^="font-family:'problem"] {
     display: block;
     background-color: black;
     color: white;
-    font-family: "Noto Sans" !important;
+    font-family: var(--font) !important;
 }
 
 span[style^="font-family:'problem"] .latex,
