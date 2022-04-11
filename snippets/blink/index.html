@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom color</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const urlParams = new URLSearchParams(window.location.search);
+
+                const clr = urlParams.get('clr');
+                const css = `/* This is an auto-generated file */
+/* DO NOT REMOVE THE COMMENT ABOVE */
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: ${clr};
+    }
+}
+
+#header h1:after {
+    content: "_";
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}`;
+
+                if (clr === null)
+                {
+                    css = "";
+                }
+                document.querySelector('pre').innerHTML = css;
+            });
+        </script>
+    </head>
+    <body>
+        <p style="font-family: Arial, sans-serif;">Copy and paste the following code:</p>
+        <pre style="word-wrap: break-word; white-space: pre-wrap;"></pre>
+    </body>
+</html>

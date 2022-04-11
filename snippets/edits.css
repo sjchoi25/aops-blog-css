@@ -1,0 +1,11 @@
+/**
+* Code by Nhv24/player01
+*
+* Copyright (c) 2021 Nhv24
+*
+* Gets rid of edits in AoPS blogs
+**/
+
+.cmty-post-edit-info {
+    display: none !important;
+}

@@ -1,0 +1,12 @@
+/**
+*
+* Credits to CreativeHedgehog
+* 
+* Completely reverts the CSS
+*
+* Copyright (c) 2021 Nhv24/player01
+*/
+
+*{
+    all: revert !important;
+}

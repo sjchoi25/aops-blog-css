@@ -1,0 +1,42 @@
+/**
+* 
+* CSS by player01
+*
+* Copyright 2021 Nhv24/player01
+*
+* Navigation bar basic styling
+**/
+
+#navigation_box, #left_navigation_box, #right_navigation_box {
+    position: fixed;
+    border-bottom: 1px solid #0e1525;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+#navigation_box {
+    justify-content: space-between;
+}
+#navigation_box a {
+    font-weight: 500;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 7px 10px;
+}
+#left_navigation_box {
+    left: 0;
+    margin-left: 10px;
+}
+#right_navigation_box {
+    right: 0;
+    margin-right: 10px;
+}
+
+#navigation_box * {
+    font-size: 0 !important;
+}
+#navigation_box a {
+    font-size: initial !important;
+}

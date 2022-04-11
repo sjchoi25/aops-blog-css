@@ -1,0 +1,31 @@
+/**
+*
+* Made by player01/Nhv24
+*
+* Copyright (c) 2021 Nhv24/player01
+*
+**/
+
+@keyframes blur {
+    0% {
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+        filter: blur(3px);
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+body {
+    animation-name: blur;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}

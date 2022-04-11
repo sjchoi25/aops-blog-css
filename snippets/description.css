@@ -1,0 +1,16 @@
+/**
+*
+* Made by player01/Nhv24
+*
+* Copyright (c) 2021 Nhv24/player01
+*
+**/
+
+.description {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}

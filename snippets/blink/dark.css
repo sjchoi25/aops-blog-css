@@ -1,0 +1,28 @@
+/**
+* Code by player01
+*
+* Copyright 2021 player01/Nhv24 under MIT
+**/
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: initial;
+    }
+}
+
+#header h1:after {
+    content: "_";
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}
