@@ -383,6 +383,7 @@ div.entry {
     transition-duration: .2s;
     line-height: normal;
     height: auto;
+    overflow: visible;
 }
 
 .blog-tags-wrapper .blog-scroll-outer .aops-scroll-content {width: auto;}
