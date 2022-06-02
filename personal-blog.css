@@ -119,6 +119,8 @@ span[style^="font-family:'hide"] a {
     padding-left: 5px;
     padding-right: 5px;
     font-family: var(--font) !important;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 span[style^="font-family:'hide"] a:hover {
