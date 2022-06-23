@@ -35,6 +35,8 @@ textarea, .widget-content, .cmty-poll-question {
     font-weight: 300;
 }
 
+b {font-weight: 500;}
+
 body {
     color: black;
 }
