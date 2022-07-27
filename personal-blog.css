@@ -62,8 +62,7 @@ CALCIUM: 0 GRAMS
 etc... etc...
 
 Notice: The above comments are purely a joke, and are not meant to be taken seriously :P
-
-Oh also this CSS is copyright under MIT:
+****************************
 * Copyright (c) 2022 Nhv24 *
 **/
 
@@ -77,8 +76,10 @@ Oh also this CSS is copyright under MIT:
 
 :root {--font: 'Inter';}
 
-/*#header h1 {font-family: 'Overpass Mono', monospace;}
-#header {background-image: url("https://nhv24.github.io/aops-blog-css/assets/nhv24/nhv24.jpeg");}*/
+#header {
+    background: url(https://nhv24.github.io/aops-blog-css/assets/nhv24/oslo.jpg);
+    background-position: top 0% center;
+}
 
 #post-2464569 div.entrywrap, #post-2464569 .message, #post-2465395 div.entrywrap, #post-2465395 .message {
     box-shadow: none;
@@ -106,7 +107,7 @@ span[style^="font-family:'no-run"] .pywindow .btn {
 }
 
 #post-2620701 .cmty-post-attached-image-content img,
-#post-2764416 .cmty-post-attached-image-content img{
+#post-2764416 .cmty-post-attached-image-content img {
     width: 70%;
     height: auto;
 }
