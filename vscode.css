@@ -68,10 +68,6 @@ textarea, .cmty-poll-question, a, .widget-title {
   width: 0px;
 }
 
-/*  Feed username color patch  */
-.cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
-.cmty-forum-admin a{color: #900 !important;}
-.cmty-forum-mod a{color: #090 !important;}
 
 /*  Search patch  
 Code taken from AoPS user monks  */
