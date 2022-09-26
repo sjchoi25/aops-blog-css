@@ -169,6 +169,10 @@ pre:not(.pywindow .CodeMirror) {
     border-color: white;
 }
 
+.aops-scroll-inner {
+    margin-top: 10px;   
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: 0;
@@ -234,7 +238,7 @@ pre:not(.pywindow .CodeMirror) {
     #header h1 {color: #f5f9fc;}
     .commentwrap .message {border-color: #1c2333;}
     div.actions a {color: #f5f9fc;}
-    .row1, .row2 {background: #7A2048; margin: 5px;}
+    .row1, .row2 {background: transparent; margin: 5px; border: 1px solid #7A2048; border-radius: 5px;}
     .blog-shout p:hover {color: #f5f9fc;}
     .blog-shout p a[href^='/community'] {color: #f5f9fc; font-weight: bold;}
     #message {color: #f5f9fc;}
