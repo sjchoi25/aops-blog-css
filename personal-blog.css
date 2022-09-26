@@ -169,10 +169,6 @@ pre:not(.pywindow .CodeMirror) {
     border-color: white;
 }
 
-.aops-scroll-inner {
-    margin-top: 10px;   
-}
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: 0;
