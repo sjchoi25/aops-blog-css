@@ -63,21 +63,21 @@ etc... etc...
 
 Notice: The above comments are purely a joke, and are not meant to be taken seriously :P
 ****************************
-* Copyright (c) 2022 Nhv24 *
+* Copyright (c) 2022 sjchoi25 *
 **/
 
-/*@import url("https://Nhv24.github.io/aops-blog-css/snippets/blink/light.css");*/
-@import url("https://Nhv24.github.io/aops-blog-css/snippets/tag-cloud.css");
-@import url("https://Nhv24.github.io/aops-blog-css/snippets/alerts.css");
-@import url("https://Nhv24.github.io/aops-blog-css/snippets/inlinecode.css");
-@import url("https://Nhv24.github.io/aops-blog-css/navbar.css");
+/*@import url("https://sjchoi25.github.io/aops-blog-css/snippets/blink/light.css");*/
+@import url("https://sjchoi25.github.io/aops-blog-css/snippets/tag-cloud.css");
+@import url("https://sjchoi25.github.io/aops-blog-css/snippets/alerts.css");
+@import url("https://sjchoi25.github.io/aops-blog-css/snippets/inlinecode.css");
+@import url("https://sjchoi25.github.io/aops-blog-css/navbar.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
 :root {--font: 'Inter';}
 
 #header {
-    background: url(https://nhv24.github.io/aops-blog-css/assets/nhv24/hamburg.jpg);
+    background: url(https://sjchoi25.github.io/aops-blog-css/assets/nhv24/hamburg.jpg);
     background-position: top 0% center;
 }
 
@@ -182,7 +182,7 @@ pre:not(.pywindow .CodeMirror) {
         border-color: #1c2333;
     }
     #header {
-        background: rgba(0, 0, 0, 0.5) url(https://nhv24.github.io/aops-blog-css/assets/nhv24/hamburg.jpg);
+        background: rgba(0, 0, 0, 0.5) url(https://sjchoi25.github.io/aops-blog-css/assets/nhv24/hamburg.jpg);
         background-blend-mode: darken;
     }
     #submit {
