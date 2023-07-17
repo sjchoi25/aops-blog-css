@@ -1,8 +1,8 @@
 /**
 * 
-* VSCode.css created by player01 (Nhv24 on GitHub)
+* VSCode.css created by player01
 *
-* Copyright (c) 2021 Nhv24 (player01)
+* Copyright (c) 2023 player01
 *
 * This CSS is not created by or affiliated with the Microsoft Corporation.
 *
@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: "Menlo";
-    src: url("https://Nhv24.github.io/aops-blog-css/assets/menlo.ttf") format("truetype"),
+    src: url("https://sjchoi25.github.io/aops-blog-css/assets/menlo.ttf") format("truetype"),
 }
 
 .blog-no-topics {
