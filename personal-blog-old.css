@@ -1,0 +1,296 @@
+/**
+ALL CSS MADE AND MANUFACTURED BY PLAYER01
+
+USDA ORGANIC
+NON-GMO
+GLUTEN FREE AND VEGAN
+
+RECYCLEABLE
+
+MADE OF 123124% RECYCLED MATERIAL
+
+DO NOT STEAL!!!
+HANDLE WITH CAUTION
+
+AUTHORIZED PERSONNEL ONLY
+
+PRODUCT MAY EXPLODE ON IMPACT
+STORE IN AN AIRTIGHT CONTAINER
+
+^ THIS SIDE UP
+
+WARNING: FRAGILE
+THIS PRODUCT MAY BE EXTREMELY SPICY, CONSUME AT YOUR OWN RISK
+
+CLEAN ROOM PRODUCT: OPEN IN A CLEAN ROOM ONLY
+
+WARNING: CONTAINS LEAD
+DO NOT MICROWAVE
+
+FLAMMABLE, KEEP AWAY FROM FIRE
+STORE IN A COOL, DRY PLACE
+KEEP AWAY FROM SUNLIGHT
+DO NOT EAT
+
+KEEP OUT OF REACH OF CHILDREN
+WARNING: CHOKING HAZARD
+
+NOT FOR CHILDREN UNDER THE AGE OF 1000000000
+
+ANY MODIFICATION TO THIS CSS NOT PERMITTED BY PLAYER01 MAY RESULT IN INJURY
+
+THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE, OR PREVENT ANY DISEASE.
+THIS PRODUCT MAY COINTAIN ZONKS AND OTHER ALERGIC PARTICLES
+
+DO NOT USE IF SAFETY SEAL IS BROKEN OR MISSING
+
+AVOID EYE CONTACT
+
+AMOUNT PER SERVING: 10
+
+SUGGESTED USE
+----------------------------------------
+|   ADULTS: TAKE 1-10 DOSES DAILY      |
+----------------------------------------
+|   CHILDREN: TAKE 10-20 DOSES DAILY   |
+----------------------------------------
+
+NUTRITION FACTS
+---------------
+SUGAR: ?? GRAMS
+CALCIUM: 0 GRAMS
+etc... etc...
+
+Notice: The above comments are purely a joke, and are not meant to be taken seriously :P
+****************************
+* Copyright (c) 2022 sjchoi25 *
+**/
+
+/*@import url("https://sjchoi25.github.io/aops-blog-css/snippets/blink/light.css");*/
+@import url("https://sjchoi25.github.io/aops-blog-css/snippets/tag-cloud.css");
+@import url("https://sjchoi25.github.io/aops-blog-css/snippets/alerts.css");
+@import url("https://sjchoi25.github.io/aops-blog-css/snippets/inlinecode.css");
+@import url("https://sjchoi25.github.io/aops-blog-css/navbar.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+
+:root {--font: 'Inter';}
+
+#header {
+    background: url(https://sjchoi25.github.io/aops-blog-css/assets/nhv24/hamburg.jpg);
+    background-position: top 0% center;
+}
+
+#post-2464569 div.entrywrap, #post-2464569 .message, #post-2465395 div.entrywrap, #post-2465395 .message {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+#post-2464569 h2, #post-2464569 .efooter, #post-2464569 .cmty-item-tag.cmty-edit-tag.aops-font, #post-2465395 h2,  #post-2465395 .efooter,  #post-2465395 .cmty-item-tag.cmty-edit-tag.aops-font {
+    display: none;
+}
+
+.cmty-item-tag {
+    transition: background-color .2s;
+    border-radius: 2px;
+}
+
+/* Links */
+.bbcode_url:hover {
+    text-decoration: underline !important;
+}
+
+/* Un-runnable pywindows */
+span[style^="font-family:'no-run"] .pywindow .btn {
+    display: none;
+}
+
+#post-2620701 .cmty-post-attached-image-content img,
+#post-2764416 .cmty-post-attached-image-content img {
+    width: 70%;
+    height: auto;
+}
+
+span[style^="font-family:'hide"] a {
+    text-decoration: none !important;
+    color: #e06800;
+    background-color: #f9e1cc;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: var(--font) !important;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+span[style^="font-family:'hide"] a:hover {
+    color: #fff;
+    background-color: #e06800;
+    text-decoration: none !important;
+}
+
+span[style^="font-family:'problem"] {
+    padding: 15px;
+    border-radius: 4px;
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: var(--font) !important;
+}
+
+span[style^="font-family:'problem"] .latex,
+span[style^="font-family:'problem"] .latexcenter,
+span[style^="font-family:'problem"] .asy-image {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* CODE + Pywindow */
+code.language-none {
+    color: #333;
+}
+pre:not(.pywindow .CodeMirror) {
+    filter: invert(1) hue-rotate(175deg); /* Credits to @happycupcake for hue-rotate */
+    color: black;
+}
+.pywindow .CodeMirror {
+    border-color: #333;
+}
+
+.CodeMirror-activeline-background, .CodeMirror {
+    background-color: #111;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid #333;
+    background-color: transparent;
+}
+.CodeMirror div.CodeMirror-cursor {
+    border-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: 0;
+        color: #f5f9fc;
+    }
+    #message {background: 0;}
+    #wrapper, #main, div.entry, div.entrywrap {background: #121212;}
+    .entry h1 a {color: #f5f9fc;}
+    div.widget-title, input.button2, div.widget-title:hover, input.button2:hover {
+        background-color: #7A2048;
+        border-color: #1c2333;
+    }
+    #header {
+        background: rgba(0, 0, 0, 0.5) url(https://sjchoi25.github.io/aops-blog-css/assets/nhv24/hamburg.jpg);
+        background-blend-mode: darken;
+    }
+    #submit {
+        background: #7A2048;
+        border-color: transparent;
+    }
+    #submit:hover {
+        background: transparent;
+        border-color: #7A2048;
+        color: #7A2048;
+    }
+    .cmty-new-topic-popup textarea,
+    .aops-modal-body .cmty-new-topic-popup .cmty-subject-input,
+    .aops-modal-body .cmty-new-topic-popup .cmty-tags-line .cmty-items-input-box,
+    .aops-modal-body .cmty-new-topic-popup .cmty-items-input {
+        color: #f5f9fc;
+        background-color: #333;
+    }
+    .cmty-posting-submenu {
+        background-color: #222;
+        color: #f5f9fc;
+    }
+    .cmty-poll-display {
+        background-color: #222;
+        border: 0;
+        border-radius: 5px;
+    }
+    .aops-modal-frame:not(.cmty-posting-modal) {
+        border-color: rgb(32, 32, 32);
+    }
+
+    .aops-modal-frame:not(.cmty-posting-modal) .aops-scroll-outer {
+        box-shadow: none;
+        background-color: rgb(32, 32, 32);
+    }
+    .aops-modal-content-wrapper {
+        box-shadow: none;
+    }
+    .aops-modal-body, 
+    .aops-modal-frame:not(.cmty-posting-modal), 
+    .aops-modal-buttons.aops-modal-footer, 
+    .aops-modal-standard .aops-modal-title, 
+    .aops-modal-plain-body .aops-modal-title {
+        background-color: rgb(32, 32, 32);
+        color: white;
+    }
+    #navigation_box {box-shadow: 0 5px 10px #1c2333;}
+    .description {color: #7A2048;}
+    #header h1 {color: #f5f9fc;}
+    .commentwrap .message {border-color: #1c2333;}
+    div.actions a {color: #f5f9fc;}
+    .row1, .row2 {background: transparent; margin: 5px; border: 1px solid #7A2048; border-radius: 5px;}
+    .blog-shout p:hover {color: #f5f9fc;}
+    .blog-shout p a[href^='/community'] {color: #f5f9fc; font-weight: bold;}
+    #message {color: #f5f9fc;}
+    #blog_keywords, .blog-shout-wrapper, #message {border-color: #1c2333;}
+    #blog_keywords {background: 0;}
+    #side .cmty-itembox .cmty-item-tag, #side .cmty-itembox a {color: #408EC6;}
+    #wrapper {box-shadow: 0 0em 5em #121212;}
+    div.entrywrap {
+        box-shadow: 0px 0px 10px #1c2333, 14px -14px #7A2048;
+        margin: calc(14px + 0.5em);
+        background: #1c2333;
+        padding: 20px;
+    }
+    .month-image, .latex, .latexcenter, .asy-image {filter: invert(1) hue-rotate(180deg);}
+    .blog-no-topics {
+        color: #f5f9fc;
+    }
+    .cmty-bbcode-btn {
+        filter: invert(0.9);
+    }
+
+    /* Quotes + hides */
+    .bbcode_quote, .bbcode_quote .bbcode_quote_head, .bbcode_quote:after,
+    .cmty-hide-content, .cmty-hide-content:after {
+        background-color: #222;
+        color: white;
+    }
+    .bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote:after,
+    .cmty-hide-content .cmty-hide-content, .cmty-hide-content .cmty-hide-content:after {
+        background-color: #333;
+        color: white;
+    }
+    .bbcode_quote .bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote .bbcode_quote:after,
+    .cmty-hide-content .cmty-hide-content .cmty-hide-content, .cmty-hide-content .cmty-hide-content .cmty-hide-content:after {
+        background-color: #444;
+        color: white;
+    }
+
+    .bbcode_quote:before,
+    .cmty-hide-content:before {
+        filter: invert(0.9);
+    }
+
+    .entry h2:hover, .entry h2:before, .author:before, .author:hover {color: #408EC6;}
+}
+
+@media (prefers-color-scheme: dark) {
+.description {color: #eee;}
+}
+/* light mode description color needs a fix */
+@media (prefers-color-scheme: light) {
+.description {color: black}
+}
+
+#post-2994339 {transform: rotate(180deg);}
+#post-3019397 img, #post-3019629 img {filter:none}
+/** 
+THESE ARE THE LAST LINES OF THIS FILE. THANK YOU FOR READING.
+**/
