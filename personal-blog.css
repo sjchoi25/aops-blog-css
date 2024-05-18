@@ -281,6 +281,16 @@ pre:not(.pywindow .CodeMirror) {
     .entry h2:hover, .entry h2:before, .author:before, .author:hover {color: #408EC6;}
 }
 
+@media (prefers-color-scheme: dark) {
+.description {color: #eee;}
+}
+/* light mode description color needs a fix */
+@media (prefers-color-scheme: light) {
+.description {color: black}
+}
+
+#post-2994339 {transform: rotate(180deg);}
+#post-3019397 img, #post-3019629 img {filter:none}
 /** 
 THESE ARE THE LAST LINES OF THIS FILE. THANK YOU FOR READING.
 **/
