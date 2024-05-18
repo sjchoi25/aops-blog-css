@@ -104,6 +104,7 @@ code[class*="language-"] {
 .search {
     padding: 8px 12px !important;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 .button2 {
     width: 100%;
@@ -113,6 +114,7 @@ code[class*="language-"] {
     color: #fff;
     border: 2px solid #779ECB;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
 }
 .button2:hover {
     color: #779ECB;
@@ -348,13 +350,14 @@ div.widget-title {
 #side {
     padding: 36px;
     background: #f7f7f7;
-    width: 30%;
+    width: 450px;
     margin-left: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 100%;
     border-radius: 5px;
+    font-size: 14px;
 }
 #main {
     width: 100%;
@@ -403,6 +406,10 @@ div.actions {padding-left: 0;}
     font-size: 12px;
     margin-left: 0;
     margin-right: 8px;
+}
+
+#shouts-widget .aops-scroll-inner {
+    width: calc(100% - 20px) !important;
 }
 
 /* inspired by ihatemath's css*/
@@ -486,6 +493,11 @@ a.post-comment:hover {
 }
 
 
+/* FIX */
+.blog-shout-wrapper .aops-scroll-content {
+    width: 100%;
+}
+
 
 #feed-wrapper {display: none;}
 
@@ -514,13 +526,14 @@ a.post-comment:hover {
     #side {
         height: 100vh;
         top: 0;
-        left: -258px;
+        left: -370px;
         z-index: 9999999;
         transition: left 1s ease;
         overflow: auto;
         position: fixed;
         background-color: white;
         background-color: var(--bg);
+        width: 300px;
     }
     #navigation_box * {
         font-size: 0;
