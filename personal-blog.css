@@ -76,11 +76,6 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
 
 :root {--font: 'Inter';}
 
-#header {
-    background: url(https://sjchoi25.github.io/aops-blog-css/assets/nhv24/hamburg.jpg);
-    background-position: top 0% center;
-}
-
 #post-2464569 div.entrywrap, #post-2464569 .message, #post-2465395 div.entrywrap, #post-2465395 .message {
     box-shadow: none;
     padding: 0;
@@ -167,126 +162,6 @@ pre:not(.pywindow .CodeMirror) {
 }
 .CodeMirror div.CodeMirror-cursor {
     border-color: white;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: 0;
-        color: #f5f9fc;
-    }
-    #message {background: 0;}
-    #wrapper, #main, div.entry, div.entrywrap {background: #121212;}
-    .entry h1 a {color: #f5f9fc;}
-    div.widget-title, input.button2, div.widget-title:hover, input.button2:hover {
-        background-color: #7A2048;
-        border-color: #1c2333;
-    }
-    #header {
-        background: rgba(0, 0, 0, 0.5) url(https://sjchoi25.github.io/aops-blog-css/assets/nhv24/hamburg.jpg);
-        background-blend-mode: darken;
-    }
-    #submit {
-        background: #7A2048;
-        border-color: transparent;
-    }
-    #submit:hover {
-        background: transparent;
-        border-color: #7A2048;
-        color: #7A2048;
-    }
-    .cmty-new-topic-popup textarea,
-    .aops-modal-body .cmty-new-topic-popup .cmty-subject-input,
-    .aops-modal-body .cmty-new-topic-popup .cmty-tags-line .cmty-items-input-box,
-    .aops-modal-body .cmty-new-topic-popup .cmty-items-input {
-        color: #f5f9fc;
-        background-color: #333;
-    }
-    .cmty-posting-submenu {
-        background-color: #222;
-        color: #f5f9fc;
-    }
-    .cmty-poll-display {
-        background-color: #222;
-        border: 0;
-        border-radius: 5px;
-    }
-    .aops-modal-frame:not(.cmty-posting-modal) {
-        border-color: rgb(32, 32, 32);
-    }
-
-    .aops-modal-frame:not(.cmty-posting-modal) .aops-scroll-outer {
-        box-shadow: none;
-        background-color: rgb(32, 32, 32);
-    }
-    .aops-modal-content-wrapper {
-        box-shadow: none;
-    }
-    .aops-modal-body, 
-    .aops-modal-frame:not(.cmty-posting-modal), 
-    .aops-modal-buttons.aops-modal-footer, 
-    .aops-modal-standard .aops-modal-title, 
-    .aops-modal-plain-body .aops-modal-title {
-        background-color: rgb(32, 32, 32);
-        color: white;
-    }
-    #navigation_box {box-shadow: 0 5px 10px #1c2333;}
-    .description {color: #7A2048;}
-    #header h1 {color: #f5f9fc;}
-    .commentwrap .message {border-color: #1c2333;}
-    div.actions a {color: #f5f9fc;}
-    .row1, .row2 {background: transparent; margin: 5px; border: 1px solid #7A2048; border-radius: 5px;}
-    .blog-shout p:hover {color: #f5f9fc;}
-    .blog-shout p a[href^='/community'] {color: #f5f9fc; font-weight: bold;}
-    #message {color: #f5f9fc;}
-    #blog_keywords, .blog-shout-wrapper, #message {border-color: #1c2333;}
-    #blog_keywords {background: 0;}
-    #side .cmty-itembox .cmty-item-tag, #side .cmty-itembox a {color: #408EC6;}
-    #wrapper {box-shadow: 0 0em 5em #121212;}
-    div.entrywrap {
-        box-shadow: 0px 0px 10px #1c2333, 14px -14px #7A2048;
-        margin: calc(14px + 0.5em);
-        background: #1c2333;
-        padding: 20px;
-    }
-    .month-image, .latex, .latexcenter, .asy-image {filter: invert(1) hue-rotate(180deg);}
-    .blog-no-topics {
-        color: #f5f9fc;
-    }
-    .cmty-bbcode-btn {
-        filter: invert(0.9);
-    }
-
-    /* Quotes + hides */
-    .bbcode_quote, .bbcode_quote .bbcode_quote_head, .bbcode_quote:after,
-    .cmty-hide-content, .cmty-hide-content:after {
-        background-color: #222;
-        color: white;
-    }
-    .bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote:after,
-    .cmty-hide-content .cmty-hide-content, .cmty-hide-content .cmty-hide-content:after {
-        background-color: #333;
-        color: white;
-    }
-    .bbcode_quote .bbcode_quote .bbcode_quote, .bbcode_quote .bbcode_quote .bbcode_quote .bbcode_quote_head, .bbcode_quote .bbcode_quote .bbcode_quote:after,
-    .cmty-hide-content .cmty-hide-content .cmty-hide-content, .cmty-hide-content .cmty-hide-content .cmty-hide-content:after {
-        background-color: #444;
-        color: white;
-    }
-
-    .bbcode_quote:before,
-    .cmty-hide-content:before {
-        filter: invert(0.9);
-    }
-
-    .entry h2:hover, .entry h2:before, .author:before, .author:hover {color: #408EC6;}
-}
-
-@media (prefers-color-scheme: dark) {
-.description {color: #eee;}
-}
-/* light mode description color needs a fix */
-@media (prefers-color-scheme: light) {
-.description {color: black}
 }
 
 #post-2994339 {transform: rotate(180deg);}
