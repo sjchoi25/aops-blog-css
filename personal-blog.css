@@ -73,8 +73,6 @@ Notice: The above comments are purely a joke, and are not meant to be taken seri
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
-:root {--font: 'Inter';}
-
 #post-2464569 div.entrywrap, #post-2464569 .message, #post-2465395 div.entrywrap, #post-2465395 .message {
     box-shadow: none;
     padding: 0;
@@ -108,7 +106,7 @@ span[style^="font-family:'hide"] a {
     border-radius: 2px;
     padding-left: 5px;
     padding-right: 5px;
-    font-family: var(--font) !important;
+    font-family: 'Merriweather' !important;
     margin-left: 3px;
     margin-right: 3px;
 }
@@ -125,7 +123,7 @@ span[style^="font-family:'problem"] {
     display: block;
     background-color: #f7f7f7;
     color: black;
-    font-family: Montserrat !important;
+    font-family: 'Merriweather' !important;
 }
 
 #post-2994339 {transform: rotate(180deg);}
