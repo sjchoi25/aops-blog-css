@@ -264,7 +264,7 @@ div.widget-title {
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: scaleX(-1);
+    transform: translateY(1px) scaleX(-1);
 }
 
 #header h1 {
